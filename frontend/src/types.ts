@@ -24,3 +24,14 @@ export type Petition = {
   decisionDate: string;
   source_file: string;
 };
+
+export type PetitionGuidance = {
+  guidance: {
+    petitionType: string;
+    supportingCases: string[];
+    keyLegalGrounds: string[];
+    evidenceToGather: string[];
+    keyPoints: string[];
+    remediesToRequest: string[];
+  };
+};

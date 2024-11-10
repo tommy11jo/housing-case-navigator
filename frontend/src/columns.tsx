@@ -85,16 +85,16 @@ export const columns: ColumnDef<Petition>[] = [
     accessorKey: "rentAdjustment",
     cell: ({ row }) => {
       const value = row.original.rentAdjustment;
-      const isPositive =
-        value.includes("+") || value.toLowerCase().includes("yes");
+      const rentReduced =
+        value.includes("-") || value.toLowerCase().includes("yes");
       return (
         <div className="flex items-center gap-1">
           <span
             className={`${
-              isPositive ? "text-green-600" : "text-red-600"
+              rentReduced ? "text-green-600" : "text-red-600"
             } font-medium`}
           >
-            {isPositive ? "↑" : "↓"} {value}
+            {rentReduced ? "↓" : "↑"} {value}
           </span>
         </div>
       );

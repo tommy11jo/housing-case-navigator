@@ -7,14 +7,14 @@ import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { useEffect, useState } from "react";
-import { Petition } from "./types";
+import { Petition, PetitionGuidance } from "./types";
 import { Spinner } from "./components/ui/spinner";
 
 function App() {
   const [data, setData] = useState<Petition[]>([]);
   const [petitionGuidance, setPetitionGuidance] = useState<
-    Record<string, unknown>
-  >({});
+    PetitionGuidance["guidance"] | null
+  >(null);
   const [petitionDetails, setPetitionDetails] = useState("");
   const [isLoading, setIsLoading] = useState(false);
 
@@ -64,7 +64,9 @@ function App() {
           <div className="space-y-6 w-[1000px]">
             <Card>
               <CardHeader>
-                <CardTitle>Petition Details</CardTitle>
+                <CardTitle className="text-3xl font-bold text-gray-900">
+                  Petition Details
+                </CardTitle>
               </CardHeader>
               <CardContent>
                 <Textarea
@@ -87,35 +89,114 @@ function App() {
 
             {isLoading ? (
               <Spinner className="mr-2 h-4 w-4" />
-            ) : (
-              <Card>
-                <CardHeader>
-                  <CardTitle>Generated Petition</CardTitle>
+            ) : petitionGuidance == null ? null : (
+              <Card className="bg-white shadow-lg">
+                <CardHeader className="text-center border-b pb-4">
+                  <CardTitle className="text-3xl font-bold text-gray-900">
+                    Petition Guidance
+                  </CardTitle>
                 </CardHeader>
-                <CardContent>
-                  <div className="space-y-4">
+                <CardContent className="p-6">
+                  <div className="space-y-8">
                     <div>
-                      <h3 className="text-lg font-semibold">Background</h3>
-                      <p className="text-gray-600">
-                        OUTPUT HERE RIHGT NOW:
-                        {JSON.stringify(petitionGuidance)}
-                      </p>
-                    </div>
-
-                    <div>
-                      <h3 className="text-lg font-semibold">Legal Basis</h3>
-                      <p className="text-gray-600">
-                        Relevant legal statutes and precedents...
-                      </p>
-                    </div>
-
-                    <div>
-                      <h3 className="text-lg font-semibold">
-                        Relief Requested
+                      <h3 className="text-2xl font-semibold text-gray-800 mb-3">
+                        Petition Type:{" "}
+                        <span className="font-normal">
+                          {petitionGuidance.petitionType}
+                        </span>
                       </h3>
-                      <p className="text-gray-600">
-                        Specific actions requested from the court...
-                      </p>
+                    </div>
+                    <div>
+                      <h3 className="text-2xl font-semibold text-gray-800 mb-4">
+                        Supporting Cases
+                      </h3>
+                      <ul className="space-y-2">
+                        {petitionGuidance.supportingCases.map(
+                          (supportingCase, index) => (
+                            <li
+                              key={index}
+                              className="flex text-black justify-center text-center"
+                            >
+                              <span className="mr-4">•</span>
+                              <span>{supportingCase}</span>
+                            </li>
+                          )
+                        )}
+                      </ul>
+                    </div>
+
+                    <div>
+                      <h3 className="text-2xl font-semibold text-gray-800 mb-4">
+                        Legal Grounds
+                      </h3>
+                      <ul className="space-y-2">
+                        {petitionGuidance?.keyLegalGrounds.map(
+                          (ground, index) => (
+                            <li
+                              key={index}
+                              className="flex text-black justify-center text-center"
+                            >
+                              <span className="mr-4 flex-shrink-0">•</span>
+                              <span>{ground}</span>
+                            </li>
+                          )
+                        )}
+                      </ul>
+                    </div>
+
+                    <div>
+                      <h3 className="text-2xl font-semibold text-gray-800 mb-4">
+                        Evidence to Gather
+                      </h3>
+                      <ul className="space-y-2">
+                        {petitionGuidance.evidenceToGather.map(
+                          (evidence, index) => (
+                            <li
+                              key={index}
+                              className="flex text-black justify-center text-center"
+                            >
+                              <span className="mr-4">•</span>
+                              <span>{evidence}</span>
+                            </li>
+                          )
+                        )}
+                      </ul>
+                    </div>
+
+                    <div>
+                      <h3 className="text-2xl font-semibold text-gray-800 mb-4">
+                        Key Points
+                      </h3>
+                      <ul className="space-y-2">
+                        {petitionGuidance?.keyPoints.map((point, index) => (
+                          <li
+                            key={index}
+                            className="flex text-black justify-center text-center"
+                          >
+                            <span className="mr-4 flex-shrink-0">•</span>
+                            <span>{point}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+
+                    <div>
+                      <h3 className="text-2xl font-semibold text-gray-800 mb-4">
+                        Remedies to Request
+                      </h3>
+                      <ul className="space-y-2">
+                        {petitionGuidance.remediesToRequest.map(
+                          (remedy, index) => (
+                            <li
+                              key={index}
+                              className="flex text-black justify-center text-center"
+                            >
+                              <span className="mr-4">•</span>
+                              <span>{remedy}</span>
+                            </li>
+                          )
+                        )}
+                      </ul>
                     </div>
                   </div>
                 </CardContent>
