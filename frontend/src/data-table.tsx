@@ -35,7 +35,7 @@ export function DataTable<TData, TValue>({
     []
   );
 
-  const fuzzyFilter: FilterFn<TData> = (row, columnId, value, addMeta) => {
+  const fuzzyFilter: FilterFn<TData> = (row, columnId, value) => {
     try {
       const cellValue = row.getValue(columnId);
       if (cellValue == null) return false;
@@ -74,7 +74,7 @@ export function DataTable<TData, TValue>({
     // Pass undefined for the addMeta parameter
     return table
       .getFilteredRowModel()
-      .rows.filter((row) => fuzzyFilter(row, columnId, filterValue, undefined))
+      .rows.filter((row) => fuzzyFilter(row, columnId, filterValue, () => {}))
       .length;
   };
 
