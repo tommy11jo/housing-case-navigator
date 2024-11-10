@@ -1,4 +1,4 @@
-"use client";
+"use client"
 
 import {
   ColumnDef,
@@ -8,7 +8,7 @@ import {
   getFilteredRowModel,
   useReactTable,
   FilterFn,
-} from "@tanstack/react-table";
+} from "@tanstack/react-table"
 
 import {
   Table,
@@ -17,14 +17,14 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from "@/components/ui/table";
-import React, { Fragment } from "react";
-import { Input } from "./components/ui/input";
-import { Search } from "lucide-react";
+} from "@/components/ui/table"
+import React, { Fragment } from "react"
+import { Input } from "./components/ui/input"
+import { Search } from "lucide-react"
 
 interface DataTableProps<TData, TValue> {
-  columns: ColumnDef<TData, TValue>[];
-  data: TData[];
+  columns: ColumnDef<TData, TValue>[]
+  data: TData[]
 }
 
 export function DataTable<TData, TValue>({
@@ -33,25 +33,31 @@ export function DataTable<TData, TValue>({
 }: DataTableProps<TData, TValue>) {
   const [columnFilters, setColumnFilters] = React.useState<ColumnFiltersState>(
     []
-  );
+  )
 
   const fuzzyFilter: FilterFn<TData> = (row, columnId, value) => {
     try {
-      const cellValue = row.getValue(columnId);
-      if (cellValue == null) return false;
+      const cellValue = row.getValue(columnId)
 
-      // Convert the cell value to a searchable string
+      if (!value) return true
+
+      if (cellValue == null) {
+        return false
+      }
+
       const searchableValue =
         typeof cellValue === "object"
           ? JSON.stringify(cellValue).toLowerCase()
-          : String(cellValue).toLowerCase();
+          : String(cellValue).toLowerCase()
 
-      return searchableValue.includes(String(value).toLowerCase());
-    } catch {
-      return false;
+      return searchableValue.includes(String(value).toLowerCase())
+    } catch (error) {
+      console.error("Error in fuzzyFilter:", error)
+      return false
     }
-  };
+  }
 
+  console.log("data is ", data)
   const table = useReactTable({
     data,
     columns: columns.map((c) => ({ ...c, filterFn: fuzzyFilter })),
@@ -65,18 +71,18 @@ export function DataTable<TData, TValue>({
       fuzzy: fuzzyFilter,
     },
     globalFilterFn: fuzzyFilter,
-  });
+  })
 
   const getFilteredRowCount = (columnId: string) => {
-    const filterValue = table.getColumn(columnId)?.getFilterValue();
-    if (!filterValue) return null;
+    const filterValue = table.getColumn(columnId)?.getFilterValue()
+    if (!filterValue) return null
 
     // Pass undefined for the addMeta parameter
     return table
       .getFilteredRowModel()
       .rows.filter((row) => fuzzyFilter(row, columnId, filterValue, () => {}))
-      .length;
-  };
+      .length
+  }
 
   return (
     <div className="flex flex-col gap-4">
@@ -142,27 +148,27 @@ export function DataTable<TData, TValue>({
                     >
                       {row.getVisibleCells().map((cell) => {
                         // This try catch logic isn't actually working :(
-                        let cellContent;
+                        let cellContent
                         try {
                           cellContent = flexRender(
                             cell.column.columnDef.cell,
                             cell.getContext()
-                          );
+                          )
                         } catch {
                           // Skip cells that can't be rendered
-                          cellContent = "Unable to load";
+                          cellContent = "Unable to load"
                         }
                         return (
                           <TableCell key={cell.id} className="p-4 border-r">
                             {cellContent}
                           </TableCell>
-                        );
+                        )
                       })}
                     </TableRow>
-                  );
+                  )
                 } catch {
                   // Skip rows that can't be rendered
-                  return null;
+                  return null
                 }
               })
             ) : (
@@ -179,5 +185,5 @@ export function DataTable<TData, TValue>({
         </Table>
       </div>
     </div>
-  );
+  )
 }

@@ -16,7 +16,7 @@ export const columns: ColumnDef<Petition>[] = [
         Petition Type
       </div>
     ),
-    accessorKey: "petitionTypeNumber",
+    accessorKey: "issueTypeNumber",
     size: 300,
     cell: ({ row }) => {
       const petitionTypeNumber = parseInt(row.original.issueTypeNumber) as
@@ -32,7 +32,7 @@ export const columns: ColumnDef<Petition>[] = [
         Petitioner Argument
       </div>
     ),
-    accessorKey: "petitionerArgument",
+    accessorKey: "argumentsAndDecisions",
     cell: ({ row }) => {
       return (
         <ol className="list-decimal pl-4 text-left w-full">

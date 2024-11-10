@@ -2,9 +2,10 @@
 // (1) Rent Ceiling Violations (2) Housing Service Reductions (3) Failure to Register a Unit with the Rent Stabilization Program
 export const PETITION_TYPE_NUMBER_TO_NAME = {
   1: "Rent Ceiling Violations",
-  2: "Housing Service Reductions",
-  3: "Failure to Register a Unit with the Rent Stabilization Program",
-};
+  2: "Reductions in Maintenance and Habitability",
+  3: "Reductions in Service",
+  4: "Failure to Register a Unit with the Rent Stabilization Program",
+}
 
 // We don't use this data anymore, we fetch from the backend now.
 // export const DATA: Petition[] = [
