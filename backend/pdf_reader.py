@@ -10,6 +10,7 @@ load_dotenv()
 
 def process_pdf(file_path: str):
     doc = fitz.open(file_path)
+    all_text = []
 
     for page_num in range(len(doc)):
         page = doc.load_page(page_num)
@@ -30,16 +31,23 @@ def extract_info_from_text(text: str) -> Dict:
     # Initialize OpenAI client (make sure to set your API key in environment variables)
     client = openai.OpenAI()
     
-    prompt = """Please analyze this legal document and provide a JSON output with the following structure:
-    {
-        "key_issues": [list of main issues/complaints],
-        "landlord_name": "name of the landlord"
-    }
+    prompt = """Please analyze this legal document to identify key issues brought up by the petitioner. For each issue, provide the following:
+    - issue type
+    - petitioner argument
+    - decision (granted or denied)
+    - reimbursement
+    - rent adjustment
+    - rationale for decision
+    - respondent
     
-    If any information is not found, use null as the value."""
+    Output should be in JSON format with the following structure:
+    {
+        "issues": Issue[]
+    }
+    """
 
     response = client.chat.completions.create(
-        model="gpt-4o-mini",
+        model="gpt-4o",
         messages=[
             {"role": "system", "content": "You are a legal document analyzer. Provide output in JSON format only."},
             {"role": "user", "content": f"{prompt}\n\nDocument text:\n{text}"}
