@@ -1,13 +1,23 @@
 import "./App.css";
 import { DataTable } from "./data-table";
-import { DATA } from "./data";
+// import { DATA } from "./data";
 import { columns } from "./columns";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { useEffect, useState } from "react";
+import { Petition } from "./types";
 
 function App() {
+  const [data, setData] = useState<Petition[]>([]);
+
+  useEffect(() => {
+    fetch("http://localhost:8000/retrieval/documents")
+      .then((res) => res.json())
+      .then((data) => setData(data.petitions));
+  }, []);
+
   return (
     <div className="container mx-auto py-10 min-h-screen">
       <h1 className="text-3xl font-bold mb-10 text-gray-900">
@@ -20,7 +30,7 @@ function App() {
         </TabsList>
 
         <TabsContent value="cases" className="border-none p-0 mt-6 w-full">
-          <DataTable columns={columns} data={DATA} />
+          <DataTable columns={columns} data={data} />
         </TabsContent>
 
         <TabsContent value="analytics" className="border-none p-0 mt-6 w-full">

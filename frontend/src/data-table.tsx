@@ -36,16 +36,21 @@ export function DataTable<TData, TValue>({
   );
 
   const fuzzyFilter: FilterFn<TData> = (row, columnId, value) => {
-    const cellValue = row.getValue(columnId);
-    if (cellValue == null) return false;
+    try {
+      const cellValue = row.getValue(columnId);
+      if (cellValue == null) return false;
 
-    // Convert the cell value to a searchable string
-    const searchableValue =
-      typeof cellValue === "object"
-        ? JSON.stringify(cellValue).toLowerCase()
-        : String(cellValue).toLowerCase();
+      // Convert the cell value to a searchable string
+      const searchableValue =
+        typeof cellValue === "object"
+          ? JSON.stringify(cellValue).toLowerCase()
+          : String(cellValue).toLowerCase();
 
-    return searchableValue.includes(String(value).toLowerCase());
+      return searchableValue.includes(String(value).toLowerCase());
+    } catch (error) {
+      // If we can't access the value, exclude this row from results
+      return false;
+    }
   };
 
   const table = useReactTable({
@@ -111,22 +116,39 @@ export function DataTable<TData, TValue>({
           </TableHeader>
           <TableBody>
             {table.getRowModel().rows?.length ? (
-              table.getRowModel().rows.map((row) => (
-                <TableRow
-                  key={row.id}
-                  data-state={row.getIsSelected() && "selected"}
-                  className="hover:bg-gray-50/50"
-                >
-                  {row.getVisibleCells().map((cell) => (
-                    <TableCell key={cell.id} className="p-4 border-r">
-                      {flexRender(
-                        cell.column.columnDef.cell,
-                        cell.getContext()
-                      )}
-                    </TableCell>
-                  ))}
-                </TableRow>
-              ))
+              table.getRowModel().rows.map((row) => {
+                try {
+                  return (
+                    <TableRow
+                      key={row.id}
+                      data-state={row.getIsSelected() && "selected"}
+                      className="hover:bg-gray-50/50"
+                    >
+                      {row.getVisibleCells().map((cell) => {
+                        // This try catch logic isn't actually working :(
+                        let cellContent;
+                        try {
+                          cellContent = flexRender(
+                            cell.column.columnDef.cell,
+                            cell.getContext()
+                          );
+                        } catch (error) {
+                          // Skip cells that can't be rendered
+                          cellContent = "Unable to load";
+                        }
+                        return (
+                          <TableCell key={cell.id} className="p-4 border-r">
+                            {cellContent}
+                          </TableCell>
+                        );
+                      })}
+                    </TableRow>
+                  );
+                } catch (error) {
+                  // Skip rows that can't be rendered
+                  return null;
+                }
+              })
             ) : (
               <TableRow>
                 <TableCell

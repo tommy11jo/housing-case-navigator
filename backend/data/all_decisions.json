@@ -213,7 +213,7 @@
       "decision": "granted",
       "reimbursement": "200.00",
       "rentAdjustment": "Yes (5%)",
-      "rationaleForDecision": {
+      "rationale": {
         "respondentHadNotice": "Yes",
         "issueDuration": "2021-2023",
         "evidenceAssessment": "Property was not registered until September 2023, after rent increase notice was issued",
@@ -232,7 +232,7 @@
       "decision": "granted",
       "reimbursement": "5750.00",
       "rentAdjustment": "Yes (various percentages for different issues)",
-      "rationaleForDecision": {
+      "rationale": {
         "respondentHadNotice": "Yes, through multiple emails and communications",
         "issueDuration": "Various issues from 2021-2023",
         "evidenceAssessment": "Photos, videos, and testimony showed pattern of maintenance problems with little response",
@@ -543,7 +543,7 @@
       "decision": "granted",
       "reimbursement": "$24,347.67",
       "rentAdjustment": "Yes (25%)",
-      "rationaleForDecision": {
+      "rationale": {
         "respondentHadNotice": "Yes, verbally in November/December 2022 and in writing",
         "issueDuration": "10+ months since December 2022",
         "evidenceAssessment": "Photos and inspection report confirmed substantial water damage; no evidence of repair attempts by landlord",
@@ -1061,7 +1061,7 @@
       "decision": "granted",
       "reimbursement": "$6,072.11 plus additional monthly credits",
       "rentAdjustment": "Yes",
-      "rationaleForDecision": {
+      "rationale": {
         "respondentHadNotice": "Yes, through tenant petition and hearing",
         "issueDuration": "Approximately 1 year (Feb 2022 - Feb 2023)",
         "evidenceAssessment": "Documentation showed incorrect base rent calculation and unlawful security deposit increase",
@@ -1207,7 +1207,7 @@
       "decision": "granted",
       "reimbursement": "$34,931.23",
       "rentAdjustment": "Yes (20%)",
-      "rationaleForDecision": {
+      "rationale": {
         "respondentHadNotice": "Yes, through multiple complaints and emails from 2019-2023",
         "issueDuration": "Various issues persisted between 2019-2023",
         "evidenceAssessment": "Hearing Officer found substantial evidence through testimony, photos, inspection reports and emails documenting ongoing issues",
