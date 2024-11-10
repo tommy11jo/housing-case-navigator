@@ -9,6 +9,14 @@ load_dotenv()
 
 router = APIRouter(prefix="/retrieval")
 
+
+# This mapping is duplicated in frontend/src/data.ts. Keep them in sync!
+PETITION_TYPE_NUMBER_TO_NAME = {
+  1: "Rent Ceiling Violations",
+  2: "Housing Service Reductions",
+  3: "Failure to Register a Unit with the Rent Stabilization Program",
+}
+
 @router.get("/documents")
 async def get_documents(format: str = "json"):
     with open("./data/all_decisions.json", "r") as file:
@@ -18,6 +26,10 @@ async def get_documents(format: str = "json"):
         # Create a string buffer to write CSV data
         output = StringIO()
         petitions = data["petitions"]
+        petitions = [
+            {"petitionType": PETITION_TYPE_NUMBER_TO_NAME[int(petition["petitionTypeNumber"])], **petition}
+            for petition in petitions
+        ]
         if petitions:  # Check if data is not empty
             # Get headers from first item's keys
             writer = csv.DictWriter(output, fieldnames=petitions[0].keys())
