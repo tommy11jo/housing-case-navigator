@@ -1,0 +1,33 @@
+{
+  "petitions": [
+    {
+      "petitionTypeNumber": "1",
+      "petitionerArgument": [
+        {
+          "violatedCode": "CSFRA Section 1707(f)",
+          "summaryOfViolation": "Unlawful rent increase above allowed Annual General Adjustment (AGA) and multiple rent increases within 12 months"
+        },
+        {
+          "violatedCode": "CSFRA Registration Requirements",
+          "summaryOfViolation": "Landlord failed to register property with Rent Stabilization Program before implementing rent increases"
+        }
+      ],
+      "decision": "granted",
+      "reimbursement": "2209.00",
+      "rentAdjustment": "Yes",
+      "rationale": {
+        "respondentHadNotice": "No, landlord failed to provide required CSFRA notices to tenant",
+        "issueDuration": "Multiple unlawful increases from March 2022 through October 2022",
+        "evidenceAssessment": "Documentation showed rent increases exceeded AGA limits and property was not properly registered",
+        "impactAssessment": "Tenant overpaid rent due to multiple unlawful increases"
+      },
+      "respondent": "Fairview Townhomes, WRL LLC",
+      "hearingOfficer": "E. Alexandra DeLateur",
+      "city": "Mountain View",
+      "caseNumber": "22230011",
+      "hearingDate": "January 13, 2023",
+      "filedOnDate": "September 30, 2022",
+      "decisionDate": "February 21, 2023"
+    }
+  ]
+}

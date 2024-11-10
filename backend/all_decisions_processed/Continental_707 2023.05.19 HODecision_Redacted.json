@@ -1,0 +1,33 @@
+{
+  "petitions": [
+    {
+      "petitionTypeNumber": "1",
+      "petitionerArgument": [
+        {
+          "violatedCode": "CSFRA Section 1706(a)",
+          "summaryOfViolation": "Landlord charged rent exceeding the lawful Base Rent by not including rent concessions in calculation"
+        },
+        {
+          "violatedCode": "CSFRA Section 1706(c)",
+          "summaryOfViolation": "Unlawful increase in security deposit from $500 to $1000 for pet addition"
+        }
+      ],
+      "decision": "granted",
+      "reimbursement": "$6,072.11 plus additional monthly credits",
+      "rentAdjustment": "Yes",
+      "rationaleForDecision": {
+        "respondentHadNotice": "Yes, through tenant petition and hearing",
+        "issueDuration": "Approximately 1 year (Feb 2022 - Feb 2023)",
+        "evidenceAssessment": "Documentation showed incorrect base rent calculation and unlawful security deposit increase",
+        "impactAssessment": "Tenants overcharged due to improper rent calculations and deposit requirements"
+      },
+      "respondent": "Americana I, LLC",
+      "hearingOfficer": "Barbara M. Ainscher",
+      "city": "Mountain View",
+      "caseNumber": "C22230028",
+      "hearingDate": "April 13, 2023",
+      "filedOnDate": "February 9, 2023",
+      "decisionDate": "May 19, 2023"
+    }
+  ]
+}

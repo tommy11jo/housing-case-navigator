@@ -1,0 +1,29 @@
+{
+  "petitions": [
+    {
+      "petitionTypeNumber": "1",
+      "petitionerArgument": [
+        {
+          "violatedCode": "CSFRA Sec. 1707(d) and Chapter 7, Section C",
+          "summaryOfViolation": "Tenant claims undue hardship due to income being below 120% AMI for household size, making rent increase burdensome"
+        }
+      ],
+      "decision": "granted",
+      "reimbursement": "Credit for excess rent paid since September 1, 2022",
+      "rentAdjustment": "Yes (reduction to 5% AGA only)",
+      "rationale": {
+        "respondentHadNotice": "Yes, through formal petition process",
+        "issueDuration": "Ongoing financial hardship since 2021",
+        "evidenceAssessment": "Tenant provided credible testimony and documentation of income below AMI threshold; landlord did not dispute evidence",
+        "impactAssessment": "Tenant's income significantly below 120% AMI threshold, with continued hardship expected due to reduced child support"
+      },
+      "respondent": "Del Medio Manor, LLP and Calson Property Management",
+      "hearingOfficer": "Martin Eichner",
+      "city": "Mountain View",
+      "caseNumber": "22230003",
+      "hearingDate": "October 6, 2022",
+      "filedOnDate": "August 5, 2022",
+      "decisionDate": "November 8, 2022"
+    }
+  ]
+}

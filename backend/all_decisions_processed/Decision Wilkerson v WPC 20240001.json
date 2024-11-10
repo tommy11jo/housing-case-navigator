@@ -1,0 +1,33 @@
+{
+  "petitions": [
+    {
+      "petitionTypeNumber": "2",
+      "petitionerArgument": [
+        {
+          "violatedCode": "Section 13 of City's Rent Stabilization and Just Cause for Eviction Ordinance",
+          "summaryOfViolation": "Reduction in maintenance and services, including non-functioning elevator, broken lights in common areas, water overflow issues, and mold"
+        },
+        {
+          "violatedCode": "CA Civil Code \u00a7 1941.1",
+          "summaryOfViolation": "Failure to maintain rental unit in habitable condition with proper maintenance and repairs"
+        }
+      ],
+      "decision": "granted",
+      "reimbursement": "$268.56",
+      "rentAdjustment": "Yes (7.5%)",
+      "rationale": {
+        "respondentHadNotice": "Yes, issues reported over multiple years",
+        "issueDuration": "Various issues spanning several months (elevator out for 6 months)",
+        "evidenceAssessment": "Hearing officer found evidence of maintenance issues during inspection, particularly with elevator service and common area lights",
+        "impactAssessment": "Determined reduction in housing services warranted temporary rent reduction"
+      },
+      "respondent": "Woodland Park Communities",
+      "hearingOfficer": "Michael H. Roush",
+      "city": "East Palo Alto",
+      "caseNumber": "2024-0001",
+      "hearingDate": "May 17, 2024",
+      "filedOnDate": "January 25, 2024",
+      "decisionDate": "May 27, 2024"
+    }
+  ]
+}

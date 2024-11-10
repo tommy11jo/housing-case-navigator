@@ -1,0 +1,33 @@
+{
+  "petitions": [
+    {
+      "petitionTypeNumber": "1",
+      "petitionerArgument": [
+        {
+          "violatedCode": "CSFRA Section 1702(b)(2)",
+          "summaryOfViolation": "Incorrect calculation of base rent during initial lease term"
+        },
+        {
+          "violatedCode": "CSFRA Section 1707(c)",
+          "summaryOfViolation": "Rent increase without proper notice"
+        }
+      ],
+      "decision": "granted",
+      "reimbursement": "$806.89",
+      "rentAdjustment": "Yes",
+      "rationale": {
+        "respondentHadNotice": "No, landlord failed to properly notify tenant of rent increases",
+        "issueDuration": "June 2022 - December 2022",
+        "evidenceAssessment": "Lease agreement and payment records showed incorrect base rent calculation",
+        "impactAssessment": "Tenant was overcharged due to improper base rent calculation and unauthorized increases"
+      },
+      "respondent": "Washington Square",
+      "hearingOfficer": "Barbara M. Anscher",
+      "city": "Mountain View",
+      "caseNumber": "22230008",
+      "hearingDate": "November 18, 2022",
+      "filedOnDate": "September 26, 2022",
+      "decisionDate": "December 16, 2022"
+    }
+  ]
+}

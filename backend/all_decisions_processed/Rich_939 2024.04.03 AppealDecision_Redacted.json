@@ -1,0 +1,33 @@
+{
+  "petitions": [
+    {
+      "petitionTypeNumber": "2",
+      "petitionerArgument": [
+        {
+          "violatedCode": "CSFRA and Mountain View Rent Stabilization Program",
+          "summaryOfViolation": "Failure to roll back rent to effective date of Community Stabilization and Fair Rent Act and improper imposition of 2018 Annual General Adjustment"
+        },
+        {
+          "violatedCode": "CA Civil Code \u00a7 1941.1",
+          "summaryOfViolation": "Water intrusion and damage to second bedroom making it unusable, and reduction in landscaping/maintenance services"
+        }
+      ],
+      "decision": "granted",
+      "reimbursement": "24347.67",
+      "rentAdjustment": "Yes (25%)",
+      "rationale": {
+        "respondentHadNotice": "Yes, Petitioner notified Respondent multiple times including June 2023",
+        "issueDuration": "Several months of unresolved water intrusion issues",
+        "evidenceAssessment": "City inspection report confirmed water damage and need for repairs, testimony and documentary evidence supported claims",
+        "impactAssessment": "Second bedroom became unusable, affecting approximately one-fourth of livable space"
+      },
+      "respondent": "Mountain View Corporate Center",
+      "hearingOfficer": "Not specified",
+      "city": "Mountain View",
+      "caseNumber": "C22230050 and C22230051",
+      "hearingDate": "October 4, 2023",
+      "filedOnDate": "May 26, 2023",
+      "decisionDate": "February 1, 2024"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "petitions": [
+    {
+      "petitionTypeNumber": "1",
+      "petitionerArgument": [
+        {
+          "violatedCode": "CSFRA Sections 1706 and 1707",
+          "summaryOfViolation": "Landlord charged rent above lawful Base Rent and failed to properly refund overcharges according to schedule"
+        }
+      ],
+      "decision": "granted",
+      "reimbursement": "$256.35",
+      "rentAdjustment": "No",
+      "rationale": {
+        "respondentHadNotice": "Yes, through original Decision in May 2023",
+        "issueDuration": "7 months of withheld refunds, 9 months of overcharges",
+        "evidenceAssessment": "Documentation showed respondent failed to follow refund schedule and continued charging above Base Rent",
+        "impactAssessment": "Tenants deprived of rightful refunds and overcharged for extended period"
+      },
+      "respondent": "Americana I, LLC",
+      "hearingOfficer": "Barbara M. Anscher",
+      "city": "Mountain View",
+      "caseNumber": "C22230028",
+      "hearingDate": "January 29, 2024",
+      "filedOnDate": "November 28, 2023",
+      "decisionDate": "March 4, 2024"
+    }
+  ]
+}

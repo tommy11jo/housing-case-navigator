@@ -1,0 +1,33 @@
+{
+  "petitions": [
+    {
+      "petitionTypeNumber": "2",
+      "petitionerArgument": [
+        {
+          "violatedCode": "Civil Code \u00a71941.1",
+          "summaryOfViolation": "Water leaks in living room and garage causing mold growth and floor damage"
+        },
+        {
+          "violatedCode": "Health and Safety Code \u00a717920.3",
+          "summaryOfViolation": "Dampness and mold in unit endangering health and safety of occupants"
+        }
+      ],
+      "decision": "granted",
+      "reimbursement": "1293.00",
+      "rentAdjustment": "Yes (25%)",
+      "rationale": {
+        "respondentHadNotice": "Yes, written notice given December 12 and 17, 2022",
+        "issueDuration": "December 12, 2022 to February 28, 2023 (78 days)",
+        "evidenceAssessment": "Photographs showed significant mold growth and water damage; landlord failed to conduct proper testing or repairs",
+        "impactAssessment": "Severe risk to tenant's elderly mother's health due to mold conditions"
+      },
+      "respondent": "TFT Investments",
+      "hearingOfficer": "Renee Glover Chantler",
+      "city": "Mountain View",
+      "caseNumber": "C22230030",
+      "hearingDate": "May 3, 2023",
+      "filedOnDate": "February 13, 2023",
+      "decisionDate": "June 30, 2023"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "petitions": [
+    {
+      "petitionTypeNumber": "1",
+      "petitionerArgument": [
+        {
+          "violatedCode": "CSFRA Section 1707",
+          "summaryOfViolation": "Unlawful rent increases - more than allowed AGA and multiple increases within 12 months"
+        },
+        {
+          "violatedCode": "CSFRA Registration Requirements",
+          "summaryOfViolation": "Landlord failed to register property with Rent Stabilization Program"
+        }
+      ],
+      "decision": "granted",
+      "reimbursement": "3040.42",
+      "rentAdjustment": "Yes",
+      "rationale": {
+        "respondentHadNotice": "Yes, received multiple requests from CSFRA staff",
+        "issueDuration": "Multiple unlawful rent increases over 12 months",
+        "evidenceAssessment": "Clear documentation of improper rent increases and failure to register",
+        "impactAssessment": "Tenant overcharged significantly compared to lawful base rent"
+      },
+      "respondent": "Frank Cervantes for Cervantes, LLC",
+      "hearingOfficer": "E. Alexandra DeLateur",
+      "city": "Mountain View",
+      "caseNumber": "22230006",
+      "hearingDate": "January 12, 2023",
+      "filedOnDate": "November 29, 2022",
+      "decisionDate": "February 13, 2023"
+    }
+  ]
+}

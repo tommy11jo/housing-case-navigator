@@ -1,0 +1,37 @@
+{
+  "petitions": [
+    {
+      "petitionTypeNumber": "2",
+      "petitionerArgument": [
+        {
+          "violatedCode": "Mountain View Municipal Code Ch. 21, Art. II, Section 21.56, CA Civil Code Section 1941.1",
+          "summaryOfViolation": "Second-hand smoke from neighboring units entering tenant's unit causing health issues"
+        },
+        {
+          "violatedCode": "CA Health & Safety Code Section 17920.3(c)(10), Property Maintenance Code 402.3",
+          "summaryOfViolation": "Inadequate lighting in parking lot creating safety hazards"
+        },
+        {
+          "violatedCode": "CA Civil Code Section 1941.1(g), Property Maintenance Code 302.1",
+          "summaryOfViolation": "Rat infestation in common areas and excess trash accumulation"
+        }
+      ],
+      "decision": "granted",
+      "reimbursement": "34,931.23",
+      "rentAdjustment": "Yes",
+      "rationale": {
+        "respondentHadNotice": "Yes, through multiple emails and complaints since 2019",
+        "issueDuration": "Multiple issues spanning 2019-2023",
+        "evidenceAssessment": "Found substantial documentation of complaints, Fire Department reports, and photo evidence",
+        "impactAssessment": "Serious impact on tenant's health and safety, including hospitalization due to smoke exposure"
+      },
+      "respondent": "West Washington Properties, LLC",
+      "hearingOfficer": "Barbara M. Anscher",
+      "city": "Mountain View",
+      "caseNumber": "C22230019, C22230025",
+      "hearingDate": "May 4, 2023 and December 20, 2023",
+      "filedOnDate": "February 3, 2023",
+      "decisionDate": "March 20, 2024"
+    }
+  ]
+}

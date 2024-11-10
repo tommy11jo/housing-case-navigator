@@ -1,0 +1,29 @@
+{
+  "petitions": [
+    {
+      "petitionTypeNumber": "2",
+      "petitionerArgument": [
+        {
+          "violatedCode": "California Health and Safety Code Section 114192",
+          "summaryOfViolation": "Failure to maintain minimum hot water temperature of 120 degrees, resulting in unusable shower and sinks"
+        }
+      ],
+      "decision": "granted",
+      "reimbursement": "1,100.00",
+      "rentAdjustment": "Yes (10%)",
+      "rationale": {
+        "respondentHadNotice": "Yes, notified on November 17, 2022",
+        "issueDuration": "Ongoing since November 23, 2022 through hearing date",
+        "evidenceAssessment": "Both parties agreed water temperature was at least 13 degrees below minimum requirement, multiple temperature readings provided as evidence",
+        "impactAssessment": "Significant impact on tenant's ability to use shower and sinks properly"
+      },
+      "respondent": "Timpson Enterprises, Inc.",
+      "hearingOfficer": "Duf Sundheim",
+      "city": "Mountain View",
+      "caseNumber": "C22230037",
+      "hearingDate": "May 9, 2023",
+      "filedOnDate": "March 3, 2023",
+      "decisionDate": "June 9, 2023"
+    }
+  ]
+}

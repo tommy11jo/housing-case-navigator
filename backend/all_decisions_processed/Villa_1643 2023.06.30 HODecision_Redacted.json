@@ -1,0 +1,29 @@
+{
+  "petitions": [
+    {
+      "petitionTypeNumber": "3",
+      "petitionerArgument": [
+        {
+          "violatedCode": "CSFRA \u00a7 1707(f)",
+          "summaryOfViolation": "Landlord's failure to register rental unit with Rent Stabilization Program prior to imposing utility charges and rent increases"
+        }
+      ],
+      "decision": "granted",
+      "reimbursement": "$5,600.85",
+      "rentAdjustment": "Yes",
+      "rationale": {
+        "respondentHadNotice": "Yes, landlord was aware of registration requirement through city website",
+        "issueDuration": "Unresolved from June 2019 to March 31, 2023",
+        "evidenceAssessment": "Found landlord failed to register unit and improperly imposed utility charges without authorization",
+        "impactAssessment": "Tenant was charged unlawful rent increases and utility costs above maximum legal rent"
+      },
+      "respondent": "Shufang Chen & William Pan",
+      "hearingOfficer": "Renee Glover Chandler",
+      "city": "Mountain View",
+      "caseNumber": "C22230029",
+      "hearingDate": "May 17, 2023",
+      "filedOnDate": "March 8, 2023",
+      "decisionDate": "June 30, 2023"
+    }
+  ]
+}

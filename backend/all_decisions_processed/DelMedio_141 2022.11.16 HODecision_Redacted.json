@@ -1,0 +1,29 @@
+{
+  "petitions": [
+    {
+      "petitionTypeNumber": "2",
+      "petitionerArgument": [
+        {
+          "violatedCode": "CSFRA Sec. 1707(d) and Chapter 7, Section C",
+          "summaryOfViolation": "Undue tenant hardship due to rent increase exceeding 50% of income for senior tenant"
+        }
+      ],
+      "decision": "granted",
+      "reimbursement": "Rent credit for increases paid between Sept 1-Oct 9, 2022",
+      "rentAdjustment": "Yes (reduction of banked increases beyond 5% AGA)",
+      "rationale": {
+        "respondentHadNotice": "Not applicable",
+        "issueDuration": "Not applicable",
+        "evidenceAssessment": "Tenant proved income significantly below AMI level and senior status requiring >50% income for rent",
+        "impactAssessment": "Hardship determined to continue for foreseeable future due to fixed income status"
+      },
+      "respondent": "Del Medio Manor, LLP (Calson Property Management)",
+      "hearingOfficer": "Martin Eichner",
+      "city": "Mountain View",
+      "caseNumber": "22230007",
+      "hearingDate": "October 7, 2022",
+      "filedOnDate": "September 15, 2022",
+      "decisionDate": "November 16, 2022"
+    }
+  ]
+}

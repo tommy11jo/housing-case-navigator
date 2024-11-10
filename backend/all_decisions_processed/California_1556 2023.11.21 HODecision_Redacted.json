@@ -1,0 +1,33 @@
+{
+  "petitions": [
+    {
+      "petitionTypeNumber": "2",
+      "petitionerArgument": [
+        {
+          "violatedCode": "CA Civil Code \u00a71941.1, Health & Safety Code \u00a717920.3",
+          "summaryOfViolation": "Multiple habitability issues including mold, damaged carpet, electrical problems, non-functioning appliances, inadequate heat, leaking plumbing and presence of rats"
+        },
+        {
+          "violatedCode": "CA Electrical Code \u00a7404.9, \u00a7406.6, \u00a7210.8(a)",
+          "summaryOfViolation": "Faulty electrical system with only one working outlet requiring extension cords, lack of GFCI outlets"
+        }
+      ],
+      "decision": "granted",
+      "reimbursement": "8217.06",
+      "rentAdjustment": "Yes (45%)",
+      "rationale": {
+        "respondentHadNotice": "Yes, as early as January 2022 for most issues",
+        "issueDuration": "Multiple issues persisting 5-8 years",
+        "evidenceAssessment": "MFH inspection reports confirmed code violations, photographic evidence showed mold and damage, PG&E report verified heating issues",
+        "impactAssessment": "Serious habitability violations affecting safety, comfort and daily living conditions"
+      },
+      "respondent": "Sergio Sanchez Morado",
+      "hearingOfficer": "Barbara M. Arischer",
+      "city": "Mountain View",
+      "caseNumber": "C2223055, C2223056",
+      "hearingDate": "September 29, 2023",
+      "filedOnDate": "June 28, 2023",
+      "decisionDate": "November 22, 2023"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "petitions": [
+    {
+      "petitionTypeNumber": "2",
+      "petitionerArgument": [
+        {
+          "violatedCode": "Civil Code Section 1941.1(a)(1) and Health & Safety Code Section 17920.3(a)(13)",
+          "summaryOfViolation": "Failure to maintain habitable premises due to water leaks and mold in garage and living room"
+        },
+        {
+          "violatedCode": "Civil Code Section 1941.1(a)(8) and Health & Safety Code Sections 17920.3 subd. (b)(2)",
+          "summaryOfViolation": "Property lacked flooring in good repair and faulty weather protection"
+        }
+      ],
+      "decision": "granted",
+      "reimbursement": "$1,293.00",
+      "rentAdjustment": "Yes (25%)",
+      "rationale": {
+        "respondentHadNotice": "Yes, notified on multiple occasions between December 12-30, 2022",
+        "issueDuration": "December 12, 2022 through February 28, 2023",
+        "evidenceAssessment": "Petitioner provided sufficient photographic evidence and testimony of conditions, respondent failed to rebut evidence or take timely action",
+        "impactAssessment": "Conditions prevented tenant's elderly mother from using living room and garage due to health concerns"
+      },
+      "respondent": "TFT Investments",
+      "hearingOfficer": "Not specified",
+      "city": "Mountain View",
+      "caseNumber": "C22230030",
+      "hearingDate": "May 3, 2023",
+      "filedOnDate": "February 13, 2023",
+      "decisionDate": "June 30, 2023"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "petitions": [
+    {
+      "petitionTypeNumber": "1",
+      "petitionerArgument": [
+        {
+          "violatedCode": "CSFRA Sections 1706 and 1707",
+          "summaryOfViolation": "Improper calculation of base rent and rent increases, failing to account for rent concessions"
+        }
+      ],
+      "decision": "granted",
+      "reimbursement": "7,596.30",
+      "rentAdjustment": "Yes",
+      "rationale": {
+        "respondentHadNotice": "Yes, via lease terms and rent payment history",
+        "issueDuration": "Nov 2022 - Oct 2023",
+        "evidenceAssessment": "Rent ledger and payment records showed improper base rent calculations",
+        "impactAssessment": "Tenant overcharged due to incorrect base rent calculation"
+      },
+      "respondent": "Ferdi DeLuna",
+      "hearingOfficer": "E. Alexandra DeLateur",
+      "city": "Mountain View",
+      "caseNumber": "C23240032",
+      "hearingDate": "February 16, 2024",
+      "filedOnDate": "November 22, 2023",
+      "decisionDate": "April 22, 2024"
+    },
+    {
+      "petitionTypeNumber": "2",
+      "petitionerArgument": [
+        {
+          "violatedCode": "CA Civil Code 1941.1",
+          "summaryOfViolation": "Multiple maintenance issues including mold, peeling paint, broken appliances, and damaged flooring in bathrooms, kitchen and living room"
+        }
+      ],
+      "decision": "granted",
+      "reimbursement": "2,800.00",
+      "rentAdjustment": "Yes",
+      "rationale": {
+        "respondentHadNotice": "Yes, via maintenance request on August 23, 2023",
+        "issueDuration": "3+ months before petition filing",
+        "evidenceAssessment": "Photos and video evidence supported claims of disrepair",
+        "impactAssessment": "Issues affected habitability and proper use of multiple rooms"
+      },
+      "respondent": "Ferdi DeLuna",
+      "hearingOfficer": "E. Alexandra DeLateur",
+      "city": "Mountain View",
+      "caseNumber": "C23240033",
+      "hearingDate": "February 16, 2024",
+      "filedOnDate": "November 22, 2023",
+      "decisionDate": "April 22, 2024"
+    }
+  ]
+}

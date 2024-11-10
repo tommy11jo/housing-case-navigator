@@ -1,0 +1,33 @@
+{
+  "petitions": [
+    {
+      "petitionTypeNumber": "2",
+      "petitionerArgument": [
+        {
+          "violatedCode": "CA Civil Code \u00a7 1941.1",
+          "summaryOfViolation": "Security issues with main gate left open allowing non-residents access"
+        },
+        {
+          "violatedCode": "EPA Municipal Code \u00a7 14.04.130",
+          "summaryOfViolation": "Unsanitary conditions including ant/spider infestation and cloudy water"
+        }
+      ],
+      "decision": "granted",
+      "reimbursement": "$460 ($230 for security gate issue, $230 for ant infestation)",
+      "rentAdjustment": "No",
+      "rationale": {
+        "respondentHadNotice": "Yes, gate issue was known to respondent",
+        "issueDuration": "Not specified in document",
+        "evidenceAssessment": "Respondent testified gate was left open for parking; Water was tested by vendor and found safe",
+        "impactAssessment": "Security compromised due to open gate allowing non-resident access"
+      },
+      "respondent": "Kristian Widjaja",
+      "hearingOfficer": "Derek Chantler",
+      "city": "East Palo Alto",
+      "caseNumber": "20210156",
+      "hearingDate": "March 29, 2022",
+      "filedOnDate": "July 4, 2022",
+      "decisionDate": "January 18, 2023"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "petitions": [
+    {
+      "petitionTypeNumber": "1",
+      "petitionerArgument": [
+        {
+          "violatedCode": "CSFRA Sec. 1707(d)",
+          "summaryOfViolation": "Challenge to banked rent increases from 2020-2021 due to senior status and limited income creating undue hardship"
+        }
+      ],
+      "decision": "granted",
+      "reimbursement": "$199.50 plus December 2022 overpayments",
+      "rentAdjustment": "Yes (5%)",
+      "rationale": {
+        "respondentHadNotice": "Yes, petition filed within 10 days of rent increase notice",
+        "issueDuration": "Not applicable",
+        "evidenceAssessment": "Petitioner proved senior status (65+ years) and income below 120% AMI through documentation",
+        "impactAssessment": "Undue hardship established due to senior status and limited income"
+      },
+      "respondent": "Avery Shadows L/P",
+      "hearingOfficer": "E. Alexandra DeLateur",
+      "city": "Mountain View",
+      "caseNumber": "22230009",
+      "hearingDate": "November 16, 2022",
+      "filedOnDate": "September 29, 2022",
+      "decisionDate": "December 8, 2022"
+    }
+  ]
+}
