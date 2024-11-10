@@ -1,8 +1,8 @@
-# uvicorn app.main:app --reload --port 8080
+# uvicorn app.main:app --reload --port 8000
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.process.process import router as quote_router
-
+from app.retrieval.retrieval import router as retrieval_router
 app = FastAPI()
 
 # CORS setup
@@ -16,7 +16,7 @@ app.add_middleware(
 )
 
 app.include_router(quote_router)
-
+app.include_router(retrieval_router)
 
 @app.get("/")
 def read_root():

@@ -66,9 +66,9 @@ export const columns: ColumnDef<Petition>[] = [
   },
   {
     header: "Reimbursement",
-    accessorKey: "directReimbursement",
+    accessorKey: "reimbursement",
     cell: ({ row }) => {
-      const amount = parseFloat(row.original.directReimbursement);
+      const amount = parseFloat(row.original.reimbursement);
       return (
         <span className="font-mono">
           $
@@ -85,7 +85,8 @@ export const columns: ColumnDef<Petition>[] = [
     accessorKey: "rentAdjustment",
     cell: ({ row }) => {
       const value = row.original.rentAdjustment;
-      const isPositive = value.includes("+");
+      const isPositive =
+        value.includes("+") || value.toLowerCase().includes("yes");
       return (
         <div className="flex items-center gap-1">
           <span
@@ -105,7 +106,7 @@ export const columns: ColumnDef<Petition>[] = [
         "Rationale for Decision"
       </div>
     ),
-    accessorKey: "rationaleForDecision",
+    accessorKey: "rationale",
     cell: ({ row }) => {
       const rationale = row.original.rationale;
       const rationaleItems = [
@@ -148,28 +149,42 @@ export const columns: ColumnDef<Petition>[] = [
     header: "Hearing Date",
     accessorKey: "hearingDate",
     cell: ({ row }) => {
-      const date = new Date(row.original.hearingDate);
-      return format(date, "MMM d, yyyy");
+      try {
+        const date = new Date(row.original.hearingDate);
+        return isNaN(date.getTime())
+          ? "Invalid Date"
+          : format(date, "MMM d, yyyy");
+      } catch {
+        return "Invalid Date";
+      }
     },
   },
   {
     header: "Filed On Date",
     accessorKey: "filedOnDate",
     cell: ({ row }) => {
-      const date = new Date(row.original.filedOnDate);
-      return format(date, "MMM d, yyyy");
+      try {
+        const date = new Date(row.original.filedOnDate);
+        return isNaN(date.getTime())
+          ? "Invalid Date"
+          : format(date, "MMM d, yyyy");
+      } catch {
+        return "Invalid Date";
+      }
     },
   },
   {
     header: "Decision Date",
     accessorKey: "decisionDate",
     cell: ({ row }) => {
-      const date = new Date(row.original.decisionDate);
-      return format(date, "MMM d, yyyy");
+      try {
+        const date = new Date(row.original.decisionDate);
+        return isNaN(date.getTime())
+          ? "Invalid Date"
+          : format(date, "MMM d, yyyy");
+      } catch {
+        return "Invalid Date";
+      }
     },
-  },
-  {
-    header: "Document",
-    accessorKey: "document",
   },
 ];

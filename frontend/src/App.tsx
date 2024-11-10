@@ -9,7 +9,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 function App() {
   return (
-    <div className="container mx-auto py-10 min-h-screen max-4-[1400px]">
+    <div className="container mx-auto py-10 min-h-screen">
       <h1 style={{ marginBottom: "40px" }}>Housing Case Navigator</h1>
       <Tabs defaultValue="cases" className="w-full">
         <TabsList>

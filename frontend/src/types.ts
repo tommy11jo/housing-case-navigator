@@ -7,13 +7,13 @@ export type Petition = {
     summaryOfViolation: string;
   }>;
   decision: string;
-  directReimbursement: string;
+  reimbursement: string;
   rentAdjustment: string;
   rationale: {
-    respondentHadNotice: string;
-    issueDuration: string;
-    evidenceAssessment: string;
-    impactAssessment: string;
+    respondentHadNotice?: string;
+    issueDuration?: string;
+    evidenceAssessment?: string;
+    impactAssessment?: string;
   };
   respondent: string;
   hearingOfficer: string;
