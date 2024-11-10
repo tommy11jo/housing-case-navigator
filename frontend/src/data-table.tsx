@@ -35,7 +35,7 @@ export function DataTable<TData, TValue>({
     []
   );
 
-  const fuzzyFilter: FilterFn<TData> = (row, columnId, value) => {
+  const fuzzyFilter: FilterFn<TData> = (row, columnId, value, addMeta) => {
     try {
       const cellValue = row.getValue(columnId);
       if (cellValue == null) return false;
@@ -48,7 +48,6 @@ export function DataTable<TData, TValue>({
 
       return searchableValue.includes(String(value).toLowerCase());
     } catch {
-      // If we can't access the value, exclude this row from results
       return false;
     }
   };
@@ -67,6 +66,17 @@ export function DataTable<TData, TValue>({
     },
     globalFilterFn: fuzzyFilter,
   });
+
+  const getFilteredRowCount = (columnId: string) => {
+    const filterValue = table.getColumn(columnId)?.getFilterValue();
+    if (!filterValue) return null;
+
+    // Pass undefined for the addMeta parameter
+    return table
+      .getFilteredRowModel()
+      .rows.filter((row) => fuzzyFilter(row, columnId, filterValue, undefined))
+      .length;
+  };
 
   return (
     <div className="flex flex-col gap-4">
@@ -107,6 +117,12 @@ export function DataTable<TData, TValue>({
                           }
                           className="w-full max-w-sm pl-8 text-sm h-9"
                         />
+                        {header.column.getFilterValue() != null ? (
+                          <div className="absolute right-2 top-1/2 -translate-y-1/2 text-xs text-gray-500">
+                            {getFilteredRowCount(header.column.id)}/
+                            {table.getPreFilteredRowModel().rows.length}
+                          </div>
+                        ) : null}
                       </div>
                     </TableHead>
                   ))}
