@@ -3,7 +3,9 @@ import os
 from typing import List, Dict
 
 
-def concatenate_decisions(directory: str = "../all_decisions_processed") -> List[Dict]:
+def concatenate_decisions(
+    directory: str = "../data/all_decisions_processed",
+) -> List[Dict]:
     """
     Read all JSON files in the specified directory and concatenate their petitions into a single list
     """
@@ -18,6 +20,8 @@ def concatenate_decisions(directory: str = "../all_decisions_processed") -> List
             try:
                 data = json.load(f)
                 if "petitions" in data:
+                    for petition in data["petitions"]:
+                        petition["source_file"] = filename
                     all_petitions.extend(data["petitions"])
             except json.JSONDecodeError as e:
                 print(f"Error reading {filename}: {e}")
@@ -25,7 +29,7 @@ def concatenate_decisions(directory: str = "../all_decisions_processed") -> List
     return {"petitions": all_petitions}
 
 
-def save_concatenated_decisions(output_file: str = "../all_decisions.json"):
+def save_concatenated_decisions(output_file: str = "../data/all_decisions.json"):
     """
     Concatenate all decisions and save to a single JSON file
     """

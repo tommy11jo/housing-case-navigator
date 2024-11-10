@@ -7,6 +7,8 @@ import openai
 import os
 from dotenv import load_dotenv
 from typing import BinaryIO
+from pydantic import BaseModel
+from typing import List, Optional
 
 load_dotenv()
 
@@ -116,41 +118,71 @@ async def extract_housing_case_data_with_claude(image_datas):
     return json.loads(response_json)
 
 
+class PetitionerArgument(BaseModel):
+    violatedCode: str
+    summaryOfViolation: str
+
+
+class Rationale(BaseModel):
+    respondentHadNotice: str
+    issueDuration: str
+    evidenceAssessment: str
+    impactAssessment: str
+
+
+class Petition(BaseModel):
+    petitionTypeNumber: str
+    petitionerArgument: List[PetitionerArgument]
+    decision: str
+    directReimbursement: Optional[str]
+    rentAdjustment: str
+    rationale: Rationale
+    respondent: str
+    hearingOfficer: str
+    city: str
+    caseNumber: str
+    filedOnDate: str
+    hearingDate: str
+    decisionDate: str
+
+
+class PetitionResponse(BaseModel):
+    petitions: List[Petition]
+
+
 # this output should technically be two petitions but i included one for simplicity
-EXAMPLE_OUTPUT = json.dumps(
-    {
-        "petitions": [
-            {
-                "petitionTypeNumber": "3",
-                "petitionerArgument": [
-                    {
-                        "violatedCode": "CA Civil Code § 1941.1",
-                        "summaryOfViolation": "Failure to maintain rental unit in habitable condition",
-                    },
-                    {
-                        "violatedCode": "City's Rent Stabilization Ordinance § 13",
-                        "summaryOfViolation": "Reduction in housing services, lack of maintenance impacts livability and property value, and prevents use of outdoor space for storage",
-                    },
-                ],
-                "decision": "granted",
-                "directReimbursement": "398.76",
-                "rentAdjustment": "Yes (5%)",
-                "rationale": {
-                    "respondentHadNotice": "Yes, in July & August 2023",
-                    "issueDuration": "Unresolved for 10+ months",
-                    "evidenceAssessment": "Found no visual evidence of repairs during May 2024 inspection, despite invoice from Innovative General Engineering (Aug 2023) claims repairs made",
-                    "impactAssessment": "Not a habitability violation but exceeds minor maintenance deficiency",
-                },
-                "respondent": "Woodland Park Communities",
-                "hearingOfficer": "Michael H. Roush",
-                "city": "East Palo Alto",
-                "caseNumber": "2023-0001/0002",
-                "filedOnDate": "Nov 3, 2023",
-                "hearingDate": "May 17, 2024",
-                "decisionDate": "May 22, 2024",
-            }
-        ]
-    }
+EXAMPLE_OUTPUT = PetitionResponse(
+    petitions=[
+        Petition(
+            petitionTypeNumber="3",
+            petitionerArgument=[
+                PetitionerArgument(
+                    violatedCode="CA Civil Code § 1941.1",
+                    summaryOfViolation="Failure to maintain rental unit in habitable condition",
+                ),
+                PetitionerArgument(
+                    violatedCode="City's Rent Stabilization Ordinance § 13",
+                    summaryOfViolation="Reduction in housing services, lack of maintenance impacts livability and property value, and prevents use of outdoor space for storage",
+                ),
+            ],
+            decision="granted",
+            directReimbursement="398.76",
+            rentAdjustment="Yes (5%)",
+            rationale=Rationale(
+                respondentHadNotice="Yes, in July & August 2023",
+                issueDuration="Unresolved for 10+ months",
+                evidenceAssessment="Found no visual evidence of repairs during May 2024 inspection, despite invoice from Innovative General Engineering (Aug 2023) claims repairs made",
+                impactAssessment="Not a habitability violation but exceeds minor maintenance deficiency",
+            ),
+            respondent="Woodland Park Communities",
+            hearingOfficer="Michael H. Roush",
+            city="East Palo Alto",
+            caseNumber="2023-0001/0002",
+            filedOnDate="Nov 3, 2023",
+            hearingDate="May 17, 2024",
+            decisionDate="May 22, 2024",
+        )
+    ]
 )
 
 
@@ -181,7 +213,9 @@ The data you will extract for each petition includes:
 """
 include_example = True
 if include_example:
-    SYSTEM_PROMPT += f"\n\nEXAMPLE OUTPUT:\n{EXAMPLE_OUTPUT}"
+    SYSTEM_PROMPT += f"\n\nEXAMPLE OUTPUT:\n{EXAMPLE_OUTPUT.model_dump_json(indent=2)}"
+
+print(SYSTEM_PROMPT)
 
 
 async def extract_housing_case_data_with_openai(image_datas):
