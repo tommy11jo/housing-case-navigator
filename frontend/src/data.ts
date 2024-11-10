@@ -1,5 +1,12 @@
 import { Petition } from "./types";
 
+// (1) Rent Ceiling Violations (2) Housing Service Reductions (3) Failure to Register a Unit with the Rent Stabilization Program
+export const PETITION_TYPE_NUMBER_TO_NAME = {
+  1: "Rent Ceiling Violations",
+  2: "Housing Service Reductions",
+  3: "Failure to Register a Unit with the Rent Stabilization Program",
+};
+
 export const DATA: Petition[] = [
   {
     petitionTypeNumber: "3",

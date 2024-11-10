@@ -74,7 +74,7 @@ export function DataTable<TData, TValue>({
                   {headerGroup.headers.map((header) => (
                     <TableHead
                       key={header.id}
-                      className="border-b bg-gray-50/75 py-4"
+                      className="border-b border-r bg-gray-50/75 py-4"
                     >
                       <div className="font-semibold text-center text-sm text-gray-900 whitespace-nowrap min-w-32">
                         {header.isPlaceholder
@@ -89,7 +89,7 @@ export function DataTable<TData, TValue>({
                 </TableRow>
                 <TableRow className="bg-gray-50/30">
                   {headerGroup.headers.map((header) => (
-                    <TableHead key={header.id} className="p-2">
+                    <TableHead key={header.id} className="p-2 border-r">
                       <div className="relative">
                         <Search className="absolute left-2 top-2.5 h-4 w-4 text-gray-400" />
                         <Input
@@ -118,7 +118,7 @@ export function DataTable<TData, TValue>({
                   className="hover:bg-gray-50/50"
                 >
                   {row.getVisibleCells().map((cell) => (
-                    <TableCell key={cell.id} className="p-4">
+                    <TableCell key={cell.id} className="p-4 border-r">
                       {flexRender(
                         cell.column.columnDef.cell,
                         cell.getContext()

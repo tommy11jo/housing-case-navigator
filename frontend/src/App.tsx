@@ -6,7 +6,7 @@ import { columns } from "./columns";
 function App() {
   return (
     <div className="container mx-auto py-10 min-h-screen">
-      <h1 style={{ marginBottom: "20px" }}>Housing Case Navigator</h1>
+      <h1 style={{ marginBottom: "40px" }}>Housing Case Navigator</h1>
       <DataTable columns={columns} data={DATA} />
     </div>
   );
