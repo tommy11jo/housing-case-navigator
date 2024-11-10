@@ -10,7 +10,9 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 function App() {
   return (
     <div className="container mx-auto py-10 min-h-screen">
-      <h1 style={{ marginBottom: "40px" }}>Housing Case Navigator</h1>
+      <h1 className="text-3xl font-bold mb-10 text-gray-900">
+        Housing Case Navigator
+      </h1>
       <Tabs defaultValue="cases" className="w-full">
         <TabsList>
           <TabsTrigger value="cases">Case Analyzer</TabsTrigger>

@@ -3,6 +3,8 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.process.process import router as quote_router
 from app.retrieval.retrieval import router as retrieval_router
+from app.petition.petition import router as petition_router
+
 app = FastAPI()
 
 # CORS setup
@@ -17,6 +19,7 @@ app.add_middleware(
 
 app.include_router(quote_router)
 app.include_router(retrieval_router)
+app.include_router(petition_router)
 
 @app.get("/")
 def read_root():

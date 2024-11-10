@@ -65,7 +65,7 @@ export function DataTable<TData, TValue>({
 
   return (
     <div className="flex flex-col gap-4">
-      <div className="rounded-md border bg-white shadow-sm">
+      <div className="rounded-md border bg-white shadow-sm w-full">
         <Table>
           <TableHeader>
             {table.getHeaderGroups().map((headerGroup) => (

@@ -4,3 +4,5 @@ frontend/.env
 # backend deps
 backend/.env
 backend/**/__pycache__
+
+

@@ -103,7 +103,7 @@ export const columns: ColumnDef<Petition>[] = [
   {
     header: () => (
       <div className="text-center" style={{ width: "250px" }}>
-        "Rationale for Decision"
+        Rationale
       </div>
     ),
     accessorKey: "rationale",
