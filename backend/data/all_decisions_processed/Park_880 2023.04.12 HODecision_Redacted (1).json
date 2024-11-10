@@ -1,29 +1,27 @@
 {
   "petitions": [
     {
-      "petitionTypeNumber": "1",
-      "petitionerArgument": [
+      "caseInfo": "Petition: 22230017",
+      "city": "Mountain View",
+      "issueTypeNumber": "1",
+      "argumentsAndDecisions": [
         {
+          "complaintSummary": "Landlord failed to register property with Rent Stabilization Program and imposed illegal rent increases",
           "violatedCode": "CSFRA Section 1707(f)(1)",
-          "summaryOfViolation": "Landlord failed to register property with Rent Stabilization Program and charged unlawful rent increases without proper compliance"
+          "reimbursement": "$2,434.29",
+          "complaintTiming": "April 2022 through February 2023",
+          "respondentHadNotice": "Yes, city provided notice regarding property compliance status",
+          "evidenceAssessment": "Respondent did not contest factual statements by Petitioner and failed to register property until after petition filed",
+          "impactAssessment": "Tenant paid excess rent due to landlord's substantial non-compliance with CSFRA"
         }
       ],
-      "decision": "granted",
-      "reimbursement": "2434.29",
-      "rentAdjustment": "No",
-      "rationale": {
-        "respondentHadNotice": "Failed to notify tenant of CSFRA protections at lease commencement",
-        "issueDuration": "Non-compliance from April 2021 until February 3, 2023",
-        "evidenceAssessment": "Landlord failed to dispute tenant's factual statements and evidence showed multiple improper rent increases",
-        "impactAssessment": "Tenant paid excessive rent due to landlord's non-compliance with CSFRA requirements"
-      },
+      "reimbursementJustified": "yes",
+      "rentAdjustment": "Yes (2%)",
       "respondent": "Frank Cervantes aka Francisco Cervantes for Cervantes, LLC",
-      "hearingOfficer": "E. Alexandra DeLateur",
-      "city": "Mountain View",
-      "caseNumber": "22230017",
-      "hearingDate": "March 10, 2023",
-      "filedOnDate": "December 27, 2022",
-      "decisionDate": "April 12, 2023"
+      "hearingOfficer": "E. Alexandra DeLatour",
+      "hearingDate": "2023-03-10",
+      "filedOnDate": "2022-12-27",
+      "decisionDate": "2023-04-12"
     }
   ]
 }

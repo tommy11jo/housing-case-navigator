@@ -1,33 +1,27 @@
 {
   "petitions": [
     {
-      "petitionTypeNumber": "1",
-      "petitionerArgument": [
+      "issueTypeNumber": "1",
+      "caseInfo": "Petition: 22230015",
+      "city": "Mountain View",
+      "argumentsAndDecisions": [
         {
-          "violatedCode": "CSFRA Section 1702(b)(2)",
-          "summaryOfViolation": "Incorrect calculation of Base Rent by not accounting for rent concessions and using 18-month instead of 12-month initial term"
-        },
-        {
-          "violatedCode": "CSFRA Section 1707(b)",
-          "summaryOfViolation": "Multiple rent increases within 12-month period and increase exceeding allowed Annual General Adjustment"
+          "complaintSummary": "Incorrect calculation of Base Rent by not accounting for rent concessions and improper rent increases",
+          "violatedCode": "CSFRA Sections 1702(b)(2), 1706(a), 1707(b)",
+          "reimbursement": "$7,472.38",
+          "complaintTiming": "December 16, 2021 through February 28, 2023",
+          "respondentHadNotice": "Yes, through filed petition and hearing process",
+          "evidenceAssessment": "Hearing officer analyzed detailed rent payment records and determined incorrect base rent calculations",
+          "impactAssessment": "Tenants were overcharged due to improper rent calculation and multiple unlawful rent increases"
         }
       ],
-      "decision": "granted",
-      "reimbursement": "7,472.38",
+      "reimbursementJustified": "yes",
       "rentAdjustment": "Yes",
-      "rationale": {
-        "respondentHadNotice": "Yes, through tenant petition filed December 15, 2022",
-        "issueDuration": "Multiple unlawful rent increases from December 2021 to June 2022",
-        "evidenceAssessment": "Review of lease terms, rent concessions, and payment records showed incorrect base rent calculations",
-        "impactAssessment": "Tenants were overcharged due to improper base rent calculation and multiple unauthorized increases"
-      },
       "respondent": "SI VI LLC",
       "hearingOfficer": "Barbara M. Anscher",
-      "city": "Mountain View",
-      "caseNumber": "22230015",
-      "hearingDate": "February 22, 2023",
-      "filedOnDate": "December 15, 2022",
-      "decisionDate": "March 23, 2023"
+      "hearingDate": "2023-02-22",
+      "filedOnDate": "2022-12-15",
+      "decisionDate": "2023-03-23"
     }
   ]
 }

@@ -1,29 +1,27 @@
 {
   "petitions": [
     {
-      "petitionTypeNumber": "2",
-      "petitionerArgument": [
+      "caseInfo": "Petition: 22230012",
+      "city": "Mountain View",
+      "issueTypeNumber": "2",
+      "argumentsAndDecisions": [
         {
+          "complaintSummary": "Multiple habitability issues including gaps/cracks allowing vermin entry, kitchen repairs needed, door and window problems",
           "violatedCode": "Mountain View Municipal Code Article XVII, Section 1700",
-          "summaryOfViolation": "Maintenance and habitability issues including gaps allowing vermin entry, kitchen defects, door problems, and structural issues"
+          "reimbursement": "$46,834.50 rent refund plus $310.50 monthly rent reduction",
+          "complaintTiming": "Prior to October 19, 2022 (petition filing date)",
+          "respondentHadNotice": "Yes, through text messages and direct communication",
+          "evidenceAssessment": "City inspections verified completion of repairs and compliance",
+          "impactAssessment": "Issues affected habitability through vermin entry and cold air infiltration"
         }
       ],
-      "decision": "granted",
-      "reimbursement": "$46,834.50",
-      "rentAdjustment": "Yes ($310.50 monthly reduction)",
-      "rationale": {
-        "respondentHadNotice": "Yes, documented through multiple inspections and communications",
-        "issueDuration": "Multiple months spanning 2022-2023",
-        "evidenceAssessment": "City inspections verified repairs were completed, with photographic evidence and permits confirming work",
-        "impactAssessment": "Issues affected habitability including vermin entry and structural integrity"
-      },
+      "reimbursementJustified": "yes",
+      "rentAdjustment": "Yes ($310.50 monthly reduction until repairs completed)",
       "respondent": "Maria Guadalupe Roque",
       "hearingOfficer": "Derek W. Chantler",
-      "city": "Mountain View",
-      "caseNumber": "22230012",
-      "hearingDate": "November 14, 2023",
-      "filedOnDate": "October 19, 2022",
-      "decisionDate": "January 12, 2024"
+      "hearingDate": "2023-11-14",
+      "filedOnDate": "2022-10-19",
+      "decisionDate": "2024-01-12"
     }
   ]
 }

@@ -1,33 +1,45 @@
 {
   "petitions": [
     {
-      "petitionTypeNumber": "2",
-      "petitionerArgument": [
+      "caseInfo": "Appeal: 20210156",
+      "city": "East Palo Alto",
+      "issueTypeNumber": "2",
+      "argumentsAndDecisions": [
         {
-          "violatedCode": "CA Civil Code \u00a7 1941.1",
-          "summaryOfViolation": "Security issues with main gate left open allowing non-residents access"
+          "complaintSummary": "Security concerns due to main gate being left open",
+          "violatedCode": "EPA Muni. Code \u00a7 14.04.130",
+          "reimbursement": "$230.00",
+          "complaintTiming": "N/A",
+          "respondentHadNotice": "Yes",
+          "evidenceAssessment": "Board found security was compromised by gate being left open for parking convenience",
+          "impactAssessment": "Non-residents were able to enter property, creating security risk"
         },
         {
-          "violatedCode": "EPA Municipal Code \u00a7 14.04.130",
-          "summaryOfViolation": "Unsanitary conditions including ant/spider infestation and cloudy water"
+          "complaintSummary": "Cloudy and discolored water",
+          "violatedCode": "CA Civil Code \u00a7 1941.1",
+          "reimbursement": "No reimbursement awarded",
+          "complaintTiming": "N/A",
+          "respondentHadNotice": "Yes, respondent had water tested by vendor",
+          "evidenceAssessment": "Vendor found water was safe to drink, issue was from water supplier",
+          "impactAssessment": "No impact found as water was determined to be safe"
+        },
+        {
+          "complaintSummary": "Ant/spider infestation",
+          "violatedCode": "CA Civil Code \u00a7 1941.1",
+          "reimbursement": "$230.00",
+          "complaintTiming": "N/A",
+          "respondentHadNotice": "N/A",
+          "evidenceAssessment": "Original petition approval maintained",
+          "impactAssessment": "N/A"
         }
       ],
-      "decision": "granted",
-      "reimbursement": "$460 ($230 for security gate issue, $230 for ant infestation)",
+      "reimbursementJustified": "no",
       "rentAdjustment": "No",
-      "rationale": {
-        "respondentHadNotice": "Yes, gate issue was known to respondent",
-        "issueDuration": "Not specified in document",
-        "evidenceAssessment": "Respondent testified gate was left open for parking; Water was tested by vendor and found safe",
-        "impactAssessment": "Security compromised due to open gate allowing non-resident access"
-      },
       "respondent": "Kristian Widjaja",
       "hearingOfficer": "Derek Chantler",
-      "city": "East Palo Alto",
-      "caseNumber": "20210156",
-      "hearingDate": "March 29, 2022",
-      "filedOnDate": "July 4, 2022",
-      "decisionDate": "January 18, 2023"
+      "hearingDate": "2022-03-29",
+      "filedOnDate": "2022-07-04",
+      "decisionDate": "2023-01-18"
     }
   ]
 }

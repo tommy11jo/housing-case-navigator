@@ -1,33 +1,36 @@
 {
   "petitions": [
     {
-      "petitionTypeNumber": "2",
-      "petitionerArgument": [
+      "caseInfo": "Petition: C22230050 and C22230051",
+      "city": "Mountain View",
+      "issueTypeNumber": "2",
+      "argumentsAndDecisions": [
         {
-          "violatedCode": "Civil Code \u00a71941.1, Health and Safety Code \u00a717920.3",
-          "summaryOfViolation": "Water intrusion and mold in second bedroom making it uninhabitable, with damage to walls, ceiling, and floors requiring use of space heaters and open windows"
+          "complaintSummary": "Water intrusion and mold in second bedroom making it uninhabitable, plus structural damage to walls, ceiling and floor",
+          "violatedCode": "Civil Code \u00a71941.1 and Health and Safety Code \u00a717920.3",
+          "reimbursement": "$24,347.67 total (including rent overcharges, habitability issues, and insurance payment refunds)",
+          "complaintTiming": "Issues began December 2022",
+          "respondentHadNotice": "Yes, tenant notified landlord verbally and through spouse's communications",
+          "evidenceAssessment": "Photos showed substantial damage, inspection confirmed water damage, landlord admitted no repairs made",
+          "impactAssessment": "25% of living space unusable, daughter unable to use bedroom, requiring space heaters and open windows to mitigate moisture"
         },
         {
+          "complaintSummary": "Elimination of gardening/maintenance services without rent reduction",
           "violatedCode": "CSFRA \u00a71710(c)",
-          "summaryOfViolation": "Elimination of gardening services without corresponding rent reduction and failure to maintain common areas"
+          "reimbursement": "$50 per month reduction ordered",
+          "complaintTiming": "Service reduction began September 2022",
+          "respondentHadNotice": "N/A",
+          "evidenceAssessment": "Landlord provided no rebuttal evidence to tenant's testimony",
+          "impactAssessment": "Reduction in housing services beyond normal wear and tear"
         }
       ],
-      "decision": "granted",
-      "reimbursement": "$24,347.67",
-      "rentAdjustment": "Yes (25%)",
-      "rationaleForDecision": {
-        "respondentHadNotice": "Yes, verbally in November/December 2022 and in writing",
-        "issueDuration": "10+ months since December 2022",
-        "evidenceAssessment": "Photos and inspection report confirmed substantial water damage; no evidence of repair attempts by landlord",
-        "impactAssessment": "25% of living space rendered unusable, teenage daughter unable to use bedroom"
-      },
+      "reimbursementJustified": "yes",
+      "rentAdjustment": "Yes (25% reduction)",
       "respondent": "Mountain View Chinese Christian Church",
       "hearingOfficer": "Renee Glover Chantler",
-      "city": "Mountain View",
-      "caseNumber": "C22230050 and C22230051",
-      "hearingDate": "October 4, 2023",
-      "filedOnDate": "May 26, 2023",
-      "decisionDate": "January 25, 2024"
+      "hearingDate": "2023-10-04",
+      "filedOnDate": "2023-05-26",
+      "decisionDate": "2024-01-25"
     }
   ]
 }

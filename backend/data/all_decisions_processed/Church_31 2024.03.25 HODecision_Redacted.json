@@ -1,33 +1,27 @@
 {
   "petitions": [
     {
-      "petitionTypeNumber": "2",
-      "petitionerArgument": [
+      "caseInfo": "Petition: C23240002",
+      "city": "Mountain View",
+      "issueTypeNumber": "2",
+      "argumentsAndDecisions": [
         {
-          "violatedCode": "Cal. Code Regs. Tit. 25, \u00a7 34",
-          "summaryOfViolation": "Landlord failed to maintain adequate heating facilities and fix malfunctioning gas heater"
-        },
-        {
-          "violatedCode": "Civil Code Sections 1941.1",
-          "summaryOfViolation": "Failure to maintain premises in habitable condition due to gas leak and heating issues"
+          "complaintSummary": "Gas heater malfunction and landlord's failure to repair, causing tenant to rely on electric heater",
+          "violatedCode": "Cal. Code Regs. Tit. 25, \u00a7 34 and CSFRA Section 1710(b)(1)",
+          "reimbursement": "$1,174.73 ($77.00 for electric heater + $1,097.73 for rent reductions)",
+          "complaintTiming": "April 29, 2021 through November 30, 2023",
+          "respondentHadNotice": "Yes, multiple notices including texts on April 29, 2021 and April 22, 2023",
+          "evidenceAssessment": "PG&E evaluation found no dangerous gas levels but confirmed gas leak. Landlord failed to fix despite promises and notices.",
+          "impactAssessment": "Tenant had to purchase electric heater and was without proper heating services for extended period"
         }
       ],
-      "decision": "granted",
-      "reimbursement": "1174.73",
+      "reimbursementJustified": "yes",
       "rentAdjustment": "Yes (4-5%)",
-      "rationale": {
-        "respondentHadNotice": "Yes, multiple notices from April 2021 through April 2023",
-        "issueDuration": "Over 2 years (April 2021 - December 2023)",
-        "evidenceAssessment": "PG&E verification of gas leak, tenant documentation of communications and purchase of electric heater",
-        "impactAssessment": "Significant impact on habitability requiring tenant to purchase alternative heating source"
-      },
-      "respondent": "Cervantes LLC, Francisco Cervantes",
+      "respondent": "Cervantes LLC, Francisco Cervantes, Owner",
       "hearingOfficer": "Duf Sundheim",
-      "city": "Mountain View",
-      "caseNumber": "C23240002",
-      "hearingDate": "December 18, 2023",
-      "filedOnDate": "October 10, 2023",
-      "decisionDate": "March 25, 2024"
+      "hearingDate": "2023-12-18",
+      "filedOnDate": "2023-10-10",
+      "decisionDate": "2024-03-25"
     }
   ]
 }

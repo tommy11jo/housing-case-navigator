@@ -1,33 +1,27 @@
 {
   "petitions": [
     {
-      "petitionTypeNumber": "1",
-      "petitionerArgument": [
+      "caseInfo": "Petition: 22230006",
+      "city": "Mountain View",
+      "issueTypeNumber": "1",
+      "argumentsAndDecisions": [
         {
-          "violatedCode": "CSFRA Section 1707",
-          "summaryOfViolation": "Unlawful rent increases - more than allowed AGA and multiple increases within 12 months"
-        },
-        {
-          "violatedCode": "CSFRA Registration Requirements",
-          "summaryOfViolation": "Landlord failed to register property with Rent Stabilization Program"
+          "complaintSummary": "Landlord imposed unlawful rent increases and failed to register property with Rent Stabilization Program",
+          "violatedCode": "CSFRA Section 1707(f), CSFRA Regs. Chapt. 4",
+          "reimbursement": "$3,040.42",
+          "complaintTiming": "January 2022 - January 2023",
+          "respondentHadNotice": "Yes, city provided notice regarding registration requirements",
+          "evidenceAssessment": "Clear documentation of rent payments and lease terms showed improper rent increases",
+          "impactAssessment": "Tenant was overcharged significantly above lawful base rent"
         }
       ],
-      "decision": "granted",
-      "reimbursement": "3040.42",
+      "reimbursementJustified": "yes",
       "rentAdjustment": "Yes",
-      "rationale": {
-        "respondentHadNotice": "Yes, received multiple requests from CSFRA staff",
-        "issueDuration": "Multiple unlawful rent increases over 12 months",
-        "evidenceAssessment": "Clear documentation of improper rent increases and failure to register",
-        "impactAssessment": "Tenant overcharged significantly compared to lawful base rent"
-      },
       "respondent": "Frank Cervantes for Cervantes, LLC",
       "hearingOfficer": "E. Alexandra DeLateur",
-      "city": "Mountain View",
-      "caseNumber": "22230006",
-      "hearingDate": "January 12, 2023",
-      "filedOnDate": "November 29, 2022",
-      "decisionDate": "February 13, 2023"
+      "hearingDate": "2023-01-12",
+      "filedOnDate": "2022-11-29",
+      "decisionDate": "2023-02-13"
     }
   ]
 }

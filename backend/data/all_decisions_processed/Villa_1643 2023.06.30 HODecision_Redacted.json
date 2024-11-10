@@ -1,29 +1,27 @@
 {
   "petitions": [
     {
-      "petitionTypeNumber": "3",
-      "petitionerArgument": [
+      "caseInfo": "Petition: C22230029",
+      "city": "Mountain View",
+      "issueTypeNumber": "4",
+      "argumentsAndDecisions": [
         {
-          "violatedCode": "CSFRA \u00a7 1707(f)",
-          "summaryOfViolation": "Landlord's failure to register rental unit with Rent Stabilization Program prior to imposing utility charges and rent increases"
+          "complaintSummary": "Landlord's failure to register unit and unlawful imposition of utility charges",
+          "violatedCode": "CSFRA \u00a71707(f), \u00a71702, \u00a71706(a)",
+          "reimbursement": "$5,600.85",
+          "complaintTiming": "June 2019 - April 2023",
+          "respondentHadNotice": "Yes, tenant made complaints about utility charges",
+          "evidenceAssessment": "Hearing officer found landlord failed to properly register unit and unlawfully imposed utility charges",
+          "impactAssessment": "Tenant was charged above maximum lawful rent and forced to pay utilities that should have been included"
         }
       ],
-      "decision": "granted",
-      "reimbursement": "$5,600.85",
+      "reimbursementJustified": "yes",
       "rentAdjustment": "Yes",
-      "rationale": {
-        "respondentHadNotice": "Yes, landlord was aware of registration requirement through city website",
-        "issueDuration": "Unresolved from June 2019 to March 31, 2023",
-        "evidenceAssessment": "Found landlord failed to register unit and improperly imposed utility charges without authorization",
-        "impactAssessment": "Tenant was charged unlawful rent increases and utility costs above maximum legal rent"
-      },
       "respondent": "Shufang Chen & William Pan",
       "hearingOfficer": "Renee Glover Chandler",
-      "city": "Mountain View",
-      "caseNumber": "C22230029",
-      "hearingDate": "May 17, 2023",
-      "filedOnDate": "March 8, 2023",
-      "decisionDate": "June 30, 2023"
+      "hearingDate": "2023-05-17",
+      "filedOnDate": "2023-03-08",
+      "decisionDate": "2023-06-30"
     }
   ]
 }

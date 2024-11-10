@@ -1,29 +1,27 @@
 {
   "petitions": [
     {
-      "petitionTypeNumber": "1",
-      "petitionerArgument": [
+      "caseInfo": "Petition: C22230028",
+      "city": "Mountain View",
+      "issueTypeNumber": "1",
+      "argumentsAndDecisions": [
         {
-          "violatedCode": "CSFRA Sections 1706 and 1707",
-          "summaryOfViolation": "Landlord charged rent above lawful Base Rent and failed to properly refund overcharges according to schedule"
+          "complaintSummary": "Landlord failed to properly refund rent overcharges and security deposit, continued charging above base rent",
+          "violatedCode": "CSFRA Sections 1706(a)(b) and 1707(f)",
+          "reimbursement": "$6,072.11 plus additional penalties ($177.11 for delayed refund, $50.31 for utility overcharges, $8.33 for security deposit delay)",
+          "complaintTiming": "February 2022 through April 2023",
+          "respondentHadNotice": "Yes, through original petition and compliance notices",
+          "evidenceAssessment": "Documentation showed continued overcharging above base rent and delayed refunds",
+          "impactAssessment": "Tenants were overcharged for 9 months and deprived of rightful refunds"
         }
       ],
-      "decision": "granted",
-      "reimbursement": "$256.35",
-      "rentAdjustment": "No",
-      "rationale": {
-        "respondentHadNotice": "Yes, through original Decision in May 2023",
-        "issueDuration": "7 months of withheld refunds, 9 months of overcharges",
-        "evidenceAssessment": "Documentation showed respondent failed to follow refund schedule and continued charging above Base Rent",
-        "impactAssessment": "Tenants deprived of rightful refunds and overcharged for extended period"
-      },
+      "reimbursementJustified": "yes",
+      "rentAdjustment": "Yes (5%)",
       "respondent": "Americana I, LLC",
       "hearingOfficer": "Barbara M. Anscher",
-      "city": "Mountain View",
-      "caseNumber": "C22230028",
-      "hearingDate": "January 29, 2024",
-      "filedOnDate": "November 28, 2023",
-      "decisionDate": "March 4, 2024"
+      "hearingDate": "2024-01-29",
+      "filedOnDate": "2023-11-28",
+      "decisionDate": "2024-03-04"
     }
   ]
 }

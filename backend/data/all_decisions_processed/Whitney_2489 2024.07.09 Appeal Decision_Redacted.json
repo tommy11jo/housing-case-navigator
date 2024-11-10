@@ -1,37 +1,45 @@
 {
   "petitions": [
     {
-      "petitionTypeNumber": "2",
-      "petitionerArgument": [
+      "caseInfo": "Petition: C22230019 and C22230025",
+      "city": "Mountain View",
+      "issueTypeNumber": "2",
+      "argumentsAndDecisions": [
         {
-          "violatedCode": "CSFRA Sections 1706(a) and 1707(a)",
-          "summaryOfViolation": "Respondent improperly calculated Base Rent and imposed unlawful rent increases"
+          "complaintSummary": "Second-hand smoke from neighbors affecting tenant's unit and common areas",
+          "violatedCode": "CA Health & Safety Code \u00a7 17920.3(c), Mountain View Municipal Code Ch. 21",
+          "reimbursement": "$8,029.90",
+          "complaintTiming": "March 15, 2019 through August 1, 2023",
+          "respondentHadNotice": "Yes, documented complaints made to property management",
+          "evidenceAssessment": "Hearing officer found substantial evidence of ongoing smoking issues despite respondent's efforts to address it",
+          "impactAssessment": "Smoke constituted a health and safety concern affecting tenant's use of premises"
         },
         {
-          "violatedCode": "CA Civil Code \u00a7 1941.1, Health & Safety Code \u00a7 17920.3(c)",
-          "summaryOfViolation": "Multiple habitability issues including second-hand smoke, rodent infestation, inadequate lighting, trash accumulation, and swimming pool maintenance"
+          "complaintSummary": "Inadequate lighting in parking lots and common areas",
+          "violatedCode": "N/A",
+          "reimbursement": "$11,016.00",
+          "complaintTiming": "July 14, 2022 through December 2023",
+          "respondentHadNotice": "Yes, multiple emails and complaints documented",
+          "evidenceAssessment": "Photos and testimony confirmed inadequate lighting persisted despite attempts to fix",
+          "impactAssessment": "Created safety concerns for tenants using parking lot at night"
         },
         {
-          "violatedCode": "CSFRA Housing Services Requirements",
-          "summaryOfViolation": "Reduction in housing services including laundry room closure and lack of on-site property manager"
+          "complaintSummary": "Excessive trash accumulation on property",
+          "violatedCode": "Civil Code \u00a7 1941.1",
+          "reimbursement": "$2,179.51",
+          "complaintTiming": "January 1, 2021 through December 20, 2023",
+          "respondentHadNotice": "Yes, documented through emails and inspection reports",
+          "evidenceAssessment": "Multiple photos and inspection reports confirmed ongoing trash issues",
+          "impactAssessment": "Created unsanitary conditions affecting habitability"
         }
       ],
-      "decision": "granted",
-      "reimbursement": "$34,931.23",
-      "rentAdjustment": "Yes (20%)",
-      "rationaleForDecision": {
-        "respondentHadNotice": "Yes, through multiple complaints and emails from 2019-2023",
-        "issueDuration": "Various issues persisted between 2019-2023",
-        "evidenceAssessment": "Hearing Officer found substantial evidence through testimony, photos, inspection reports and emails documenting ongoing issues",
-        "impactAssessment": "Multiple habitability and maintenance issues significantly impacted tenant's use and enjoyment of property"
-      },
-      "respondent": "West Washington Gardens LLC/CMF Property Management",
-      "hearingOfficer": "Not explicitly stated",
-      "city": "Mountain View",
-      "caseNumber": "C22230019 and C22230025",
-      "hearingDate": "December 20, 2023",
-      "filedOnDate": "February 3, 2023",
-      "decisionDate": "March 20, 2024"
+      "rentAdjustment": "Yes (4%)",
+      "respondent": "West Washington Properties, LLC",
+      "hearingOfficer": "N/A",
+      "hearingDate": "2023-12-20",
+      "filedOnDate": "2023-02-03",
+      "decisionDate": "2024-03-20",
+      "reimbursementJustified": "yes"
     }
   ]
 }

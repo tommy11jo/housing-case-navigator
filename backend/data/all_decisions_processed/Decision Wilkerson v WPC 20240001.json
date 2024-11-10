@@ -1,33 +1,36 @@
 {
   "petitions": [
     {
-      "petitionTypeNumber": "2",
-      "petitionerArgument": [
+      "caseInfo": "Petition: 2024-0001",
+      "city": "East Palo Alto",
+      "issueTypeNumber": "2",
+      "argumentsAndDecisions": [
         {
-          "violatedCode": "Section 13 of City's Rent Stabilization and Just Cause for Eviction Ordinance",
-          "summaryOfViolation": "Reduction in maintenance and services, including non-functioning elevator, broken lights in common areas, water overflow issues, and mold"
+          "complaintSummary": "Non-functioning elevator and lighting in common areas",
+          "violatedCode": "CA Civil Code \u00a7 1941.1, Rent Ordinance Section 13",
+          "reimbursement": "$268.56",
+          "complaintTiming": "October 2023 through January 2024",
+          "respondentHadNotice": "Yes, through tenant complaints and prior petitions",
+          "evidenceAssessment": "Hearing Officer acknowledged elevator was out of service and lights weren't replaced timely",
+          "impactAssessment": "Loss of elevator service and inadequate lighting deemed significant enough to warrant rent reduction"
         },
         {
+          "complaintSummary": "Water overflow and mold in kitchen sink",
           "violatedCode": "CA Civil Code \u00a7 1941.1",
-          "summaryOfViolation": "Failure to maintain rental unit in habitable condition with proper maintenance and repairs"
+          "reimbursement": "No reimbursement awarded",
+          "complaintTiming": "December 2023",
+          "respondentHadNotice": "Yes",
+          "evidenceAssessment": "Woodland Park responded timely to water overflow issue",
+          "impactAssessment": "Impact deemed addressed through timely response"
         }
       ],
-      "decision": "granted",
-      "reimbursement": "$268.56",
+      "reimbursementJustified": "yes",
       "rentAdjustment": "Yes (7.5%)",
-      "rationale": {
-        "respondentHadNotice": "Yes, issues reported over multiple years",
-        "issueDuration": "Various issues spanning several months (elevator out for 6 months)",
-        "evidenceAssessment": "Hearing officer found evidence of maintenance issues during inspection, particularly with elevator service and common area lights",
-        "impactAssessment": "Determined reduction in housing services warranted temporary rent reduction"
-      },
       "respondent": "Woodland Park Communities",
       "hearingOfficer": "Michael H. Roush",
-      "city": "East Palo Alto",
-      "caseNumber": "2024-0001",
-      "hearingDate": "May 17, 2024",
-      "filedOnDate": "January 25, 2024",
-      "decisionDate": "May 27, 2024"
+      "hearingDate": "2024-05-17",
+      "filedOnDate": "2024-01-25",
+      "decisionDate": "2024-05-27"
     }
   ]
 }

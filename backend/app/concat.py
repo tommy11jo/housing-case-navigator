@@ -21,7 +21,7 @@ def concatenate_decisions(
                 data = json.load(f)
                 if "petitions" in data:
                     for petition in data["petitions"]:
-                        petition["source_file"] = filename
+                        petition["sourceFile"] = filename
                     all_petitions.extend(data["petitions"])
             except json.JSONDecodeError as e:
                 print(f"Error reading {filename}: {e}")

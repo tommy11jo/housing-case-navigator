@@ -1,29 +1,27 @@
 {
   "petitions": [
     {
-      "petitionTypeNumber": "2",
-      "petitionerArgument": [
+      "caseInfo": "Petition: C22230052",
+      "city": "Mountain View",
+      "issueTypeNumber": "2",
+      "argumentsAndDecisions": [
         {
-          "violatedCode": "CA Civil Code \u00a71941.1, CA H&SC \u00a717920.3",
-          "summaryOfViolation": "Failure to maintain premises due to extensive mold growth and moisture issues in wall causing unhealthy living conditions"
+          "complaintSummary": "Failure to address persistent mold growth and moisture issues in wall near living room window",
+          "violatedCode": "CA Health & Safety Code Section 17920.3(a)(11), Civil Code Section 1941.1",
+          "reimbursement": "$7,050.60",
+          "complaintTiming": "January 3, 2023 through July 1, 2023",
+          "respondentHadNotice": "Yes, multiple work orders filed and maintenance visits documented",
+          "evidenceAssessment": "Landlord failed to provide evidence of repairs, had inconsistent records, and could not produce photos showing completed work",
+          "impactAssessment": "Severe health impact - AT&T worker required specialized mask, neighbor wouldn't allow child to enter premises, tenants experienced physical symptoms"
         }
       ],
-      "decision": "granted",
-      "reimbursement": "7050.60",
+      "reimbursementJustified": "yes",
       "rentAdjustment": "Yes (40%)",
-      "rationale": {
-        "respondentHadNotice": "Yes, first notified in October 2021 and multiple times thereafter",
-        "issueDuration": "Issue persisted from January 2023 through July 2023 (180 days)",
-        "evidenceAssessment": "Landlord failed to provide evidence of completed repairs, had inconsistent records, and AT&T worker incident confirmed serious mold issue requiring specialized mask",
-        "impactAssessment": "Significant negative health impacts on tenants, requiring specialized masks and causing respiratory issues"
-      },
       "respondent": "Highland Garden Apartments",
       "hearingOfficer": "Duf Sundheim",
-      "city": "Mountain View",
-      "caseNumber": "C22230052",
-      "hearingDate": "August 30, 2023",
-      "filedOnDate": "May 16, 2023",
-      "decisionDate": "October 10, 2023"
+      "hearingDate": "2023-08-30",
+      "filedOnDate": "2023-05-16",
+      "decisionDate": "2023-10-10"
     }
   ]
 }

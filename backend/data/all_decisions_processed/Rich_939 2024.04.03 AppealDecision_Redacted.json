@@ -1,33 +1,45 @@
 {
   "petitions": [
     {
-      "petitionTypeNumber": "2",
-      "petitionerArgument": [
+      "caseInfo": "Petitions: C22230050 and C22230051",
+      "city": "Mountain View",
+      "issueTypeNumber": "1",
+      "argumentsAndDecisions": [
         {
-          "violatedCode": "CSFRA and Mountain View Rent Stabilization Program",
-          "summaryOfViolation": "Failure to roll back rent to effective date of Community Stabilization and Fair Rent Act and improper imposition of 2018 Annual General Adjustment"
+          "complaintSummary": "Landlord's predecessor failed to roll back rent and improperly imposed 2018 Annual General Adjustment",
+          "violatedCode": "CSFRA \u00a7 1707(a)",
+          "reimbursement": "$24,347.67",
+          "complaintTiming": "From CSFRA effective date",
+          "respondentHadNotice": "Yes",
+          "evidenceAssessment": "Hearing Officer found sufficient evidence that predecessor failed to roll back rent from $1,850 to $1,700",
+          "impactAssessment": "Tenant was overcharged rent in violation of CSFRA requirements"
         },
         {
-          "violatedCode": "CA Civil Code \u00a7 1941.1",
-          "summaryOfViolation": "Water intrusion and damage to second bedroom making it unusable, and reduction in landscaping/maintenance services"
+          "complaintSummary": "Water intrusion and damage to second bedroom",
+          "violatedCode": "Civil Code \u00a7 1941.1",
+          "reimbursement": "$425 per month reduction",
+          "complaintTiming": "Beginning November 2022",
+          "respondentHadNotice": "Yes, multiple notices including June 2023",
+          "evidenceAssessment": "City inspection report confirmed water damage and needed repairs",
+          "impactAssessment": "Bedroom constituted one-fourth of living space and became unusable"
+        },
+        {
+          "complaintSummary": "Reduction in landscaping services",
+          "violatedCode": "CSFRA housing services requirements",
+          "reimbursement": "$50 per month reduction",
+          "complaintTiming": "Effective September 2022",
+          "respondentHadNotice": "Yes",
+          "evidenceAssessment": "Confirmed reduction in landscaping services",
+          "impactAssessment": "Represented less than 3 percent of maximum legal rent"
         }
       ],
-      "decision": "granted",
-      "reimbursement": "24347.67",
+      "reimbursementJustified": "yes",
       "rentAdjustment": "Yes (25%)",
-      "rationale": {
-        "respondentHadNotice": "Yes, Petitioner notified Respondent multiple times including June 2023",
-        "issueDuration": "Several months of unresolved water intrusion issues",
-        "evidenceAssessment": "City inspection report confirmed water damage and need for repairs, testimony and documentary evidence supported claims",
-        "impactAssessment": "Second bedroom became unusable, affecting approximately one-fourth of livable space"
-      },
-      "respondent": "Mountain View Corporate Center",
-      "hearingOfficer": "Not specified",
-      "city": "Mountain View",
-      "caseNumber": "C22230050 and C22230051",
-      "hearingDate": "October 4, 2023",
-      "filedOnDate": "May 26, 2023",
-      "decisionDate": "February 1, 2024"
+      "respondent": "N/A",
+      "hearingOfficer": "N/A",
+      "hearingDate": "2023-10-04",
+      "filedOnDate": "2023-05-26",
+      "decisionDate": "2024-02-01"
     }
   ]
 }

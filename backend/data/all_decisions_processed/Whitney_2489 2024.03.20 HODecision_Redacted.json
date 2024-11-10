@@ -1,37 +1,45 @@
 {
   "petitions": [
     {
-      "petitionTypeNumber": "2",
-      "petitionerArgument": [
+      "caseInfo": "Petition: C22230019, C22230025",
+      "city": "Mountain View",
+      "issueTypeNumber": "2",
+      "argumentsAndDecisions": [
         {
-          "violatedCode": "Mountain View Municipal Code Ch. 21, Art. II, Section 21.56, CA Civil Code Section 1941.1",
-          "summaryOfViolation": "Second-hand smoke from neighboring units entering tenant's unit causing health issues"
+          "complaintSummary": "Secondhand smoke entering unit from neighboring tenants, affecting tenant's health and safety",
+          "violatedCode": "CA Civil Code \u00a7 1941.1, Mountain View Municipal Code Ch. 21, Art. II, Section 21.56",
+          "reimbursement": "$8,039.90",
+          "complaintTiming": "March 2019 - August 2023 (52 months, 17 days)",
+          "respondentHadNotice": "Yes, multiple notices and complaints since March 2019, including Fire Department documentation",
+          "evidenceAssessment": "Substantiated by Fire Department reports, tenant logs, and property manager emails confirming smoking incidents",
+          "impactAssessment": "Severe impact on tenant's health requiring medical treatment and hospital visits"
         },
         {
-          "violatedCode": "CA Health & Safety Code Section 17920.3(c)(10), Property Maintenance Code 402.3",
-          "summaryOfViolation": "Inadequate lighting in parking lot creating safety hazards"
+          "complaintSummary": "Rat infestation in common areas",
+          "violatedCode": "CA Civil Code \u00a7 1941.1(a)(6), International Property Maintenance Code \u00a7 302.5",
+          "reimbursement": "$155.37",
+          "complaintTiming": "November 2020 - December 2022 (25 months)",
+          "respondentHadNotice": "Yes, documented through tenant complaints and photos",
+          "evidenceAssessment": "Evidence included photos of rat droppings and property manager confirmation of pest control services",
+          "impactAssessment": "Affected common areas equivalent to 20% of rental value"
         },
         {
-          "violatedCode": "CA Civil Code Section 1941.1(g), Property Maintenance Code 302.1",
-          "summaryOfViolation": "Rat infestation in common areas and excess trash accumulation"
+          "complaintSummary": "Inadequate lighting in parking lot creating safety hazard",
+          "violatedCode": "CA Health & Safety Code \u00a7 17920.3(a)(10)",
+          "reimbursement": "$1,052.25",
+          "complaintTiming": "July 2022 - December 2023 (17 months)",
+          "respondentHadNotice": "Yes, multiple email complaints and maintenance requests",
+          "evidenceAssessment": "Photos documented dark conditions, property manager admitted lighting issues",
+          "impactAssessment": "Created safety and security risks for tenants"
         }
       ],
-      "decision": "granted",
-      "reimbursement": "34,931.23",
+      "reimbursementJustified": "yes",
       "rentAdjustment": "Yes",
-      "rationale": {
-        "respondentHadNotice": "Yes, through multiple emails and complaints since 2019",
-        "issueDuration": "Multiple issues spanning 2019-2023",
-        "evidenceAssessment": "Found substantial documentation of complaints, Fire Department reports, and photo evidence",
-        "impactAssessment": "Serious impact on tenant's health and safety, including hospitalization due to smoke exposure"
-      },
       "respondent": "West Washington Properties, LLC",
       "hearingOfficer": "Barbara M. Anscher",
-      "city": "Mountain View",
-      "caseNumber": "C22230019, C22230025",
-      "hearingDate": "May 4, 2023 and December 20, 2023",
-      "filedOnDate": "February 3, 2023",
-      "decisionDate": "March 20, 2024"
+      "hearingDate": "2023-05-04 and 2023-12-20",
+      "filedOnDate": "2023-02-03",
+      "decisionDate": "2024-03-20"
     }
   ]
 }

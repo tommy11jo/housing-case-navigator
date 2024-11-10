@@ -1,1226 +1,1210 @@
 {
   "petitions": [
     {
-      "petitionTypeNumber": "2",
-      "petitionerArgument": [
+      "caseInfo": "Petition: C2324003 & C2324004",
+      "city": "Mountain View",
+      "issueTypeNumber": "2",
+      "argumentsAndDecisions": [
         {
+          "complaintSummary": "Peeling bathroom surfaces and plumbing issues",
           "violatedCode": "CSFRA Regulations, Chapter 2(h)",
-          "summaryOfViolation": "Peeling bathroom surfaces, leaking plumbing fixtures, and inadequate maintenance of tub, sink, shower and toilet"
+          "reimbursement": "$1,200.00 plus $100/month ongoing until repaired",
+          "complaintTiming": "July 2023 - present",
+          "respondentHadNotice": "Yes, through tenant portal and direct communications",
+          "evidenceAssessment": "Photos, texts provided showing poor condition; respondent's offered repairs deemed inadequate",
+          "impactAssessment": "Significant impact on basic housing services, potential water damage and mold issues"
         },
         {
+          "complaintSummary": "Trash bins blocking parking access and pest issues",
           "violatedCode": "CSFRA Regulations, Chapter 2(h)",
-          "summaryOfViolation": "Blocked parking access due to dumpster placement, pest issues, and inadequate laundry facilities maintenance"
+          "reimbursement": "$3,500.00 plus $100/month ongoing until resolved",
+          "complaintTiming": "January 2024 - present",
+          "respondentHadNotice": "Yes, multiple communications documented",
+          "evidenceAssessment": "Respondent admitted issue but cited space constraints",
+          "impactAssessment": "Regular loss of contracted parking access impacts tenant's basic housing services"
+        },
+        {
+          "complaintSummary": "Inoperable/unsafe laundry facilities",
+          "violatedCode": "CSFRA Regulations, Chapter 2(h)",
+          "reimbursement": "$950.00 plus $50/month ongoing until resolved",
+          "complaintTiming": "June 2022 - present",
+          "respondentHadNotice": "Yes, through maintenance requests and direct communication",
+          "evidenceAssessment": "Documentation of repair invoices and ongoing issues provided",
+          "impactAssessment": "Forced to use external laundry facilities due to persistent problems"
         }
       ],
-      "decision": "granted",
-      "reimbursement": "12,865.18",
-      "rentAdjustment": "Yes",
-      "rationale": {
-        "respondentHadNotice": "Yes, through tenant portal and direct communications",
-        "issueDuration": "Various issues persisting 8-19 months",
-        "evidenceAssessment": "Photos, texts, videos, and testimony demonstrated ongoing maintenance issues",
-        "impactAssessment": "Multiple habitability issues affecting daily living including bathroom facilities, parking access, and laundry services"
-      },
+      "reimbursementJustified": "yes",
+      "rentAdjustment": "Yes (17%)",
       "respondent": "TayCon Properties",
       "hearingOfficer": "E. Alexandra DeLateur",
-      "city": "Mountain View",
-      "caseNumber": "C2324003 & C2324004",
-      "hearingDate": "November 8, 2023",
-      "filedOnDate": "August 25, 2023",
-      "decisionDate": "February 15, 2024",
-      "source_file": "WMiddlefield_2120 2024.02.15 HODecision_Redacted.json"
+      "hearingDate": "2023-11-08",
+      "filedOnDate": "2023-08-25",
+      "decisionDate": "2024-02-15",
+      "sourceFile": "WMiddlefield_2120 2024.02.15 HODecision_Redacted.json"
     },
     {
-      "petitionTypeNumber": "1",
-      "petitionerArgument": [
+      "caseInfo": "Petition: C2223005, C2223056",
+      "city": "Mountain View",
+      "issueTypeNumber": "2",
+      "argumentsAndDecisions": [
         {
-          "violatedCode": "CSFRA Section 1707",
-          "summaryOfViolation": "Landlord demanded unlawful rent increases and failed to register property with Rent Stabilization Program"
+          "complaintSummary": "Multiple habitability issues including mold, electrical problems, non-functioning appliances, and maintenance issues",
+          "violatedCode": "CA Civil Code \u00a7 1941.1, Health and Safety Code \u00a7 17920.3",
+          "reimbursement": "$6,717.06",
+          "complaintTiming": "Multiple issues spanning 5+ years",
+          "respondentHadNotice": "Yes, through verbal complaints, written notice on May 5, 2023, and MFH inspections",
+          "evidenceAssessment": "Evidence included photos, inspection reports, witness testimony confirming long-term issues",
+          "impactAssessment": "Significant impact on living conditions - electrical hazards, lack of heat, mold, plumbing issues affecting daily life"
         }
       ],
-      "decision": "granted",
-      "reimbursement": "2317.66",
+      "reimbursementJustified": "yes",
       "rentAdjustment": "Yes",
-      "rationale": {
-        "respondentHadNotice": "Yes, through city correspondence requesting registration",
-        "issueDuration": "Property unregistered from start of tenancy until February 2023",
-        "evidenceAssessment": "Found rent increases exceeded allowable AGA and proper notices not given",
-        "impactAssessment": "Tenant overcharged due to improper rent increases"
-      },
-      "respondent": "Frank Cervantes for Cervantes, LLC",
-      "hearingOfficer": "E. Alexandra DeLateur",
-      "city": "Mountain View",
-      "caseNumber": "22230026",
-      "hearingDate": "March 10, 2023",
-      "filedOnDate": "February 1, 2023",
-      "decisionDate": "April 12, 2023",
-      "source_file": "Park_880 2023.04.12 HODecision_Redacted (2).json"
-    },
-    {
-      "petitionTypeNumber": "2",
-      "petitionerArgument": [
-        {
-          "violatedCode": "CA Civil Code \u00a71941.1, Health & Safety Code \u00a717920.3",
-          "summaryOfViolation": "Multiple habitability issues including mold, damaged carpet, electrical problems, non-functioning appliances, inadequate heat, leaking plumbing and presence of rats"
-        },
-        {
-          "violatedCode": "CA Electrical Code \u00a7404.9, \u00a7406.6, \u00a7210.8(a)",
-          "summaryOfViolation": "Faulty electrical system with only one working outlet requiring extension cords, lack of GFCI outlets"
-        }
-      ],
-      "decision": "granted",
-      "reimbursement": "8217.06",
-      "rentAdjustment": "Yes (45%)",
-      "rationale": {
-        "respondentHadNotice": "Yes, as early as January 2022 for most issues",
-        "issueDuration": "Multiple issues persisting 5-8 years",
-        "evidenceAssessment": "MFH inspection reports confirmed code violations, photographic evidence showed mold and damage, PG&E report verified heating issues",
-        "impactAssessment": "Serious habitability violations affecting safety, comfort and daily living conditions"
-      },
       "respondent": "Sergio Sanchez Morado",
       "hearingOfficer": "Barbara M. Arischer",
-      "city": "Mountain View",
-      "caseNumber": "C2223055, C2223056",
-      "hearingDate": "September 29, 2023",
-      "filedOnDate": "June 28, 2023",
-      "decisionDate": "November 22, 2023",
-      "source_file": "California_1556 2023.11.21 HODecision_Redacted.json"
+      "hearingDate": "2023-09-29",
+      "filedOnDate": "2023-06-28",
+      "decisionDate": "2023-11-22",
+      "sourceFile": "California_1556 2023.11.21 HODecision_Redacted.json"
     },
     {
-      "petitionTypeNumber": "2",
-      "petitionerArgument": [
+      "caseInfo": "Appeal: C22230037",
+      "city": "Mountain View",
+      "issueTypeNumber": "2",
+      "argumentsAndDecisions": [
         {
-          "violatedCode": "Community Stabilization and Fair Rent Act (CSFRA)",
-          "summaryOfViolation": "Failure to maintain habitable premises due to insufficient hot water temperature below California health and safety codes since November 2022"
+          "complaintSummary": "Failure to maintain minimum hot water temperature required for habitable premises",
+          "violatedCode": "CSFRA and International Property Maintenance Code (IPMC) - minimum 110 degrees Fahrenheit requirement",
+          "reimbursement": "$2,640.00",
+          "complaintTiming": "Beginning November 2022",
+          "respondentHadNotice": "Yes, notice provided on November 23, 2022",
+          "evidenceAssessment": "Hearing Officer determined 110-degree Fahrenheit standard was appropriate based on IPMC and City's Multifamily Housing Inspection Department",
+          "impactAssessment": "Constitutes a failure to maintain habitable premises"
         }
       ],
-      "decision": "granted",
-      "reimbursement": "$2,640.00",
+      "reimbursementJustified": "yes",
       "rentAdjustment": "Yes (8%)",
-      "rationale": {
-        "respondentHadNotice": "Yes, notice given on November 23, 2022",
-        "issueDuration": "Since December 1, 2022",
-        "evidenceAssessment": "Hearing Officer determined 110-degree Fahrenheit minimum standard was appropriate based on International Property Maintenance Code and City's Multifamily Housing Inspection Department",
-        "impactAssessment": "Constituted a failure to maintain habitable premises"
-      },
-      "respondent": "Shirley Ankenbauer/Timpson Enterprises, Inc.",
-      "hearingOfficer": "Not specified",
-      "city": "Mountain View",
-      "caseNumber": "C22230037",
-      "hearingDate": "May 9, 2023",
-      "filedOnDate": "March 2, 2023",
-      "decisionDate": "January 26, 2024",
-      "source_file": "Wright_1725 2024.04.03 RemandAppealDecision_Redacted.json"
+      "respondent": "Timpson Enterprises, Inc.",
+      "hearingOfficer": "N/A",
+      "hearingDate": "2023-11-02",
+      "filedOnDate": "2023-03-02",
+      "decisionDate": "N/A",
+      "sourceFile": "Wright_1725 2024.04.03 RemandAppealDecision_Redacted.json"
     },
     {
-      "petitionTypeNumber": "2",
-      "petitionerArgument": [
+      "caseInfo": "Appeal: 20210156",
+      "city": "East Palo Alto",
+      "issueTypeNumber": "2",
+      "argumentsAndDecisions": [
         {
-          "violatedCode": "CA Civil Code \u00a7 1941.1",
-          "summaryOfViolation": "Security issues with main gate left open allowing non-residents access"
+          "complaintSummary": "Security concerns due to main gate being left open",
+          "violatedCode": "EPA Muni. Code \u00a7 14.04.130",
+          "reimbursement": "$230.00",
+          "complaintTiming": "N/A",
+          "respondentHadNotice": "Yes",
+          "evidenceAssessment": "Board found security was compromised by gate being left open for parking convenience",
+          "impactAssessment": "Non-residents were able to enter property, creating security risk"
         },
         {
-          "violatedCode": "EPA Municipal Code \u00a7 14.04.130",
-          "summaryOfViolation": "Unsanitary conditions including ant/spider infestation and cloudy water"
+          "complaintSummary": "Cloudy and discolored water",
+          "violatedCode": "CA Civil Code \u00a7 1941.1",
+          "reimbursement": "No reimbursement awarded",
+          "complaintTiming": "N/A",
+          "respondentHadNotice": "Yes, respondent had water tested by vendor",
+          "evidenceAssessment": "Vendor found water was safe to drink, issue was from water supplier",
+          "impactAssessment": "No impact found as water was determined to be safe"
+        },
+        {
+          "complaintSummary": "Ant/spider infestation",
+          "violatedCode": "CA Civil Code \u00a7 1941.1",
+          "reimbursement": "$230.00",
+          "complaintTiming": "N/A",
+          "respondentHadNotice": "N/A",
+          "evidenceAssessment": "Original petition approval maintained",
+          "impactAssessment": "N/A"
         }
       ],
-      "decision": "granted",
-      "reimbursement": "$460 ($230 for security gate issue, $230 for ant infestation)",
+      "reimbursementJustified": "no",
       "rentAdjustment": "No",
-      "rationale": {
-        "respondentHadNotice": "Yes, gate issue was known to respondent",
-        "issueDuration": "Not specified in document",
-        "evidenceAssessment": "Respondent testified gate was left open for parking; Water was tested by vendor and found safe",
-        "impactAssessment": "Security compromised due to open gate allowing non-resident access"
-      },
       "respondent": "Kristian Widjaja",
       "hearingOfficer": "Derek Chantler",
-      "city": "East Palo Alto",
-      "caseNumber": "20210156",
-      "hearingDate": "March 29, 2022",
-      "filedOnDate": "July 4, 2022",
-      "decisionDate": "January 18, 2023",
-      "source_file": "2023-01-23 Rent Boards Finding and Decisions Appeal Case 2021056 - 2070 Glen Way Apartment F.json"
+      "hearingDate": "2022-03-29",
+      "filedOnDate": "2022-07-04",
+      "decisionDate": "2023-01-18",
+      "sourceFile": "2023-01-23 Rent Boards Finding and Decisions Appeal Case 2021056 - 2070 Glen Way Apartment F.json"
     },
     {
-      "petitionTypeNumber": "1",
-      "petitionerArgument": [
+      "caseInfo": "Petition: 22230011",
+      "city": "Mountain View",
+      "issueTypeNumber": "1",
+      "argumentsAndDecisions": [
         {
-          "violatedCode": "CSFRA Section 1707(f)",
-          "summaryOfViolation": "Unlawful rent increase above allowed Annual General Adjustment (AGA) and multiple rent increases within 12 months"
-        },
-        {
-          "violatedCode": "CSFRA Registration Requirements",
-          "summaryOfViolation": "Landlord failed to register property with Rent Stabilization Program before implementing rent increases"
+          "complaintSummary": "Unlawful rent increases above allowed AGA and multiple increases within 12 months",
+          "violatedCode": "CSFRA Section 1707(f), CSFRA Regs. Chapt. 4(B)",
+          "reimbursement": "$2,209.00",
+          "complaintTiming": "March 2022 - October 2022",
+          "respondentHadNotice": "No, landlord failed to provide required CSFRA notices",
+          "evidenceAssessment": "Hearing officer found rent increases unlawful due to failure to register property and exceeding AGA limits",
+          "impactAssessment": "Tenant was overcharged beyond legal base rent amount"
         }
       ],
-      "decision": "granted",
-      "reimbursement": "2209.00",
+      "reimbursementJustified": "yes",
       "rentAdjustment": "Yes",
-      "rationale": {
-        "respondentHadNotice": "No, landlord failed to provide required CSFRA notices to tenant",
-        "issueDuration": "Multiple unlawful increases from March 2022 through October 2022",
-        "evidenceAssessment": "Documentation showed rent increases exceeded AGA limits and property was not properly registered",
-        "impactAssessment": "Tenant overpaid rent due to multiple unlawful increases"
-      },
       "respondent": "Fairview Townhomes, WRL LLC",
       "hearingOfficer": "E. Alexandra DeLateur",
-      "city": "Mountain View",
-      "caseNumber": "22230011",
-      "hearingDate": "January 13, 2023",
-      "filedOnDate": "September 30, 2022",
-      "decisionDate": "February 21, 2023",
-      "source_file": "Rengstorff_429 2023.02.17 HODecision_Redacted.json"
+      "hearingDate": "2023-01-13",
+      "filedOnDate": "2022-09-30",
+      "decisionDate": "2023-02-21",
+      "sourceFile": "Rengstorff_429 2023.02.17 HODecision_Redacted.json"
     },
     {
-      "petitionTypeNumber": "2",
-      "petitionerArgument": [
+      "caseInfo": "Appeal: C22230030",
+      "city": "Mountain View",
+      "issueTypeNumber": "2",
+      "argumentsAndDecisions": [
         {
-          "violatedCode": "Civil Code Section 1941.1(a)(1) and Health & Safety Code Section 17920.3(a)(13)",
-          "summaryOfViolation": "Failure to maintain habitable premises due to water leaks and mold in garage and living room"
+          "complaintSummary": "Water leak in roof leading to mold and habitability issues in garage and living room",
+          "violatedCode": "Civil Code Section 1941.1(a)(1), Health & Safety Code Section 17920.3(a)(13)",
+          "reimbursement": "$1,293.00",
+          "complaintTiming": "December 12, 2022 - February 28, 2023",
+          "respondentHadNotice": "Yes, notified on multiple occasions in December 2022",
+          "evidenceAssessment": "Photographic evidence showed visual discoloration, mold presence confirmed through testimony and documentation",
+          "impactAssessment": "Elderly tenant unable to use living room and garage due to mold conditions"
+        }
+      ],
+      "reimbursementJustified": "yes",
+      "rentAdjustment": "Yes (25%)",
+      "respondent": "TFT Investments",
+      "hearingOfficer": "N/A",
+      "hearingDate": "2023-05-03",
+      "filedOnDate": "2023-02-13",
+      "decisionDate": "2023-06-30",
+      "sourceFile": "Montecito_1260 2023.10.24 AppealDecision_Redacted.json"
+    },
+    {
+      "issueTypeNumber": "2",
+      "caseInfo": "Petition: C23240022 and C23240023",
+      "city": "Mountain View",
+      "argumentsAndDecisions": [
+        {
+          "complaintSummary": "Water leaking from bedroom ceiling causing mold",
+          "violatedCode": "CSFRA Section 1707(f)(3)",
+          "reimbursement": "$3,100 plus continuing rent reductions of $100/month",
+          "complaintTiming": "October 2021 - ongoing",
+          "respondentHadNotice": "Yes, notified via email with photos",
+          "evidenceAssessment": "Photos and video show appalling water damage and mold formation",
+          "impactAssessment": "Hazardous condition affecting family health and safety"
         },
         {
-          "violatedCode": "Civil Code Section 1941.1(a)(8) and Health & Safety Code Sections 17920.3 subd. (b)(2)",
-          "summaryOfViolation": "Property lacked flooring in good repair and faulty weather protection"
+          "complaintSummary": "Exploded stove and non-functioning hood fan",
+          "violatedCode": "CSFRA Section 1707(f)(3)",
+          "reimbursement": "$200/month until stove replaced + $50 for hood fan",
+          "complaintTiming": "November 27, 2023",
+          "respondentHadNotice": "Yes, reported immediately",
+          "evidenceAssessment": "Video evidence of sparks and smoke, stove deemed unsafe",
+          "impactAssessment": "Family unable to cook, forced to eat out"
         }
       ],
-      "decision": "granted",
-      "reimbursement": "$1,293.00",
-      "rentAdjustment": "Yes (25%)",
-      "rationale": {
-        "respondentHadNotice": "Yes, notified on multiple occasions between December 12-30, 2022",
-        "issueDuration": "December 12, 2022 through February 28, 2023",
-        "evidenceAssessment": "Petitioner provided sufficient photographic evidence and testimony of conditions, respondent failed to rebut evidence or take timely action",
-        "impactAssessment": "Conditions prevented tenant's elderly mother from using living room and garage due to health concerns"
-      },
-      "respondent": "TFT Investments",
-      "hearingOfficer": "Not specified",
+      "reimbursementJustified": "yes",
+      "rentAdjustment": "Yes (multiple percentage reductions: 4.6%, 2.3%, 4.6%, 2.3%, 9.2%)",
+      "respondent": "Joseph Richards for 1084 Wentworth Apartments",
+      "hearingOfficer": "E. Alexandra DeLateur",
+      "hearingDate": "2024-01-31",
+      "filedOnDate": "2023-10-19",
+      "decisionDate": "2024-05-06",
+      "sourceFile": "Wentworth_1084 2024.05.06 HODecision_Redacted.json"
+    },
+    {
+      "caseInfo": "Petition: C22230021",
       "city": "Mountain View",
-      "caseNumber": "C22230030",
-      "hearingDate": "May 3, 2023",
-      "filedOnDate": "February 13, 2023",
-      "decisionDate": "June 30, 2023",
-      "source_file": "Montecito_1260 2023.10.24 AppealDecision_Redacted.json"
-    },
-    {
-      "petitionTypeNumber": "3",
-      "petitionerArgument": [
+      "issueTypeNumber": "4",
+      "argumentsAndDecisions": [
         {
-          "violatedCode": "CSFRA Registration Requirements",
-          "summaryOfViolation": "Failure to register property with Rent Stabilization Program prior to issuing rent increase"
+          "complaintSummary": "Landlord imposed improper 10% rent increase when property was not registered with the City",
+          "violatedCode": "CSFRA \u00a7 1707(i)(1)",
+          "reimbursement": "$1,487.20",
+          "complaintTiming": "July 2022 - July 2023",
+          "respondentHadNotice": "Yes, through petition filed December 30, 2022",
+          "evidenceAssessment": "Property registration record shows non-registration during rent increase period",
+          "impactAssessment": "Tenant was overcharged $114.40 per month for 13 months"
         }
       ],
-      "decision": "granted",
-      "reimbursement": "200.00",
-      "rentAdjustment": "Yes (5%)",
-      "rationale": {
-        "respondentHadNotice": "Yes",
-        "issueDuration": "2021-2023",
-        "evidenceAssessment": "Property was not registered until September 2023, after rent increase notice was issued",
-        "impactAssessment": "Rent increase deemed invalid due to non-compliance with registration requirements"
-      },
-      "source_file": "Wentworth_1084 2024.05.06 HODecision_Redacted.json"
-    },
-    {
-      "petitionTypeNumber": "2",
-      "petitionerArgument": [
-        {
-          "violatedCode": "Civil Code Sections 1941.1",
-          "summaryOfViolation": "Multiple maintenance issues including water leaks, mold, broken stove, and other habitability concerns"
-        }
-      ],
-      "decision": "granted",
-      "reimbursement": "5750.00",
-      "rentAdjustment": "Yes (various percentages for different issues)",
-      "rationale": {
-        "respondentHadNotice": "Yes, through multiple emails and communications",
-        "issueDuration": "Various issues from 2021-2023",
-        "evidenceAssessment": "Photos, videos, and testimony showed pattern of maintenance problems with little response",
-        "impactAssessment": "Significant impact on habitability and use of premises"
-      },
-      "source_file": "Wentworth_1084 2024.05.06 HODecision_Redacted.json"
-    },
-    {
-      "petitionTypeNumber": "3",
-      "petitionerArgument": [
-        {
-          "violatedCode": "CSFRA \u00a7 1707(f)(1)",
-          "summaryOfViolation": "Failure to register property with the City before imposing rent increase"
-        }
-      ],
-      "decision": "granted",
-      "reimbursement": "1487.20",
-      "rentAdjustment": "Yes (2%)",
-      "rationale": {
-        "respondentHadNotice": "No evidence of prior notice",
-        "issueDuration": "July 2022 - April 2023 (improper rent increase period)",
-        "evidenceAssessment": "Property registration records showed non-compliance during rent increase period",
-        "impactAssessment": "Tenant was charged 10% increase instead of allowed 2% due to registration non-compliance"
-      },
+      "reimbursementJustified": "yes",
+      "rentAdjustment": "Yes (decrease to original $2,288.00)",
       "respondent": "Tenant Planet Inc.",
       "hearingOfficer": "Derek W. Chantler",
-      "city": "Mountain View",
-      "caseNumber": "C22230021",
-      "hearingDate": "May 18, 2023",
-      "filedOnDate": "December 30, 2022",
-      "decisionDate": "August 3, 2023",
-      "source_file": "Chiquita_465 2023.08.04 HODecision_Redacted.json"
+      "hearingDate": "2023-05-18",
+      "filedOnDate": "2022-12-30",
+      "decisionDate": "2023-08-03",
+      "sourceFile": "Chiquita_465 2023.08.04 HODecision_Redacted.json"
     },
     {
-      "petitionTypeNumber": "2",
-      "petitionerArgument": [
+      "caseInfo": "Petition: C22230019, C22230025",
+      "city": "Mountain View",
+      "issueTypeNumber": "2",
+      "argumentsAndDecisions": [
         {
-          "violatedCode": "Mountain View Municipal Code Ch. 21, Art. II, Section 21.56, CA Civil Code Section 1941.1",
-          "summaryOfViolation": "Second-hand smoke from neighboring units entering tenant's unit causing health issues"
+          "complaintSummary": "Secondhand smoke entering unit from neighboring tenants, affecting tenant's health and safety",
+          "violatedCode": "CA Civil Code \u00a7 1941.1, Mountain View Municipal Code Ch. 21, Art. II, Section 21.56",
+          "reimbursement": "$8,039.90",
+          "complaintTiming": "March 2019 - August 2023 (52 months, 17 days)",
+          "respondentHadNotice": "Yes, multiple notices and complaints since March 2019, including Fire Department documentation",
+          "evidenceAssessment": "Substantiated by Fire Department reports, tenant logs, and property manager emails confirming smoking incidents",
+          "impactAssessment": "Severe impact on tenant's health requiring medical treatment and hospital visits"
         },
         {
-          "violatedCode": "CA Health & Safety Code Section 17920.3(c)(10), Property Maintenance Code 402.3",
-          "summaryOfViolation": "Inadequate lighting in parking lot creating safety hazards"
+          "complaintSummary": "Rat infestation in common areas",
+          "violatedCode": "CA Civil Code \u00a7 1941.1(a)(6), International Property Maintenance Code \u00a7 302.5",
+          "reimbursement": "$155.37",
+          "complaintTiming": "November 2020 - December 2022 (25 months)",
+          "respondentHadNotice": "Yes, documented through tenant complaints and photos",
+          "evidenceAssessment": "Evidence included photos of rat droppings and property manager confirmation of pest control services",
+          "impactAssessment": "Affected common areas equivalent to 20% of rental value"
         },
         {
-          "violatedCode": "CA Civil Code Section 1941.1(g), Property Maintenance Code 302.1",
-          "summaryOfViolation": "Rat infestation in common areas and excess trash accumulation"
+          "complaintSummary": "Inadequate lighting in parking lot creating safety hazard",
+          "violatedCode": "CA Health & Safety Code \u00a7 17920.3(a)(10)",
+          "reimbursement": "$1,052.25",
+          "complaintTiming": "July 2022 - December 2023 (17 months)",
+          "respondentHadNotice": "Yes, multiple email complaints and maintenance requests",
+          "evidenceAssessment": "Photos documented dark conditions, property manager admitted lighting issues",
+          "impactAssessment": "Created safety and security risks for tenants"
         }
       ],
-      "decision": "granted",
-      "reimbursement": "34,931.23",
+      "reimbursementJustified": "yes",
       "rentAdjustment": "Yes",
-      "rationale": {
-        "respondentHadNotice": "Yes, through multiple emails and complaints since 2019",
-        "issueDuration": "Multiple issues spanning 2019-2023",
-        "evidenceAssessment": "Found substantial documentation of complaints, Fire Department reports, and photo evidence",
-        "impactAssessment": "Serious impact on tenant's health and safety, including hospitalization due to smoke exposure"
-      },
       "respondent": "West Washington Properties, LLC",
       "hearingOfficer": "Barbara M. Anscher",
-      "city": "Mountain View",
-      "caseNumber": "C22230019, C22230025",
-      "hearingDate": "May 4, 2023 and December 20, 2023",
-      "filedOnDate": "February 3, 2023",
-      "decisionDate": "March 20, 2024",
-      "source_file": "Whitney_2489 2024.03.20 HODecision_Redacted.json"
+      "hearingDate": "2023-05-04 and 2023-12-20",
+      "filedOnDate": "2023-02-03",
+      "decisionDate": "2024-03-20",
+      "sourceFile": "Whitney_2489 2024.03.20 HODecision_Redacted.json"
     },
     {
-      "petitionTypeNumber": "2",
-      "petitionerArgument": [
+      "caseInfo": "Petition: 22230004",
+      "city": "Mountain View",
+      "issueTypeNumber": "4",
+      "argumentsAndDecisions": [
         {
-          "violatedCode": "CSFRA Section 1707(d) and Chapter 7, Section C of Regulations",
-          "summaryOfViolation": "Undue tenant hardship due to inadequate household income relative to rent increases"
+          "complaintSummary": "Landlord failed to register property with Rent Stabilization Program as required by CSFRA",
+          "violatedCode": "CSFRA Reg. Chap. 11(B)(1) and 11(F)",
+          "reimbursement": "Rent reduction for October 7-9, 2022 plus reduction of banked increases through August 31, 2023",
+          "complaintTiming": "Prior to October 10, 2022",
+          "respondentHadNotice": "Yes, landlord was notified multiple times including September 30, 2022",
+          "evidenceAssessment": "Property registration records confirmed non-compliance until October 10, 2022",
+          "impactAssessment": "Constituted substantial noncompliance with CSFRA affecting rent increase validity"
         }
       ],
-      "decision": "granted",
-      "reimbursement": "Rent increase amount for Oct 7-9, 2022 and reduction of banked increases after Oct 10, 2022",
-      "rentAdjustment": "Yes (reduction of banked increases beyond 5% AGA)",
-      "rationale": {
-        "respondentHadNotice": "Yes, through proper petition filing on September 9, 2022",
-        "issueDuration": "Not applicable",
-        "evidenceAssessment": "Tenant proved income below 100% AMI threshold through tax returns and testimony",
-        "impactAssessment": "Tenant's household income qualified for hardship protection under regulations"
-      },
-      "respondent": "Del Medio Manor LLC/Calson Property Management",
+      "rentAdjustment": "Yes (9.9%)",
+      "respondent": "Gina Frye, Lydia Sanabria (Calson Property Management)",
       "hearingOfficer": "Martin Eichner",
-      "city": "Mountain View",
-      "caseNumber": "22230004",
-      "hearingDate": "October 7, 2022",
-      "filedOnDate": "September 9, 2022",
-      "decisionDate": "November 18, 2022",
-      "source_file": "Del Medio_141 2022.11.18 HODecision_Redacted.json"
+      "hearingDate": "2022-10-07",
+      "filedOnDate": "2022-09-09",
+      "decisionDate": "2022-11-18",
+      "reimbursementJustified": "yes",
+      "sourceFile": "Del Medio_141 2022.11.18 HODecision_Redacted.json"
     },
     {
-      "petitionTypeNumber": "2",
-      "petitionerArgument": [
-        {
-          "violatedCode": "CSFRA Regulations on Housing Services and Maintenance",
-          "summaryOfViolation": "Failure to maintain bathroom fixtures (bathtub, shower, sinks) in proper condition with ongoing glazing issues"
-        },
-        {
-          "violatedCode": "City Housing Code - Waste Management",
-          "summaryOfViolation": "Blocked access to assigned parking spot due to overflowing dumpsters"
-        },
-        {
-          "violatedCode": "Housing Services Requirements",
-          "summaryOfViolation": "Unsanitary and non-functional laundry facilities with broken machines"
-        }
-      ],
-      "decision": "granted",
-      "reimbursement": "$12,367.34 total (various refunds for rent overcharges, repairs, and service reductions)",
-      "rentAdjustment": "Yes ($25-100 monthly reductions for various issues)",
-      "rationale": {
-        "respondentHadNotice": "Yes, multiple notifications about various issues",
-        "issueDuration": "Issues persisted from February 2021 through hearing date",
-        "evidenceAssessment": "Photographic evidence and testimony demonstrated ongoing maintenance issues",
-        "impactAssessment": "Significant impact on habitability and use of facilities"
-      },
-      "respondent": "Property owner represented by Ela Levin",
-      "hearingOfficer": "Not explicitly named",
+      "caseInfo": "Appeal: C23240003 and C23240004",
       "city": "Mountain View",
-      "caseNumber": "C23240003 and C23240004",
-      "hearingDate": "November 8, 2023",
-      "filedOnDate": "August 25, 2023",
-      "decisionDate": "February 15, 2024",
-      "source_file": "WMiddlefield_2120 2024.04.26 AppealDecision_Redacted.json"
-    },
-    {
-      "petitionTypeNumber": "1",
-      "petitionerArgument": [
+      "issueTypeNumber": "2",
+      "argumentsAndDecisions": [
         {
-          "violatedCode": "CSFRA Section 1707(f)(1)",
-          "summaryOfViolation": "Landlord failed to register property with Rent Stabilization Program and charged unlawful rent increases without proper compliance"
-        }
-      ],
-      "decision": "granted",
-      "reimbursement": "2434.29",
-      "rentAdjustment": "No",
-      "rationale": {
-        "respondentHadNotice": "Failed to notify tenant of CSFRA protections at lease commencement",
-        "issueDuration": "Non-compliance from April 2021 until February 3, 2023",
-        "evidenceAssessment": "Landlord failed to dispute tenant's factual statements and evidence showed multiple improper rent increases",
-        "impactAssessment": "Tenant paid excessive rent due to landlord's non-compliance with CSFRA requirements"
-      },
-      "respondent": "Frank Cervantes aka Francisco Cervantes for Cervantes, LLC",
-      "hearingOfficer": "E. Alexandra DeLateur",
-      "city": "Mountain View",
-      "caseNumber": "22230017",
-      "hearingDate": "March 10, 2023",
-      "filedOnDate": "December 27, 2022",
-      "decisionDate": "April 12, 2023",
-      "source_file": "Park_880 2023.04.12 HODecision_Redacted (1).json"
-    },
-    {
-      "petitionTypeNumber": "1",
-      "petitionerArgument": [
-        {
-          "violatedCode": "CSFRA Section 1702(b)(2)",
-          "summaryOfViolation": "Incorrect calculation of base rent during initial lease term"
+          "complaintSummary": "Deteriorating glazing and poor condition of bathtub, shower and sinks",
+          "violatedCode": "CA Civil Code 1954(a)",
+          "reimbursement": "$1,200 total ($100/month for 12 months) plus ongoing $100/month",
+          "complaintTiming": "Starting January 2023",
+          "respondentHadNotice": "Yes, tenant informed respondent's agent/plumber",
+          "evidenceAssessment": "Photographic evidence and testimony demonstrated poor conditions; respondent only offered reglazings rather than necessary repairs",
+          "impactAssessment": "Conditions were deemed to significantly impact habitability"
         },
         {
-          "violatedCode": "CSFRA Section 1707(c)",
-          "summaryOfViolation": "Rent increase without proper notice"
+          "complaintSummary": "Blocked parking access due to dumpster placement",
+          "violatedCode": "CSFRA \u00a7 1702",
+          "reimbursement": "$3,500 total for 15-month period plus ongoing $100/month",
+          "complaintTiming": "February 2021 - December 2023",
+          "respondentHadNotice": "Yes, multiple complaints made since February 2021",
+          "evidenceAssessment": "Evidence showed ongoing issue requiring new waste management company",
+          "impactAssessment": "Significant impact on tenant's fundamental right to parking access"
+        },
+        {
+          "complaintSummary": "Unsanitary and non-functional laundry facilities",
+          "violatedCode": "CSFRA regulations on housing services",
+          "reimbursement": "$950 total ($50/month for 19 months) plus ongoing $50/month",
+          "complaintTiming": "June 2022 - December 2023",
+          "respondentHadNotice": "Yes, multiple reports made",
+          "evidenceAssessment": "Testimony and evidence demonstrated ongoing poor conditions",
+          "impactAssessment": "Facilities deemed inaccessible, unsafe and unsanitary"
         }
       ],
-      "decision": "granted",
-      "reimbursement": "$806.89",
+      "reimbursementJustified": "yes",
       "rentAdjustment": "Yes",
-      "rationale": {
-        "respondentHadNotice": "No, landlord failed to properly notify tenant of rent increases",
-        "issueDuration": "June 2022 - December 2022",
-        "evidenceAssessment": "Lease agreement and payment records showed incorrect base rent calculation",
-        "impactAssessment": "Tenant was overcharged due to improper base rent calculation and unauthorized increases"
-      },
+      "respondent": "N/A",
+      "hearingOfficer": "N/A",
+      "hearingDate": "2023-11-08",
+      "filedOnDate": "2023-08-25",
+      "decisionDate": "2024-02-15",
+      "sourceFile": "WMiddlefield_2120 2024.04.26 AppealDecision_Redacted.json"
+    },
+    {
+      "caseInfo": "Petition: 22230017",
+      "city": "Mountain View",
+      "issueTypeNumber": "1",
+      "argumentsAndDecisions": [
+        {
+          "complaintSummary": "Landlord failed to register property with Rent Stabilization Program and imposed illegal rent increases",
+          "violatedCode": "CSFRA Section 1707(f)(1)",
+          "reimbursement": "$2,434.29",
+          "complaintTiming": "April 2022 through February 2023",
+          "respondentHadNotice": "Yes, city provided notice regarding property compliance status",
+          "evidenceAssessment": "Respondent did not contest factual statements by Petitioner and failed to register property until after petition filed",
+          "impactAssessment": "Tenant paid excess rent due to landlord's substantial non-compliance with CSFRA"
+        }
+      ],
+      "reimbursementJustified": "yes",
+      "rentAdjustment": "Yes (2%)",
+      "respondent": "Frank Cervantes aka Francisco Cervantes for Cervantes, LLC",
+      "hearingOfficer": "E. Alexandra DeLatour",
+      "hearingDate": "2023-03-10",
+      "filedOnDate": "2022-12-27",
+      "decisionDate": "2023-04-12",
+      "sourceFile": "Park_880 2023.04.12 HODecision_Redacted (1).json"
+    },
+    {
+      "caseInfo": "Petition: 22230008",
+      "city": "Mountain View",
+      "issueTypeNumber": "1",
+      "argumentsAndDecisions": [
+        {
+          "complaintSummary": "Landlord miscalculated base rent and made unlawful rent increases",
+          "violatedCode": "CSFRA Section 1702(b)(2), 1706(a), and 1707(b)",
+          "reimbursement": "$806.89",
+          "complaintTiming": "September 2022 - December 2022",
+          "respondentHadNotice": "Yes, tenant contacted property manager about rent increases",
+          "evidenceAssessment": "Hearing officer found base rent was incorrectly calculated as $2,390 instead of $2,172.73",
+          "impactAssessment": "Tenant was overcharged $337.27 per month due to unlawful rent increases"
+        }
+      ],
+      "reimbursementJustified": "yes",
+      "rentAdjustment": "Yes (rolled back to $2,172.73)",
       "respondent": "Washington Square",
       "hearingOfficer": "Barbara M. Anscher",
-      "city": "Mountain View",
-      "caseNumber": "22230008",
-      "hearingDate": "November 18, 2022",
-      "filedOnDate": "September 26, 2022",
-      "decisionDate": "December 16, 2022",
-      "source_file": "Montecito_1375 2022.12.14 HODecision_Redacted.json"
+      "hearingDate": "2022-11-18",
+      "filedOnDate": "2022-09-26",
+      "decisionDate": "2022-12-16",
+      "sourceFile": "Montecito_1375 2022.12.14 HODecision_Redacted.json"
     },
     {
-      "petitionTypeNumber": "2",
-      "petitionerArgument": [
+      "caseInfo": "Petition: 2024-0001",
+      "city": "East Palo Alto",
+      "issueTypeNumber": "2",
+      "argumentsAndDecisions": [
         {
-          "violatedCode": "Section 13 of City's Rent Stabilization and Just Cause for Eviction Ordinance",
-          "summaryOfViolation": "Reduction in maintenance and services, including non-functioning elevator, broken lights in common areas, water overflow issues, and mold"
+          "complaintSummary": "Non-functioning elevator and lighting in common areas",
+          "violatedCode": "CA Civil Code \u00a7 1941.1, Rent Ordinance Section 13",
+          "reimbursement": "$268.56",
+          "complaintTiming": "October 2023 through January 2024",
+          "respondentHadNotice": "Yes, through tenant complaints and prior petitions",
+          "evidenceAssessment": "Hearing Officer acknowledged elevator was out of service and lights weren't replaced timely",
+          "impactAssessment": "Loss of elevator service and inadequate lighting deemed significant enough to warrant rent reduction"
         },
         {
+          "complaintSummary": "Water overflow and mold in kitchen sink",
           "violatedCode": "CA Civil Code \u00a7 1941.1",
-          "summaryOfViolation": "Failure to maintain rental unit in habitable condition with proper maintenance and repairs"
+          "reimbursement": "No reimbursement awarded",
+          "complaintTiming": "December 2023",
+          "respondentHadNotice": "Yes",
+          "evidenceAssessment": "Woodland Park responded timely to water overflow issue",
+          "impactAssessment": "Impact deemed addressed through timely response"
         }
       ],
-      "decision": "granted",
-      "reimbursement": "$268.56",
+      "reimbursementJustified": "yes",
       "rentAdjustment": "Yes (7.5%)",
-      "rationale": {
-        "respondentHadNotice": "Yes, issues reported over multiple years",
-        "issueDuration": "Various issues spanning several months (elevator out for 6 months)",
-        "evidenceAssessment": "Hearing officer found evidence of maintenance issues during inspection, particularly with elevator service and common area lights",
-        "impactAssessment": "Determined reduction in housing services warranted temporary rent reduction"
-      },
       "respondent": "Woodland Park Communities",
       "hearingOfficer": "Michael H. Roush",
-      "city": "East Palo Alto",
-      "caseNumber": "2024-0001",
-      "hearingDate": "May 17, 2024",
-      "filedOnDate": "January 25, 2024",
-      "decisionDate": "May 27, 2024",
-      "source_file": "Decision Wilkerson v WPC 20240001.json"
+      "hearingDate": "2024-05-17",
+      "filedOnDate": "2024-01-25",
+      "decisionDate": "2024-05-27",
+      "sourceFile": "Decision Wilkerson v WPC 20240001.json"
     },
     {
-      "petitionTypeNumber": "2",
-      "petitionerArgument": [
+      "caseInfo": "Appeal: C22330052",
+      "city": "Mountain View",
+      "issueTypeNumber": "2",
+      "argumentsAndDecisions": [
         {
-          "violatedCode": "CSFRA",
-          "summaryOfViolation": "Landlord failed to maintain habitable premises due to water leaks, moisture, and mold issues in living room wall"
+          "complaintSummary": "Moisture and mold issues in living room wall due to water leaks near window",
+          "violatedCode": "CSFRA and Civil Code Section 1941.2",
+          "reimbursement": "$7,050.60",
+          "complaintTiming": "January 4, 2023 through July 1, 2023",
+          "respondentHadNotice": "Yes, multiple notices starting October 2021",
+          "evidenceAssessment": "Tenants' testimony and evidence found more credible than landlord's regarding timeline of repairs",
+          "impactAssessment": "Significant reduction in property value and health impacts from humidity/mold condition"
         }
       ],
-      "decision": "granted",
-      "reimbursement": "$7,050.60",
+      "reimbursementJustified": "yes",
       "rentAdjustment": "Yes (40%)",
-      "rationale": {
-        "respondentHadNotice": "Yes, first notified in October 2021",
-        "issueDuration": "Unresolved from January 4, 2023 through July 1, 2023",
-        "evidenceAssessment": "Tenants provided detailed testimony, maintenance requests, and photo evidence showing persistent issues; landlord's evidence was inconsistent",
-        "impactAssessment": "Significant reduction in property value and health impacts from humidity/mold condition"
-      },
       "respondent": "Highland Garden Apartments",
-      "hearingOfficer": "Not specified in document",
-      "city": "Mountain View",
-      "caseNumber": "C22330052",
-      "hearingDate": "August 30, 2023",
-      "filedOnDate": "May 16, 2023",
-      "decisionDate": "October 16, 2023",
-      "source_file": "Escuela_222 2024.01.25 AppealDecision_Redacted.json"
+      "hearingOfficer": "N/A",
+      "hearingDate": "2023-08-30",
+      "filedOnDate": "2023-05-16",
+      "decisionDate": "2023-10-16",
+      "sourceFile": "Escuela_222 2024.01.25 AppealDecision_Redacted.json"
     },
     {
-      "petitionTypeNumber": "1",
-      "petitionerArgument": [
+      "caseInfo": "Appeal: 23240026",
+      "city": "Mountain View",
+      "issueTypeNumber": "1",
+      "argumentsAndDecisions": [
         {
+          "complaintSummary": "Tenant filed for relief from banked rent increase of 5% due to financial hardship",
           "violatedCode": "CSFRA Section 1707(d)",
-          "summaryOfViolation": "Undue tenant hardship due to household income not exceeding 100% of median household income"
+          "reimbursement": "$28.25/month for 10 months and $101.44/month for 3 months",
+          "complaintTiming": "Filed October 9, 2023, within 10 days of effective rent increase date",
+          "respondentHadNotice": "Yes, through Notice of Rent Increase dated August 29, 2023",
+          "evidenceAssessment": "Hearing officer found tenant's household income was less than AMI threshold and qualified for relief",
+          "impactAssessment": "Determined tenant would experience financial hardship if rent increase was imposed"
         }
       ],
-      "decision": "granted",
-      "reimbursement": "$28.25 per month for Dec 2022-Sep 2023; $101.44 per month for Oct-Dec 2023",
+      "reimbursementJustified": "yes",
       "rentAdjustment": "Yes (5%)",
-      "rationale": {
-        "respondentHadNotice": "Yes, through formal rent increase notice dated August 29, 2023",
-        "issueDuration": "Issue addressed within 10 days of effective rent increase date",
-        "evidenceAssessment": "Petitioner demonstrated income below threshold and provided necessary documentation",
-        "impactAssessment": "Tenant would experience hardship if proposed rent increase were imposed"
-      },
       "respondent": "Shoreline Village LLC",
-      "hearingOfficer": "Not specified",
-      "city": "Mountain View",
-      "caseNumber": "23240026",
-      "hearingDate": "November 29, 2023",
-      "filedOnDate": "October 9, 2023",
-      "decisionDate": "January 11, 2024",
-      "source_file": "Central_511 2024.02.27 AppealDecision_Redacted.json"
+      "hearingOfficer": "N/A",
+      "hearingDate": "2023-11-29",
+      "filedOnDate": "2023-10-09",
+      "decisionDate": "2024-01-11",
+      "sourceFile": "Central_511 2024.02.27 AppealDecision_Redacted.json"
     },
     {
-      "petitionTypeNumber": "2",
-      "petitionerArgument": [
+      "caseInfo": "Petitions: C22230050 and C22230051",
+      "city": "Mountain View",
+      "issueTypeNumber": "1",
+      "argumentsAndDecisions": [
         {
-          "violatedCode": "CSFRA and Mountain View Rent Stabilization Program",
-          "summaryOfViolation": "Failure to roll back rent to effective date of Community Stabilization and Fair Rent Act and improper imposition of 2018 Annual General Adjustment"
+          "complaintSummary": "Landlord's predecessor failed to roll back rent and improperly imposed 2018 Annual General Adjustment",
+          "violatedCode": "CSFRA \u00a7 1707(a)",
+          "reimbursement": "$24,347.67",
+          "complaintTiming": "From CSFRA effective date",
+          "respondentHadNotice": "Yes",
+          "evidenceAssessment": "Hearing Officer found sufficient evidence that predecessor failed to roll back rent from $1,850 to $1,700",
+          "impactAssessment": "Tenant was overcharged rent in violation of CSFRA requirements"
         },
         {
-          "violatedCode": "CA Civil Code \u00a7 1941.1",
-          "summaryOfViolation": "Water intrusion and damage to second bedroom making it unusable, and reduction in landscaping/maintenance services"
+          "complaintSummary": "Water intrusion and damage to second bedroom",
+          "violatedCode": "Civil Code \u00a7 1941.1",
+          "reimbursement": "$425 per month reduction",
+          "complaintTiming": "Beginning November 2022",
+          "respondentHadNotice": "Yes, multiple notices including June 2023",
+          "evidenceAssessment": "City inspection report confirmed water damage and needed repairs",
+          "impactAssessment": "Bedroom constituted one-fourth of living space and became unusable"
+        },
+        {
+          "complaintSummary": "Reduction in landscaping services",
+          "violatedCode": "CSFRA housing services requirements",
+          "reimbursement": "$50 per month reduction",
+          "complaintTiming": "Effective September 2022",
+          "respondentHadNotice": "Yes",
+          "evidenceAssessment": "Confirmed reduction in landscaping services",
+          "impactAssessment": "Represented less than 3 percent of maximum legal rent"
         }
       ],
-      "decision": "granted",
-      "reimbursement": "24347.67",
+      "reimbursementJustified": "yes",
       "rentAdjustment": "Yes (25%)",
-      "rationale": {
-        "respondentHadNotice": "Yes, Petitioner notified Respondent multiple times including June 2023",
-        "issueDuration": "Several months of unresolved water intrusion issues",
-        "evidenceAssessment": "City inspection report confirmed water damage and need for repairs, testimony and documentary evidence supported claims",
-        "impactAssessment": "Second bedroom became unusable, affecting approximately one-fourth of livable space"
-      },
-      "respondent": "Mountain View Corporate Center",
-      "hearingOfficer": "Not specified",
-      "city": "Mountain View",
-      "caseNumber": "C22230050 and C22230051",
-      "hearingDate": "October 4, 2023",
-      "filedOnDate": "May 26, 2023",
-      "decisionDate": "February 1, 2024",
-      "source_file": "Rich_939 2024.04.03 AppealDecision_Redacted.json"
+      "respondent": "N/A",
+      "hearingOfficer": "N/A",
+      "hearingDate": "2023-10-04",
+      "filedOnDate": "2023-05-26",
+      "decisionDate": "2024-02-01",
+      "sourceFile": "Rich_939 2024.04.03 AppealDecision_Redacted.json"
     },
     {
-      "petitionTypeNumber": "2",
-      "petitionerArgument": [
+      "caseInfo": "Petition: C22230050 and C22230051",
+      "city": "Mountain View",
+      "issueTypeNumber": "2",
+      "argumentsAndDecisions": [
         {
-          "violatedCode": "Civil Code \u00a71941.1, Health and Safety Code \u00a717920.3",
-          "summaryOfViolation": "Water intrusion and mold in second bedroom making it uninhabitable, with damage to walls, ceiling, and floors requiring use of space heaters and open windows"
+          "complaintSummary": "Water intrusion and mold in second bedroom making it uninhabitable, plus structural damage to walls, ceiling and floor",
+          "violatedCode": "Civil Code \u00a71941.1 and Health and Safety Code \u00a717920.3",
+          "reimbursement": "$24,347.67 total (including rent overcharges, habitability issues, and insurance payment refunds)",
+          "complaintTiming": "Issues began December 2022",
+          "respondentHadNotice": "Yes, tenant notified landlord verbally and through spouse's communications",
+          "evidenceAssessment": "Photos showed substantial damage, inspection confirmed water damage, landlord admitted no repairs made",
+          "impactAssessment": "25% of living space unusable, daughter unable to use bedroom, requiring space heaters and open windows to mitigate moisture"
         },
         {
+          "complaintSummary": "Elimination of gardening/maintenance services without rent reduction",
           "violatedCode": "CSFRA \u00a71710(c)",
-          "summaryOfViolation": "Elimination of gardening services without corresponding rent reduction and failure to maintain common areas"
+          "reimbursement": "$50 per month reduction ordered",
+          "complaintTiming": "Service reduction began September 2022",
+          "respondentHadNotice": "N/A",
+          "evidenceAssessment": "Landlord provided no rebuttal evidence to tenant's testimony",
+          "impactAssessment": "Reduction in housing services beyond normal wear and tear"
         }
       ],
-      "decision": "granted",
-      "reimbursement": "$24,347.67",
-      "rentAdjustment": "Yes (25%)",
-      "rationale": {
-        "respondentHadNotice": "Yes, verbally in November/December 2022 and in writing",
-        "issueDuration": "10+ months since December 2022",
-        "evidenceAssessment": "Photos and inspection report confirmed substantial water damage; no evidence of repair attempts by landlord",
-        "impactAssessment": "25% of living space rendered unusable, teenage daughter unable to use bedroom"
-      },
+      "reimbursementJustified": "yes",
+      "rentAdjustment": "Yes (25% reduction)",
       "respondent": "Mountain View Chinese Christian Church",
       "hearingOfficer": "Renee Glover Chantler",
-      "city": "Mountain View",
-      "caseNumber": "C22230050 and C22230051",
-      "hearingDate": "October 4, 2023",
-      "filedOnDate": "May 26, 2023",
-      "decisionDate": "January 25, 2024",
-      "source_file": "Rich_939 2024.02.01 HODecision_Redacted.json"
+      "hearingDate": "2023-10-04",
+      "filedOnDate": "2023-05-26",
+      "decisionDate": "2024-01-25",
+      "sourceFile": "Rich_939 2024.02.01 HODecision_Redacted.json"
     },
     {
-      "petitionTypeNumber": "2",
-      "petitionerArgument": [
+      "caseInfo": "Appeal: C22230037",
+      "city": "Mountain View",
+      "issueTypeNumber": "2",
+      "argumentsAndDecisions": [
         {
-          "violatedCode": "CA Health & Safety Code Section 114192, Civil Code Section 1941.1, Health & Safety Code Sections 17920.3 and 17920.10",
-          "summaryOfViolation": "Insufficient hot water temperature below required minimum of 120-degrees, affecting tenant's ability to shower and properly use sinks"
+          "complaintSummary": "Insufficient hot water temperature below required minimum",
+          "violatedCode": "California Health & Safety Code Section 114192, Civil Code Section 1941.1, Health & Safety Code Sections 17920.3 and 17920.10",
+          "reimbursement": "$1,100.00",
+          "complaintTiming": "Since November 23, 2022",
+          "respondentHadNotice": "Yes, notice provided on November 23, 2022",
+          "evidenceAssessment": "Water temperature consistently below 120-degree minimum requirement, verified through temperature readings",
+          "impactAssessment": "Significant impact on tenant's use of shower and ability to properly use sinks"
         }
       ],
-      "decision": "granted",
-      "reimbursement": "$1,100.00",
+      "reimbursementJustified": "yes",
       "rentAdjustment": "Yes (10%)",
-      "rationale": {
-        "respondentHadNotice": "Yes, notified on November 23, 2022",
-        "issueDuration": "From November 2022 through hearing date",
-        "evidenceAssessment": "Hearing officer found tenant's water temperature measurements reliable and confirmed violation through witness testimony and evidence",
-        "impactAssessment": "Significant impact on tenant's use of shower and sinks, requiring use of portable heater"
-      },
-      "respondent": "Trungent Enterprises, Inc.",
-      "hearingOfficer": "Not specified",
-      "city": "Mountain View",
-      "caseNumber": "C22230037",
-      "hearingDate": "May 9, 2023",
-      "filedOnDate": "March 2, 2023",
-      "decisionDate": "June 9, 2023",
-      "source_file": "Wright_1725 2023.10.12 AppealDecision_Redacted.json"
+      "respondent": "Shirley Ankenbauer",
+      "hearingOfficer": "N/A",
+      "hearingDate": "2023-05-09",
+      "filedOnDate": "2023-03-02",
+      "decisionDate": "2023-06-09",
+      "sourceFile": "Wright_1725 2023.10.12 AppealDecision_Redacted.json"
     },
     {
-      "petitionTypeNumber": "1",
-      "petitionerArgument": [
+      "issueTypeNumber": "1",
+      "caseInfo": "Petition: C23240032/C23240033",
+      "city": "Mountain View",
+      "argumentsAndDecisions": [
         {
+          "complaintSummary": "Improper rent increase calculation and failure to apply rent concessions",
           "violatedCode": "CSFRA Sections 1706 and 1707",
-          "summaryOfViolation": "Improper calculation of base rent and rent increases, failing to account for rent concessions"
+          "reimbursement": "$7,596.30",
+          "complaintTiming": "November 2022 through October 2023",
+          "respondentHadNotice": "Yes, through rent payments and documentation",
+          "evidenceAssessment": "Hearing officer found respondent incorrectly calculated base rent by not including concession months",
+          "impactAssessment": "Tenant was overcharged due to improper rent calculation"
         }
       ],
-      "decision": "granted",
-      "reimbursement": "7,596.30",
+      "reimbursementJustified": "yes",
       "rentAdjustment": "Yes",
-      "rationale": {
-        "respondentHadNotice": "Yes, via lease terms and rent payment history",
-        "issueDuration": "Nov 2022 - Oct 2023",
-        "evidenceAssessment": "Rent ledger and payment records showed improper base rent calculations",
-        "impactAssessment": "Tenant overcharged due to incorrect base rent calculation"
-      },
-      "respondent": "Ferdi DeLuna",
+      "respondent": "Ferdi DeLuna, The Arbors at Mountain View",
       "hearingOfficer": "E. Alexandra DeLateur",
-      "city": "Mountain View",
-      "caseNumber": "C23240032",
-      "hearingDate": "February 16, 2024",
-      "filedOnDate": "November 22, 2023",
-      "decisionDate": "April 22, 2024",
-      "source_file": "California_2200 2024.04.24 HODecision_Redacted.json"
+      "hearingDate": "2024-02-16",
+      "filedOnDate": "2023-11-22",
+      "decisionDate": "2024-04-22",
+      "sourceFile": "California_2200 2024.04.24 HODecision_Redacted.json"
     },
     {
-      "petitionTypeNumber": "2",
-      "petitionerArgument": [
+      "issueTypeNumber": "2",
+      "caseInfo": "Petition: C23240032/C23240033",
+      "city": "Mountain View",
+      "argumentsAndDecisions": [
         {
-          "violatedCode": "CA Civil Code 1941.1",
-          "summaryOfViolation": "Multiple maintenance issues including mold, peeling paint, broken appliances, and damaged flooring in bathrooms, kitchen and living room"
+          "complaintSummary": "Multiple maintenance and habitability issues including mold, peeling paint, broken appliances and flooring",
+          "violatedCode": "California Civil Code section 1954(a)(2)",
+          "reimbursement": "$2,800.00",
+          "complaintTiming": "August 2023 through March 2024",
+          "respondentHadNotice": "Yes, through maintenance request on August 23, 2023",
+          "evidenceAssessment": "Photos and video evidence supported tenant's claims about conditions",
+          "impactAssessment": "Issues affected habitability and potentially tenant health and safety"
         }
       ],
-      "decision": "granted",
-      "reimbursement": "2,800.00",
+      "reimbursementJustified": "yes",
       "rentAdjustment": "Yes",
-      "rationale": {
-        "respondentHadNotice": "Yes, via maintenance request on August 23, 2023",
-        "issueDuration": "3+ months before petition filing",
-        "evidenceAssessment": "Photos and video evidence supported claims of disrepair",
-        "impactAssessment": "Issues affected habitability and proper use of multiple rooms"
-      },
-      "respondent": "Ferdi DeLuna",
+      "respondent": "Ferdi DeLuna, The Arbors at Mountain View",
       "hearingOfficer": "E. Alexandra DeLateur",
-      "city": "Mountain View",
-      "caseNumber": "C23240033",
-      "hearingDate": "February 16, 2024",
-      "filedOnDate": "November 22, 2023",
-      "decisionDate": "April 22, 2024",
-      "source_file": "California_2200 2024.04.24 HODecision_Redacted.json"
+      "hearingDate": "2024-02-16",
+      "filedOnDate": "2023-11-22",
+      "decisionDate": "2024-04-22",
+      "sourceFile": "California_2200 2024.04.24 HODecision_Redacted.json"
     },
     {
-      "petitionTypeNumber": "2",
-      "petitionerArgument": [
+      "caseInfo": "Petition: C22230037",
+      "city": "Mountain View",
+      "issueTypeNumber": "2",
+      "argumentsAndDecisions": [
         {
+          "complaintSummary": "Lack of adequate hot water temperature below required minimum of 120 degrees",
           "violatedCode": "California Health and Safety Code Section 114192",
-          "summaryOfViolation": "Failure to maintain minimum hot water temperature of 120 degrees, resulting in unusable shower and sinks"
+          "reimbursement": "$1,100 plus ongoing $7.33 per day",
+          "complaintTiming": "Since November 23, 2022",
+          "respondentHadNotice": "Yes, tenant notified landlord on November 17, 2022",
+          "evidenceAssessment": "Both parties agreed water temperature was at least 13 degrees below minimum requirement, documented with multiple temperature readings",
+          "impactAssessment": "Significant impact on tenant's ability to shower and properly use sinks"
         }
       ],
-      "decision": "granted",
-      "reimbursement": "1,100.00",
+      "reimbursementJustified": "yes",
       "rentAdjustment": "Yes (10%)",
-      "rationale": {
-        "respondentHadNotice": "Yes, notified on November 17, 2022",
-        "issueDuration": "Ongoing since November 23, 2022 through hearing date",
-        "evidenceAssessment": "Both parties agreed water temperature was at least 13 degrees below minimum requirement, multiple temperature readings provided as evidence",
-        "impactAssessment": "Significant impact on tenant's ability to use shower and sinks properly"
-      },
       "respondent": "Timpson Enterprises, Inc.",
       "hearingOfficer": "Duf Sundheim",
-      "city": "Mountain View",
-      "caseNumber": "C22230037",
-      "hearingDate": "May 9, 2023",
-      "filedOnDate": "March 3, 2023",
-      "decisionDate": "June 9, 2023",
-      "source_file": "Wright_1725 2023.06.09 HODecision_Redacted.json"
+      "hearingDate": "2023-05-09",
+      "filedOnDate": "2023-03-03",
+      "decisionDate": "2023-06-09",
+      "sourceFile": "Wright_1725 2023.06.09 HODecision_Redacted.json"
     },
     {
-      "petitionTypeNumber": "1",
-      "petitionerArgument": [
+      "caseInfo": "Petition: C22230028",
+      "city": "Mountain View",
+      "issueTypeNumber": "1",
+      "argumentsAndDecisions": [
         {
-          "violatedCode": "CSFRA Sections 1706 and 1707",
-          "summaryOfViolation": "Landlord charged rent above lawful Base Rent and failed to properly refund overcharges according to schedule"
+          "complaintSummary": "Landlord failed to properly refund rent overcharges and security deposit, continued charging above base rent",
+          "violatedCode": "CSFRA Sections 1706(a)(b) and 1707(f)",
+          "reimbursement": "$6,072.11 plus additional penalties ($177.11 for delayed refund, $50.31 for utility overcharges, $8.33 for security deposit delay)",
+          "complaintTiming": "February 2022 through April 2023",
+          "respondentHadNotice": "Yes, through original petition and compliance notices",
+          "evidenceAssessment": "Documentation showed continued overcharging above base rent and delayed refunds",
+          "impactAssessment": "Tenants were overcharged for 9 months and deprived of rightful refunds"
         }
       ],
-      "decision": "granted",
-      "reimbursement": "$256.35",
-      "rentAdjustment": "No",
-      "rationale": {
-        "respondentHadNotice": "Yes, through original Decision in May 2023",
-        "issueDuration": "7 months of withheld refunds, 9 months of overcharges",
-        "evidenceAssessment": "Documentation showed respondent failed to follow refund schedule and continued charging above Base Rent",
-        "impactAssessment": "Tenants deprived of rightful refunds and overcharged for extended period"
-      },
+      "reimbursementJustified": "yes",
+      "rentAdjustment": "Yes (5%)",
       "respondent": "Americana I, LLC",
       "hearingOfficer": "Barbara M. Anscher",
-      "city": "Mountain View",
-      "caseNumber": "C22230028",
-      "hearingDate": "January 29, 2024",
-      "filedOnDate": "November 28, 2023",
-      "decisionDate": "March 4, 2024",
-      "source_file": "Continental_707 2024.03.04 HOCPDecision_Redacted.json"
+      "hearingDate": "2024-01-29",
+      "filedOnDate": "2023-11-28",
+      "decisionDate": "2024-03-04",
+      "sourceFile": "Continental_707 2024.03.04 HOCPDecision_Redacted.json"
     },
     {
-      "petitionTypeNumber": "2",
-      "petitionerArgument": [
+      "caseInfo": "Petition: C23240002",
+      "city": "Mountain View",
+      "issueTypeNumber": "2",
+      "argumentsAndDecisions": [
         {
-          "violatedCode": "Cal. Code Regs. Tit. 25, \u00a7 34",
-          "summaryOfViolation": "Landlord failed to maintain adequate heating facilities and fix malfunctioning gas heater"
-        },
-        {
-          "violatedCode": "Civil Code Sections 1941.1",
-          "summaryOfViolation": "Failure to maintain premises in habitable condition due to gas leak and heating issues"
+          "complaintSummary": "Gas heater malfunction and landlord's failure to repair, causing tenant to rely on electric heater",
+          "violatedCode": "Cal. Code Regs. Tit. 25, \u00a7 34 and CSFRA Section 1710(b)(1)",
+          "reimbursement": "$1,174.73 ($77.00 for electric heater + $1,097.73 for rent reductions)",
+          "complaintTiming": "April 29, 2021 through November 30, 2023",
+          "respondentHadNotice": "Yes, multiple notices including texts on April 29, 2021 and April 22, 2023",
+          "evidenceAssessment": "PG&E evaluation found no dangerous gas levels but confirmed gas leak. Landlord failed to fix despite promises and notices.",
+          "impactAssessment": "Tenant had to purchase electric heater and was without proper heating services for extended period"
         }
       ],
-      "decision": "granted",
-      "reimbursement": "1174.73",
+      "reimbursementJustified": "yes",
       "rentAdjustment": "Yes (4-5%)",
-      "rationale": {
-        "respondentHadNotice": "Yes, multiple notices from April 2021 through April 2023",
-        "issueDuration": "Over 2 years (April 2021 - December 2023)",
-        "evidenceAssessment": "PG&E verification of gas leak, tenant documentation of communications and purchase of electric heater",
-        "impactAssessment": "Significant impact on habitability requiring tenant to purchase alternative heating source"
-      },
-      "respondent": "Cervantes LLC, Francisco Cervantes",
+      "respondent": "Cervantes LLC, Francisco Cervantes, Owner",
       "hearingOfficer": "Duf Sundheim",
-      "city": "Mountain View",
-      "caseNumber": "C23240002",
-      "hearingDate": "December 18, 2023",
-      "filedOnDate": "October 10, 2023",
-      "decisionDate": "March 25, 2024",
-      "source_file": "Church_31 2024.03.25 HODecision_Redacted.json"
+      "hearingDate": "2023-12-18",
+      "filedOnDate": "2023-10-10",
+      "decisionDate": "2024-03-25",
+      "sourceFile": "Church_31 2024.03.25 HODecision_Redacted.json"
     },
     {
-      "petitionTypeNumber": "2",
-      "petitionerArgument": [
+      "caseInfo": "Petition: 22230012",
+      "city": "Mountain View",
+      "issueTypeNumber": "2",
+      "argumentsAndDecisions": [
         {
+          "complaintSummary": "Multiple habitability issues including gaps/cracks allowing vermin entry, kitchen repairs needed, door and window problems",
           "violatedCode": "Mountain View Municipal Code Article XVII, Section 1700",
-          "summaryOfViolation": "Maintenance and habitability issues including gaps allowing vermin entry, kitchen defects, door problems, and structural issues"
+          "reimbursement": "$46,834.50 rent refund plus $310.50 monthly rent reduction",
+          "complaintTiming": "Prior to October 19, 2022 (petition filing date)",
+          "respondentHadNotice": "Yes, through text messages and direct communication",
+          "evidenceAssessment": "City inspections verified completion of repairs and compliance",
+          "impactAssessment": "Issues affected habitability through vermin entry and cold air infiltration"
         }
       ],
-      "decision": "granted",
-      "reimbursement": "$46,834.50",
-      "rentAdjustment": "Yes ($310.50 monthly reduction)",
-      "rationale": {
-        "respondentHadNotice": "Yes, documented through multiple inspections and communications",
-        "issueDuration": "Multiple months spanning 2022-2023",
-        "evidenceAssessment": "City inspections verified repairs were completed, with photographic evidence and permits confirming work",
-        "impactAssessment": "Issues affected habitability including vermin entry and structural integrity"
-      },
+      "reimbursementJustified": "yes",
+      "rentAdjustment": "Yes ($310.50 monthly reduction until repairs completed)",
       "respondent": "Maria Guadalupe Roque",
       "hearingOfficer": "Derek W. Chantler",
-      "city": "Mountain View",
-      "caseNumber": "22230012",
-      "hearingDate": "November 14, 2023",
-      "filedOnDate": "October 19, 2022",
-      "decisionDate": "January 12, 2024",
-      "source_file": "Higdon_1826 2024.01.29 HOCPDecision_Redacted.json"
+      "hearingDate": "2023-11-14",
+      "filedOnDate": "2022-10-19",
+      "decisionDate": "2024-01-12",
+      "sourceFile": "Higdon_1826 2024.01.29 HOCPDecision_Redacted.json"
     },
     {
-      "petitionTypeNumber": "2",
-      "petitionerArgument": [
+      "caseInfo": "Petition: 22230007",
+      "city": "Mountain View",
+      "issueTypeNumber": "4",
+      "argumentsAndDecisions": [
         {
-          "violatedCode": "CSFRA Sec. 1707(d) and Chapter 7, Section C",
-          "summaryOfViolation": "Undue tenant hardship due to rent increase exceeding 50% of income for senior tenant"
+          "complaintSummary": "Landlord failed to register property with Rent Stabilization Program and improperly implemented rent increases",
+          "violatedCode": "CSFRA Sec. 1707(f)(1), Reg. Chap. 11(B)(1) and 11(F)",
+          "reimbursement": "Rent increase amount between Sept 1-Oct 9, 2022 plus banked increases exceeding 5% AGA through Aug 31, 2023",
+          "complaintTiming": "Filed September 15, 2022",
+          "respondentHadNotice": "Yes, landlord was notified multiple times in prior years including September 30, 2022",
+          "evidenceAssessment": "City records confirmed property was not registered until October 10, 2022",
+          "impactAssessment": "Tenant required to pay over 50% of income on rent, qualifying as undue hardship"
         }
       ],
-      "decision": "granted",
-      "reimbursement": "Rent credit for increases paid between Sept 1-Oct 9, 2022",
-      "rentAdjustment": "Yes (reduction of banked increases beyond 5% AGA)",
-      "rationale": {
-        "respondentHadNotice": "Not applicable",
-        "issueDuration": "Not applicable",
-        "evidenceAssessment": "Tenant proved income significantly below AMI level and senior status requiring >50% income for rent",
-        "impactAssessment": "Hardship determined to continue for foreseeable future due to fixed income status"
-      },
-      "respondent": "Del Medio Manor, LLP (Calson Property Management)",
+      "reimbursementJustified": "yes",
+      "rentAdjustment": "Yes (9.9% reduction)",
+      "respondent": "Gina Frye, Lydia Sanabria (Calson Property Management)",
       "hearingOfficer": "Martin Eichner",
-      "city": "Mountain View",
-      "caseNumber": "22230007",
-      "hearingDate": "October 7, 2022",
-      "filedOnDate": "September 15, 2022",
-      "decisionDate": "November 16, 2022",
-      "source_file": "DelMedio_141 2022.11.16 HODecision_Redacted.json"
+      "hearingDate": "2022-10-07",
+      "filedOnDate": "2022-09-15",
+      "decisionDate": "2022-11-16",
+      "sourceFile": "DelMedio_141 2022.11.16 HODecision_Redacted.json"
     },
     {
-      "petitionTypeNumber": "2",
-      "petitionerArgument": [
+      "caseInfo": "Petition: C22230030",
+      "city": "Mountain View",
+      "issueTypeNumber": "2",
+      "argumentsAndDecisions": [
         {
-          "violatedCode": "Civil Code \u00a71941.1",
-          "summaryOfViolation": "Water leaks in living room and garage causing mold growth and floor damage"
-        },
-        {
-          "violatedCode": "Health and Safety Code \u00a717920.3",
-          "summaryOfViolation": "Dampness and mold in unit endangering health and safety of occupants"
+          "complaintSummary": "Water leaks causing mold in garage and damage to living room wall/floor",
+          "violatedCode": "Civil Code \u00a71941.1 and Health and Safety Code \u00a717920.3",
+          "reimbursement": "$1,293.00",
+          "complaintTiming": "December 12, 2022 to February 28, 2023",
+          "respondentHadNotice": "Yes, written notice provided December 12 and 17, 2022",
+          "evidenceAssessment": "Photos showed significant mold growth in garage and damage to living room; landlord failed to test for mold despite visual evidence",
+          "impactAssessment": "Conditions endangered health of elderly resident, prevented full use of garage, and caused water damage to living room"
         }
       ],
-      "decision": "granted",
-      "reimbursement": "1293.00",
+      "reimbursementJustified": "yes",
       "rentAdjustment": "Yes (25%)",
-      "rationale": {
-        "respondentHadNotice": "Yes, written notice given December 12 and 17, 2022",
-        "issueDuration": "December 12, 2022 to February 28, 2023 (78 days)",
-        "evidenceAssessment": "Photographs showed significant mold growth and water damage; landlord failed to conduct proper testing or repairs",
-        "impactAssessment": "Severe risk to tenant's elderly mother's health due to mold conditions"
-      },
       "respondent": "TFT Investments",
       "hearingOfficer": "Renee Glover Chantler",
-      "city": "Mountain View",
-      "caseNumber": "C22230030",
-      "hearingDate": "May 3, 2023",
-      "filedOnDate": "February 13, 2023",
-      "decisionDate": "June 30, 2023",
-      "source_file": "Montecito_1260 2023.06.30 HODecision_Redacted.json"
+      "hearingDate": "2023-05-03",
+      "filedOnDate": "2023-02-13",
+      "decisionDate": "2023-06-30",
+      "sourceFile": "Montecito_1260 2023.06.30 HODecision_Redacted.json"
     },
     {
-      "petitionTypeNumber": "2",
-      "petitionerArgument": [
+      "caseInfo": "Petition: C22230052",
+      "city": "Mountain View",
+      "issueTypeNumber": "2",
+      "argumentsAndDecisions": [
         {
-          "violatedCode": "CA Civil Code \u00a71941.1, CA H&SC \u00a717920.3",
-          "summaryOfViolation": "Failure to maintain premises due to extensive mold growth and moisture issues in wall causing unhealthy living conditions"
+          "complaintSummary": "Failure to address persistent mold growth and moisture issues in wall near living room window",
+          "violatedCode": "CA Health & Safety Code Section 17920.3(a)(11), Civil Code Section 1941.1",
+          "reimbursement": "$7,050.60",
+          "complaintTiming": "January 3, 2023 through July 1, 2023",
+          "respondentHadNotice": "Yes, multiple work orders filed and maintenance visits documented",
+          "evidenceAssessment": "Landlord failed to provide evidence of repairs, had inconsistent records, and could not produce photos showing completed work",
+          "impactAssessment": "Severe health impact - AT&T worker required specialized mask, neighbor wouldn't allow child to enter premises, tenants experienced physical symptoms"
         }
       ],
-      "decision": "granted",
-      "reimbursement": "7050.60",
+      "reimbursementJustified": "yes",
       "rentAdjustment": "Yes (40%)",
-      "rationale": {
-        "respondentHadNotice": "Yes, first notified in October 2021 and multiple times thereafter",
-        "issueDuration": "Issue persisted from January 2023 through July 2023 (180 days)",
-        "evidenceAssessment": "Landlord failed to provide evidence of completed repairs, had inconsistent records, and AT&T worker incident confirmed serious mold issue requiring specialized mask",
-        "impactAssessment": "Significant negative health impacts on tenants, requiring specialized masks and causing respiratory issues"
-      },
       "respondent": "Highland Garden Apartments",
       "hearingOfficer": "Duf Sundheim",
-      "city": "Mountain View",
-      "caseNumber": "C22230052",
-      "hearingDate": "August 30, 2023",
-      "filedOnDate": "May 16, 2023",
-      "decisionDate": "October 10, 2023",
-      "source_file": "Escuela_222 2023.10.16 HODecision_Redacted.json"
+      "hearingDate": "2023-08-30",
+      "filedOnDate": "2023-05-16",
+      "decisionDate": "2023-10-10",
+      "sourceFile": "Escuela_222 2023.10.16 HODecision_Redacted.json"
     },
     {
-      "petitionTypeNumber": "2",
-      "petitionerArgument": [
+      "caseInfo": "Petition B - C22230046",
+      "city": "Mountain View",
+      "issueTypeNumber": "2",
+      "argumentsAndDecisions": [
         {
-          "violatedCode": "CA Civil Code \u00a7 1941.1(1)",
-          "summaryOfViolation": "Single pane windows failed to provide effective weatherproofing and protection against cold air"
+          "complaintSummary": "Inadequate heating system causing freezing temperatures in bedrooms and bathrooms",
+          "violatedCode": "California Civil Code Section 1941.1(4)",
+          "reimbursement": "$2,875.50",
+          "complaintTiming": "December 22, 2022 to March 22, 2023 (90 days)",
+          "respondentHadNotice": "Yes, through multiple written complaints starting December 19, 2022",
+          "evidenceAssessment": "Tenant's testimony about freezing temperatures was uncontradicted and maintenance staff's repeated visits without resolution supported the claim",
+          "impactAssessment": "Freezing temperatures represented a major discomfort and serious loss of tenancy benefits"
         },
         {
-          "violatedCode": "CA Civil Code \u00a7 1941.1(4)",
-          "summaryOfViolation": "Heating system failed to provide adequate heat in bedrooms and bathrooms, leading to freezing temperatures"
+          "complaintSummary": "Single pane windows providing inadequate weather protection",
+          "violatedCode": "California Civil Code Section 1941.1(1)",
+          "reimbursement": "No reimbursement awarded",
+          "complaintTiming": "November 13, 2022 to February 10, 2023",
+          "respondentHadNotice": "No - Tenant failed to properly notify landlord about window issues",
+          "evidenceAssessment": "Tenant didn't prove landlord was aware of habitability violation regarding windows",
+          "impactAssessment": "Contributed to cold temperatures but separate from heating system issue"
         }
       ],
-      "decision": "granted",
-      "reimbursement": "2875.50",
+      "reimbursementJustified": "yes",
       "rentAdjustment": "Yes (30%)",
-      "rationale": {
-        "respondentHadNotice": "Written notice provided on December 19, 2022 with multiple follow-up complaints",
-        "issueDuration": "90 days (December 22, 2022 to March 22, 2023)",
-        "evidenceAssessment": "Tenant provided credible testimony about freezing temperatures; landlord failed to prove tenant was responsible for heating issues",
-        "impactAssessment": "Major discomfort and serious loss of tenancy benefits due to freezing temperatures in bedrooms and bathrooms"
-      },
       "respondent": "Solano Apartments LP",
       "hearingOfficer": "Martin Eichner",
-      "city": "Mountain View",
-      "caseNumber": "C22230046",
-      "hearingDate": "July 12, 2023",
-      "filedOnDate": "April 21, 2023",
-      "decisionDate": "August 31, 2023",
-      "source_file": "Crestview_1050 2023.08.31 HODecision_Redacted.json"
+      "hearingDate": "2023-07-12",
+      "filedOnDate": "2023-04-21",
+      "decisionDate": "2023-08-31",
+      "sourceFile": "Crestview_1050 2023.08.31 HODecision_Redacted.json"
     },
     {
-      "petitionTypeNumber": "1",
-      "petitionerArgument": [
+      "caseInfo": "Petition: 22230003",
+      "city": "Mountain View",
+      "issueTypeNumber": "4",
+      "argumentsAndDecisions": [
         {
-          "violatedCode": "CSFRA Sec. 1707(d) and Chapter 7, Section C",
-          "summaryOfViolation": "Tenant claims undue hardship due to income being below 120% AMI for household size, making rent increase burdensome"
+          "complaintSummary": "Landlord failed to comply with CSFRA registration requirements while implementing rent increases",
+          "violatedCode": "CSFRA Section 1707(f)(1) and CSFRA Reg. Chap. 11(B)(1) and 11(F)",
+          "reimbursement": "Reduction of entire rent increase from Sept 1-Oct 9, 2022",
+          "complaintTiming": "August 5, 2022",
+          "respondentHadNotice": "Yes, through multiple notices from City staff",
+          "evidenceAssessment": "Evidence demonstrated landlord was non-compliant with registration requirements until October 10, 2022",
+          "impactAssessment": "Tenant qualified for undue hardship relief due to income being significantly below 120% AMI"
         }
       ],
-      "decision": "granted",
-      "reimbursement": "Credit for excess rent paid since September 1, 2022",
-      "rentAdjustment": "Yes (reduction to 5% AGA only)",
-      "rationale": {
-        "respondentHadNotice": "Yes, through formal petition process",
-        "issueDuration": "Ongoing financial hardship since 2021",
-        "evidenceAssessment": "Tenant provided credible testimony and documentation of income below AMI threshold; landlord did not dispute evidence",
-        "impactAssessment": "Tenant's income significantly below 120% AMI threshold, with continued hardship expected due to reduced child support"
-      },
+      "reimbursementJustified": "yes",
+      "rentAdjustment": "Yes (9.9% reduction)",
       "respondent": "Del Medio Manor, LLP and Calson Property Management",
       "hearingOfficer": "Martin Eichner",
-      "city": "Mountain View",
-      "caseNumber": "22230003",
-      "hearingDate": "October 6, 2022",
-      "filedOnDate": "August 5, 2022",
-      "decisionDate": "November 8, 2022",
-      "source_file": "Del Medio_141 2022.11.08 HODecision_Redacted.json"
+      "hearingDate": "2022-10-06",
+      "filedOnDate": "2022-08-05",
+      "decisionDate": "2022-11-08",
+      "sourceFile": "Del Medio_141 2022.11.08 HODecision_Redacted.json"
     },
     {
-      "petitionTypeNumber": "1",
-      "petitionerArgument": [
+      "caseInfo": "Petition: C23240026",
+      "city": "Mountain View",
+      "issueTypeNumber": "1",
+      "argumentsAndDecisions": [
         {
-          "violatedCode": "CSFRA Sec. 1707(d) and Chapter 7",
-          "summaryOfViolation": "Improper banked rent increase of 5% causing undue hardship due to tenant's limited income"
+          "complaintSummary": "Tenant seeks relief from banked 5% AGA rent increase due to financial hardship",
+          "violatedCode": "CSFRA Chapter 7(C)(2)(a)",
+          "reimbursement": "$586.82",
+          "complaintTiming": "December 2022 - December 2023",
+          "respondentHadNotice": "Yes, through formal rent increase notice",
+          "evidenceAssessment": "Petitioner proved income below 100% of median household income for Santa Clara County",
+          "impactAssessment": "Hearing officer found undue hardship would result from banked rent increase due to limited income"
         }
       ],
-      "decision": "granted",
-      "reimbursement": "$586.82",
+      "reimbursementJustified": "yes",
       "rentAdjustment": "Yes (5%)",
-      "rationale": {
-        "respondentHadNotice": "Yes, through proper petition filing",
-        "issueDuration": "Affected rent calculations from December 2022 through December 2023",
-        "evidenceAssessment": "Petitioner proved income below 100% of median household income, qualifying for hardship relief",
-        "impactAssessment": "Rent increase would create undue financial hardship given petitioner's limited income"
-      },
       "respondent": "Shoreline Village LLC rep. by Steve Welter",
       "hearingOfficer": "E. Alexandra DeLateur",
-      "city": "Mountain View",
-      "caseNumber": "C23240026",
-      "hearingDate": "November 29, 2023",
-      "filedOnDate": "October 9, 2023",
-      "decisionDate": "January 11, 2024",
-      "source_file": "Central_511 2024.01.11 HODecision_Redacted.json"
+      "hearingDate": "2023-11-29",
+      "filedOnDate": "2023-10-09",
+      "decisionDate": "2024-01-11",
+      "sourceFile": "Central_511 2024.01.11 HODecision_Redacted.json"
     },
     {
-      "petitionTypeNumber": "1",
-      "petitionerArgument": [
+      "caseInfo": "Petition: 22230002",
+      "city": "Mountain View",
+      "issueTypeNumber": "1",
+      "argumentsAndDecisions": [
         {
+          "complaintSummary": "Undue hardship due to rent increase exceeding tenant's ability to pay based on income",
           "violatedCode": "CSFRA Sec. 1707(d) and Chapter 7, Section C",
-          "summaryOfViolation": "Undue tenant hardship due to inadequate household income below AMI threshold, making banked rent increases unaffordable"
+          "reimbursement": "Full refund of rent increase from Sept 1-Oct 9, 2022; reduction of banked increases exceeding 5% AGA through Aug 31, 2023",
+          "complaintTiming": "Filed August 5, 2022",
+          "respondentHadNotice": "Yes, through formal petition process",
+          "evidenceAssessment": "Tenant provided credible evidence of income significantly below AMI threshold of $117,950",
+          "impactAssessment": "Tenant's income proven to be significantly below 100% of median household income, demonstrating undue hardship"
+        },
+        {
+          "complaintSummary": "Landlord failed to register property with rent stabilization program",
+          "violatedCode": "CSFRA Reg. Chap. 11(B)(1) and 11(F)",
+          "reimbursement": "No rent increases permitted during non-compliance period (before Oct 10, 2022)",
+          "complaintTiming": "Prior to October 10, 2022",
+          "respondentHadNotice": "Yes, documented in HO Ex. 7, 8, and 9",
+          "evidenceAssessment": "City records confirmed non-compliance with registration requirements",
+          "impactAssessment": "Registration non-compliance prevented landlord from implementing any rent increases"
         }
       ],
-      "decision": "granted",
-      "reimbursement": "Full refund of rent increase paid from Sept 1-Oct 9, 2022",
-      "rentAdjustment": "Yes (4.9%)",
-      "rationale": {
-        "respondentHadNotice": "Yes, petition filed before increase effective date",
-        "issueDuration": "Not applicable",
-        "evidenceAssessment": "Tenant proved income significantly below 100% AMI threshold, landlord did not dispute income evidence",
-        "impactAssessment": "Tenant's income significantly below hardship threshold, hardship expected to continue"
-      },
+      "reimbursementJustified": "yes",
+      "rentAdjustment": "Yes (9.9% reduction)",
       "respondent": "Del Medio Manor, LLP and Calson Property Management",
       "hearingOfficer": "Martin Eichner",
-      "city": "Mountain View",
-      "caseNumber": "22230002",
-      "hearingDate": "October 6, 2022",
-      "filedOnDate": "August 5, 2022",
-      "decisionDate": "November 4, 2022",
-      "source_file": "Del Medio_141 2022.11.04 HODecision_Redacted.json"
+      "hearingDate": "2022-10-06",
+      "filedOnDate": "2022-08-05",
+      "decisionDate": "2022-11-04",
+      "sourceFile": "Del Medio_141 2022.11.04 HODecision_Redacted.json"
     },
     {
-      "petitionTypeNumber": "2",
-      "petitionerArgument": [
+      "caseInfo": "Petition: 2023-0001 and 2023-0002",
+      "city": "East Palo Alto",
+      "issueTypeNumber": "3",
+      "argumentsAndDecisions": [
         {
-          "violatedCode": "Section 13 of City's Rent Stabilization Ordinance",
-          "summaryOfViolation": "Cracked and uneven outdoor patio affecting storage use and maintenance/services reduction"
-        },
-        {
-          "violatedCode": "CA Civil Code \u00a7 1941.1",
-          "summaryOfViolation": "Bathtub in need of repair with drain issues"
+          "complaintSummary": "Cracked and uneven outdoor patio affecting tenant's use of backyard space",
+          "violatedCode": "Section 13 of City's Rent Stabilization and Just Cause for Eviction Ordinance",
+          "reimbursement": "$398.76",
+          "complaintTiming": "July 2023 to present",
+          "respondentHadNotice": "Yes, notified in July and August 2023",
+          "evidenceAssessment": "Hearing Officer's inspection confirmed cracked/uneven patio with no visual evidence of claimed repairs",
+          "impactAssessment": "Conditions more than minor maintenance deficiency but not a habitability violation"
         }
       ],
-      "decision": "granted",
-      "reimbursement": "$396.76",
+      "reimbursementJustified": "yes",
       "rentAdjustment": "Yes (5%)",
-      "rationale": {
-        "respondentHadNotice": "Yes, notified in July and August 2023",
-        "issueDuration": "Issue with patio existing since at least July 2023",
-        "evidenceAssessment": "No visual evidence of repairs despite invoice claiming August 2023 repair",
-        "impactAssessment": "Condition exceeds minor maintenance deficiency but does not constitute habitability violation"
-      },
       "respondent": "Woodland Park Communities",
       "hearingOfficer": "Michael H. Roush",
-      "city": "East Palo Alto",
-      "caseNumber": "2023-0001 and 2023-0002",
-      "hearingDate": "May 17, 2024",
-      "filedOnDate": "November 3, 2023",
-      "decisionDate": "May 22, 2024",
-      "source_file": "Decision Franklin v WPC 20230001 and 20230002.json"
+      "hearingDate": "2024-05-17",
+      "filedOnDate": "2023-11-03",
+      "decisionDate": "2024-05-22",
+      "sourceFile": "Decision Franklin v WPC 20230001 and 20230002.json"
     },
     {
-      "petitionTypeNumber": "3",
-      "petitionerArgument": [
+      "caseInfo": "Petition: C22230029",
+      "city": "Mountain View",
+      "issueTypeNumber": "4",
+      "argumentsAndDecisions": [
         {
-          "violatedCode": "CSFRA \u00a7 1707(f)",
-          "summaryOfViolation": "Landlord's failure to register rental unit with Rent Stabilization Program prior to imposing utility charges and rent increases"
+          "complaintSummary": "Landlord's failure to register unit and unlawful imposition of utility charges",
+          "violatedCode": "CSFRA \u00a71707(f), \u00a71702, \u00a71706(a)",
+          "reimbursement": "$5,600.85",
+          "complaintTiming": "June 2019 - April 2023",
+          "respondentHadNotice": "Yes, tenant made complaints about utility charges",
+          "evidenceAssessment": "Hearing officer found landlord failed to properly register unit and unlawfully imposed utility charges",
+          "impactAssessment": "Tenant was charged above maximum lawful rent and forced to pay utilities that should have been included"
         }
       ],
-      "decision": "granted",
-      "reimbursement": "$5,600.85",
+      "reimbursementJustified": "yes",
       "rentAdjustment": "Yes",
-      "rationale": {
-        "respondentHadNotice": "Yes, landlord was aware of registration requirement through city website",
-        "issueDuration": "Unresolved from June 2019 to March 31, 2023",
-        "evidenceAssessment": "Found landlord failed to register unit and improperly imposed utility charges without authorization",
-        "impactAssessment": "Tenant was charged unlawful rent increases and utility costs above maximum legal rent"
-      },
       "respondent": "Shufang Chen & William Pan",
       "hearingOfficer": "Renee Glover Chandler",
-      "city": "Mountain View",
-      "caseNumber": "C22230029",
-      "hearingDate": "May 17, 2023",
-      "filedOnDate": "March 8, 2023",
-      "decisionDate": "June 30, 2023",
-      "source_file": "Villa_1643 2023.06.30 HODecision_Redacted.json"
+      "hearingDate": "2023-05-17",
+      "filedOnDate": "2023-03-08",
+      "decisionDate": "2023-06-30",
+      "sourceFile": "Villa_1643 2023.06.30 HODecision_Redacted.json"
     },
     {
-      "petitionTypeNumber": "2",
-      "petitionerArgument": [
+      "caseInfo": "Petition: 22230012",
+      "city": "Mountain View",
+      "issueTypeNumber": "2",
+      "argumentsAndDecisions": [
         {
+          "complaintSummary": "Water leak in basement causing severe odor and flooding",
           "violatedCode": "CSFRA \u00a71710(b)",
-          "summaryOfViolation": "Basement flooding and sewage leak causing uninhabitable conditions and strong smells"
+          "reimbursement": "$2,484.00",
+          "complaintTiming": "April 2022 - June 2022",
+          "respondentHadNotice": "Yes, reported in April 2022",
+          "evidenceAssessment": "Evidence showed issue persisted longer than landlord claimed based on CLESEPA letter from 2021",
+          "impactAssessment": "Tenants unable to use kitchen, forced to wash dishes outside, visitors reluctant to enter due to smell"
         },
         {
-          "violatedCode": "Civil Code \u00a71941.1",
-          "summaryOfViolation": "Multiple habitability issues including broken windows, pest infestation, faulty water heater, and structural cracks"
+          "complaintSummary": "Broken windows and structural gaps allowing pest entry",
+          "violatedCode": "CSFRA \u00a71710(b)",
+          "reimbursement": "$1,863.00",
+          "complaintTiming": "October 2022 - February 2023",
+          "respondentHadNotice": "Yes, documented in City inspection reports",
+          "evidenceAssessment": "City inspection reports confirmed issues",
+          "impactAssessment": "Affected weatherproofing and pest control of unit"
+        },
+        {
+          "complaintSummary": "Severe pest infestation (cockroaches and rats)",
+          "violatedCode": "CSFRA \u00a71710(b)",
+          "reimbursement": "$14,593.50",
+          "complaintTiming": "December 2020 - November 2022 (23.5 months)",
+          "respondentHadNotice": "Yes, reported since December 2020",
+          "evidenceAssessment": "Monthly pest control was insufficient to resolve the issue",
+          "impactAssessment": "Severe habitability violation with long-term persistence"
+        },
+        {
+          "complaintSummary": "Lack of hot water/faulty water heater",
+          "violatedCode": "CSFRA \u00a71710(b), \u00a71702(b)",
+          "reimbursement": "$27,894.00",
+          "complaintTiming": "December 2016 - October 2020 (46 months)",
+          "respondentHadNotice": "Yes, reported in 2016",
+          "evidenceAssessment": "Confirmed lack of hot water for extended period",
+          "impactAssessment": "Major violation of habitability affecting basic living conditions"
         }
       ],
-      "decision": "granted",
-      "reimbursement": "46834.50",
+      "reimbursementJustified": "yes",
       "rentAdjustment": "Yes (10%)",
-      "rationale": {
-        "respondentHadNotice": "Yes, multiple issues reported between 2016-2022",
-        "issueDuration": "Various issues lasting from 3 months to over 46 months",
-        "evidenceAssessment": "City inspection reports and witness testimony confirmed multiple habitability violations",
-        "impactAssessment": "Severe impact on daily living - unable to use kitchen, forced to wash dishes outside, pest infestation, no hot water"
-      },
       "respondent": "Maria Guadalupe Roque",
       "hearingOfficer": "Derek W. Chantler",
-      "city": "Mountain View",
-      "caseNumber": "22230012",
-      "hearingDate": "December 1, 2022",
-      "filedOnDate": "October 19, 2022",
-      "decisionDate": "February 23, 2023",
-      "source_file": "Higdon_1826 2023.02.23 HODecision_Redacted.json"
+      "hearingDate": "2022-12-01",
+      "filedOnDate": "2022-10-19",
+      "decisionDate": "2023-02-23",
+      "sourceFile": "Higdon_1826 2023.02.23 HODecision_Redacted.json"
     },
     {
-      "petitionTypeNumber": "1",
-      "petitionerArgument": [
+      "caseInfo": "Petition: T22230009",
+      "city": "Mountain View",
+      "issueTypeNumber": "4",
+      "argumentsAndDecisions": [
         {
-          "violatedCode": "CSFRA Sec. 1707(d)",
-          "summaryOfViolation": "Challenge to banked rent increases from 2020-2021 due to senior status and limited income creating undue hardship"
+          "complaintSummary": "Tenant seeks relief from banked rent increases due to senior status and limited income",
+          "violatedCode": "CSFRA Sec. 1707(d) and Chapter 7(C)(2)(c)",
+          "reimbursement": "$199.50 plus December 2022 overpayments",
+          "complaintTiming": "Filed September 29, 2022",
+          "respondentHadNotice": "Yes, through proper petition filing process",
+          "evidenceAssessment": "Petitioner proved by preponderance of evidence senior status and income below 120% AMI threshold",
+          "impactAssessment": "Undue hardship would result from banked rent increases due to senior status and limited income"
         }
       ],
-      "decision": "granted",
-      "reimbursement": "$199.50 plus December 2022 overpayments",
+      "reimbursementJustified": "yes",
       "rentAdjustment": "Yes (5%)",
-      "rationale": {
-        "respondentHadNotice": "Yes, petition filed within 10 days of rent increase notice",
-        "issueDuration": "Not applicable",
-        "evidenceAssessment": "Petitioner proved senior status (65+ years) and income below 120% AMI through documentation",
-        "impactAssessment": "Undue hardship established due to senior status and limited income"
-      },
-      "respondent": "Avery Shadows L/P",
+      "respondent": "Avery Shadows I, LP",
       "hearingOfficer": "E. Alexandra DeLateur",
-      "city": "Mountain View",
-      "caseNumber": "22230009",
-      "hearingDate": "November 16, 2022",
-      "filedOnDate": "September 29, 2022",
-      "decisionDate": "December 8, 2022",
-      "source_file": "NShoreline_750 2022.12.08 HODecision_Redacted.json"
+      "hearingDate": "2022-11-16",
+      "filedOnDate": "2022-09-29",
+      "decisionDate": "2022-12-08",
+      "sourceFile": "NShoreline_750 2022.12.08 HODecision_Redacted.json"
     },
     {
-      "petitionTypeNumber": "1",
-      "petitionerArgument": [
+      "caseInfo": "Petition: C22230028",
+      "city": "Mountain View",
+      "issueTypeNumber": "1",
+      "argumentsAndDecisions": [
         {
-          "violatedCode": "CSFRA Section 1706(a)",
-          "summaryOfViolation": "Landlord charged rent exceeding the lawful Base Rent by not including rent concessions in calculation"
+          "complaintSummary": "Incorrect base rent calculation leading to unlawful rent increases in 2022 and 2023",
+          "violatedCode": "CSFRA Section 1706(a) and 1702(b)",
+          "reimbursement": "$6,072.11",
+          "complaintTiming": "February 16, 2022 through April 30, 2023",
+          "respondentHadNotice": "Yes, through filed petition on February 9, 2023",
+          "evidenceAssessment": "Hearing officer found base rent was incorrectly calculated by not including rent concessions from initial term",
+          "impactAssessment": "Tenants were overcharged due to incorrect base rent calculation"
         },
         {
+          "complaintSummary": "Unlawful collection of additional security deposit for pet",
           "violatedCode": "CSFRA Section 1706(c)",
-          "summaryOfViolation": "Unlawful increase in security deposit from $500 to $1000 for pet addition"
+          "reimbursement": "$500.00",
+          "complaintTiming": "March 22, 2021",
+          "respondentHadNotice": "Yes, through lease documentation",
+          "evidenceAssessment": "Additional deposit was improperly characterized as security deposit rather than pet deposit",
+          "impactAssessment": "Tenants paid excess security deposit beyond lawful amount"
         }
       ],
-      "decision": "granted",
-      "reimbursement": "$6,072.11 plus additional monthly credits",
+      "reimbursementJustified": "yes",
       "rentAdjustment": "Yes",
-      "rationale": {
-        "respondentHadNotice": "Yes, through tenant petition and hearing",
-        "issueDuration": "Approximately 1 year (Feb 2022 - Feb 2023)",
-        "evidenceAssessment": "Documentation showed incorrect base rent calculation and unlawful security deposit increase",
-        "impactAssessment": "Tenants overcharged due to improper rent calculations and deposit requirements"
-      },
       "respondent": "Americana I, LLC",
-      "hearingOfficer": "Barbara M. Ainscher",
-      "city": "Mountain View",
-      "caseNumber": "C22230028",
-      "hearingDate": "April 13, 2023",
-      "filedOnDate": "February 9, 2023",
-      "decisionDate": "May 19, 2023",
-      "source_file": "Continental_707 2023.05.19 HODecision_Redacted.json"
+      "hearingOfficer": "Barbara M. Arscher",
+      "hearingDate": "2023-04-13",
+      "filedOnDate": "2023-02-09",
+      "decisionDate": "2023-05-19",
+      "sourceFile": "Continental_707 2023.05.19 HODecision_Redacted.json"
     },
     {
-      "petitionTypeNumber": "1",
-      "petitionerArgument": [
+      "issueTypeNumber": "1",
+      "caseInfo": "Petition: 22230015",
+      "city": "Mountain View",
+      "argumentsAndDecisions": [
         {
-          "violatedCode": "CSFRA Section 1702(b)(2)",
-          "summaryOfViolation": "Incorrect calculation of Base Rent by not accounting for rent concessions and using 18-month instead of 12-month initial term"
-        },
-        {
-          "violatedCode": "CSFRA Section 1707(b)",
-          "summaryOfViolation": "Multiple rent increases within 12-month period and increase exceeding allowed Annual General Adjustment"
+          "complaintSummary": "Incorrect calculation of Base Rent by not accounting for rent concessions and improper rent increases",
+          "violatedCode": "CSFRA Sections 1702(b)(2), 1706(a), 1707(b)",
+          "reimbursement": "$7,472.38",
+          "complaintTiming": "December 16, 2021 through February 28, 2023",
+          "respondentHadNotice": "Yes, through filed petition and hearing process",
+          "evidenceAssessment": "Hearing officer analyzed detailed rent payment records and determined incorrect base rent calculations",
+          "impactAssessment": "Tenants were overcharged due to improper rent calculation and multiple unlawful rent increases"
         }
       ],
-      "decision": "granted",
-      "reimbursement": "7,472.38",
+      "reimbursementJustified": "yes",
       "rentAdjustment": "Yes",
-      "rationale": {
-        "respondentHadNotice": "Yes, through tenant petition filed December 15, 2022",
-        "issueDuration": "Multiple unlawful rent increases from December 2021 to June 2022",
-        "evidenceAssessment": "Review of lease terms, rent concessions, and payment records showed incorrect base rent calculations",
-        "impactAssessment": "Tenants were overcharged due to improper base rent calculation and multiple unauthorized increases"
-      },
       "respondent": "SI VI LLC",
       "hearingOfficer": "Barbara M. Anscher",
-      "city": "Mountain View",
-      "caseNumber": "22230015",
-      "hearingDate": "February 22, 2023",
-      "filedOnDate": "December 15, 2022",
-      "decisionDate": "March 23, 2023",
-      "source_file": "NWhisman_100 2023.03.23 HODecision_Redacted.json"
+      "hearingDate": "2023-02-22",
+      "filedOnDate": "2022-12-15",
+      "decisionDate": "2023-03-23",
+      "sourceFile": "NWhisman_100 2023.03.23 HODecision_Redacted.json"
     },
     {
-      "petitionTypeNumber": "1",
-      "petitionerArgument": [
+      "caseInfo": "Petition: 22230016",
+      "city": "Mountain View",
+      "issueTypeNumber": "4",
+      "argumentsAndDecisions": [
         {
-          "violatedCode": "CSFRA Section 1707",
-          "summaryOfViolation": "Landlord imposed multiple unlawful rent increases and failed to register property with Rent Stabilization Program"
+          "complaintSummary": "Landlord failed to register property with Rent Stabilization Program and imposed unlawful rent increases",
+          "violatedCode": "CSFRA Sect. 1707(f) and CSFRA Chapt. 12(B)",
+          "reimbursement": "$2,337.04",
+          "complaintTiming": "April 2022 through February 2023",
+          "respondentHadNotice": "Yes, city provided notice regarding compliance requirements",
+          "evidenceAssessment": "Respondent did not contest any factual statements by Petitioner and failed to register property until after petition was filed",
+          "impactAssessment": "Multiple invalid rent increases resulted in tenant overpayments"
         }
       ],
-      "decision": "granted",
-      "reimbursement": "2,337.04",
-      "rentAdjustment": "No",
-      "rationale": {
-        "respondentHadNotice": "Yes, was notified by City about compliance requirements",
-        "issueDuration": "Failed to register property for years until February 3, 2023",
-        "evidenceAssessment": "Landlord did not contest tenant's factual statements and failed to provide required CSFRA notices",
-        "impactAssessment": "Tenant was overcharged due to improper rent increases above allowable amounts"
-      },
+      "reimbursementJustified": "yes",
+      "rentAdjustment": "Yes (2%)",
       "respondent": "Francisco Cervantes aka Frank Cervantes for Cervantes, LLC",
       "hearingOfficer": "E. Alexandra DeLateur",
-      "city": "Mountain View",
-      "caseNumber": "22230016",
-      "hearingDate": "March 10, 2023",
-      "filedOnDate": "December 19, 2022",
-      "decisionDate": "April 13, 2023",
-      "source_file": "Park_880 2023.04.13 HODecision_Redacted.json"
+      "hearingDate": "2023-03-10",
+      "filedOnDate": "2022-12-19",
+      "decisionDate": "2023-04-12",
+      "sourceFile": "Park_880 2023.04.13 HODecision_Redacted.json"
     },
     {
-      "petitionTypeNumber": "1",
-      "petitionerArgument": [
+      "caseInfo": "Petition: 22230006",
+      "city": "Mountain View",
+      "issueTypeNumber": "1",
+      "argumentsAndDecisions": [
         {
-          "violatedCode": "CSFRA Section 1707",
-          "summaryOfViolation": "Unlawful rent increases - more than allowed AGA and multiple increases within 12 months"
-        },
-        {
-          "violatedCode": "CSFRA Registration Requirements",
-          "summaryOfViolation": "Landlord failed to register property with Rent Stabilization Program"
+          "complaintSummary": "Landlord imposed unlawful rent increases and failed to register property with Rent Stabilization Program",
+          "violatedCode": "CSFRA Section 1707(f), CSFRA Regs. Chapt. 4",
+          "reimbursement": "$3,040.42",
+          "complaintTiming": "January 2022 - January 2023",
+          "respondentHadNotice": "Yes, city provided notice regarding registration requirements",
+          "evidenceAssessment": "Clear documentation of rent payments and lease terms showed improper rent increases",
+          "impactAssessment": "Tenant was overcharged significantly above lawful base rent"
         }
       ],
-      "decision": "granted",
-      "reimbursement": "3040.42",
+      "reimbursementJustified": "yes",
       "rentAdjustment": "Yes",
-      "rationale": {
-        "respondentHadNotice": "Yes, received multiple requests from CSFRA staff",
-        "issueDuration": "Multiple unlawful rent increases over 12 months",
-        "evidenceAssessment": "Clear documentation of improper rent increases and failure to register",
-        "impactAssessment": "Tenant overcharged significantly compared to lawful base rent"
-      },
       "respondent": "Frank Cervantes for Cervantes, LLC",
       "hearingOfficer": "E. Alexandra DeLateur",
-      "city": "Mountain View",
-      "caseNumber": "22230006",
-      "hearingDate": "January 12, 2023",
-      "filedOnDate": "November 29, 2022",
-      "decisionDate": "February 13, 2023",
-      "source_file": "Church_31 2023.02.13 HODecision_Redacted.json"
+      "hearingDate": "2023-01-12",
+      "filedOnDate": "2022-11-29",
+      "decisionDate": "2023-02-13",
+      "sourceFile": "Church_31 2023.02.13 HODecision_Redacted.json"
     },
     {
-      "petitionTypeNumber": "2",
-      "petitionerArgument": [
+      "caseInfo": "Petition: 2023-0003 and 2023-0004",
+      "city": "East Palo Alto",
+      "issueTypeNumber": "2",
+      "argumentsAndDecisions": [
         {
-          "violatedCode": "Section 13 of City's Rent Stabilization Ordinance & CA Civil Code \u00a7 1941.1",
-          "summaryOfViolation": "Roach infestation, unsanitary conditions from neighbor's garbage storage, rats on balcony, and noise disturbances impacting habitability"
+          "complaintSummary": "Ongoing roach infestation and pest problems",
+          "violatedCode": "California Civil Code \u00a7 1941.1",
+          "reimbursement": "$2024.79",
+          "complaintTiming": "Since 2015",
+          "respondentHadNotice": "Yes, multiple complaints since 2015",
+          "evidenceAssessment": "Periodic infestations return despite temporary treatments",
+          "impactAssessment": "Long-term maintenance issue affecting habitability"
+        },
+        {
+          "complaintSummary": "Noise and nuisance from upstairs tenant",
+          "violatedCode": "N/A",
+          "reimbursement": "No reimbursement awarded",
+          "complaintTiming": "Since 2021",
+          "respondentHadNotice": "Yes, reported to property management",
+          "evidenceAssessment": "Not within scope of rent ordinance grounds for reduction",
+          "impactAssessment": "Disturbs peaceful enjoyment but outside maintenance/habitability scope"
         }
       ],
-      "decision": "granted",
-      "reimbursement": "$2024.79",
+      "reimbursementJustified": "yes",
       "rentAdjustment": "Yes (7.5%)",
-      "rationale": {
-        "respondentHadNotice": "Yes, since at least 2022",
-        "issueDuration": "Multiple years of ongoing issues, particularly since 2022",
-        "evidenceAssessment": "Tenant's testimony supported finding of periodic maintenance and habitability issues; temporary remedial efforts by landlord proved insufficient",
-        "impactAssessment": "Unit not free of roaches/rats, balcony unusable due to neighbor's dog waste, significant impact on living conditions"
-      },
       "respondent": "Woodland Park Communities",
       "hearingOfficer": "Michael H. Roush",
-      "city": "East Palo Alto",
-      "caseNumber": "2023-0003 and 2023-0004",
-      "hearingDate": "May 17, 2024",
-      "filedOnDate": "November 15, 2023",
-      "decisionDate": "May 23, 2024",
-      "source_file": "Decision Nee v WPC 20230003 and 20230004.json"
+      "hearingDate": "2024-05-17",
+      "filedOnDate": "2023-11-15",
+      "decisionDate": "2024-05-23",
+      "sourceFile": "Decision Nee v WPC 20230003 and 20230004.json"
     },
     {
-      "petitionTypeNumber": "2",
-      "petitionerArgument": [
+      "caseInfo": "Petition: C22230019 and C22230025",
+      "city": "Mountain View",
+      "issueTypeNumber": "2",
+      "argumentsAndDecisions": [
         {
-          "violatedCode": "CSFRA Sections 1706(a) and 1707(a)",
-          "summaryOfViolation": "Respondent improperly calculated Base Rent and imposed unlawful rent increases"
+          "complaintSummary": "Second-hand smoke from neighbors affecting tenant's unit and common areas",
+          "violatedCode": "CA Health & Safety Code \u00a7 17920.3(c), Mountain View Municipal Code Ch. 21",
+          "reimbursement": "$8,029.90",
+          "complaintTiming": "March 15, 2019 through August 1, 2023",
+          "respondentHadNotice": "Yes, documented complaints made to property management",
+          "evidenceAssessment": "Hearing officer found substantial evidence of ongoing smoking issues despite respondent's efforts to address it",
+          "impactAssessment": "Smoke constituted a health and safety concern affecting tenant's use of premises"
         },
         {
-          "violatedCode": "CA Civil Code \u00a7 1941.1, Health & Safety Code \u00a7 17920.3(c)",
-          "summaryOfViolation": "Multiple habitability issues including second-hand smoke, rodent infestation, inadequate lighting, trash accumulation, and swimming pool maintenance"
+          "complaintSummary": "Inadequate lighting in parking lots and common areas",
+          "violatedCode": "N/A",
+          "reimbursement": "$11,016.00",
+          "complaintTiming": "July 14, 2022 through December 2023",
+          "respondentHadNotice": "Yes, multiple emails and complaints documented",
+          "evidenceAssessment": "Photos and testimony confirmed inadequate lighting persisted despite attempts to fix",
+          "impactAssessment": "Created safety concerns for tenants using parking lot at night"
         },
         {
-          "violatedCode": "CSFRA Housing Services Requirements",
-          "summaryOfViolation": "Reduction in housing services including laundry room closure and lack of on-site property manager"
+          "complaintSummary": "Excessive trash accumulation on property",
+          "violatedCode": "Civil Code \u00a7 1941.1",
+          "reimbursement": "$2,179.51",
+          "complaintTiming": "January 1, 2021 through December 20, 2023",
+          "respondentHadNotice": "Yes, documented through emails and inspection reports",
+          "evidenceAssessment": "Multiple photos and inspection reports confirmed ongoing trash issues",
+          "impactAssessment": "Created unsanitary conditions affecting habitability"
         }
       ],
-      "decision": "granted",
-      "reimbursement": "$34,931.23",
-      "rentAdjustment": "Yes (20%)",
-      "rationale": {
-        "respondentHadNotice": "Yes, through multiple complaints and emails from 2019-2023",
-        "issueDuration": "Various issues persisted between 2019-2023",
-        "evidenceAssessment": "Hearing Officer found substantial evidence through testimony, photos, inspection reports and emails documenting ongoing issues",
-        "impactAssessment": "Multiple habitability and maintenance issues significantly impacted tenant's use and enjoyment of property"
-      },
-      "respondent": "West Washington Gardens LLC/CMF Property Management",
-      "hearingOfficer": "Not explicitly stated",
-      "city": "Mountain View",
-      "caseNumber": "C22230019 and C22230025",
-      "hearingDate": "December 20, 2023",
-      "filedOnDate": "February 3, 2023",
-      "decisionDate": "March 20, 2024",
-      "source_file": "Whitney_2489 2024.07.09 Appeal Decision_Redacted.json"
+      "rentAdjustment": "Yes (4%)",
+      "respondent": "West Washington Properties, LLC",
+      "hearingOfficer": "N/A",
+      "hearingDate": "2023-12-20",
+      "filedOnDate": "2023-02-03",
+      "decisionDate": "2024-03-20",
+      "reimbursementJustified": "yes",
+      "sourceFile": "Whitney_2489 2024.07.09 Appeal Decision_Redacted.json"
     }
   ]
 }

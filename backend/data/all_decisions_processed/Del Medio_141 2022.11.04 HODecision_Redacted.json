@@ -1,29 +1,36 @@
 {
   "petitions": [
     {
-      "petitionTypeNumber": "1",
-      "petitionerArgument": [
+      "caseInfo": "Petition: 22230002",
+      "city": "Mountain View",
+      "issueTypeNumber": "1",
+      "argumentsAndDecisions": [
         {
+          "complaintSummary": "Undue hardship due to rent increase exceeding tenant's ability to pay based on income",
           "violatedCode": "CSFRA Sec. 1707(d) and Chapter 7, Section C",
-          "summaryOfViolation": "Undue tenant hardship due to inadequate household income below AMI threshold, making banked rent increases unaffordable"
+          "reimbursement": "Full refund of rent increase from Sept 1-Oct 9, 2022; reduction of banked increases exceeding 5% AGA through Aug 31, 2023",
+          "complaintTiming": "Filed August 5, 2022",
+          "respondentHadNotice": "Yes, through formal petition process",
+          "evidenceAssessment": "Tenant provided credible evidence of income significantly below AMI threshold of $117,950",
+          "impactAssessment": "Tenant's income proven to be significantly below 100% of median household income, demonstrating undue hardship"
+        },
+        {
+          "complaintSummary": "Landlord failed to register property with rent stabilization program",
+          "violatedCode": "CSFRA Reg. Chap. 11(B)(1) and 11(F)",
+          "reimbursement": "No rent increases permitted during non-compliance period (before Oct 10, 2022)",
+          "complaintTiming": "Prior to October 10, 2022",
+          "respondentHadNotice": "Yes, documented in HO Ex. 7, 8, and 9",
+          "evidenceAssessment": "City records confirmed non-compliance with registration requirements",
+          "impactAssessment": "Registration non-compliance prevented landlord from implementing any rent increases"
         }
       ],
-      "decision": "granted",
-      "reimbursement": "Full refund of rent increase paid from Sept 1-Oct 9, 2022",
-      "rentAdjustment": "Yes (4.9%)",
-      "rationale": {
-        "respondentHadNotice": "Yes, petition filed before increase effective date",
-        "issueDuration": "Not applicable",
-        "evidenceAssessment": "Tenant proved income significantly below 100% AMI threshold, landlord did not dispute income evidence",
-        "impactAssessment": "Tenant's income significantly below hardship threshold, hardship expected to continue"
-      },
+      "reimbursementJustified": "yes",
+      "rentAdjustment": "Yes (9.9% reduction)",
       "respondent": "Del Medio Manor, LLP and Calson Property Management",
       "hearingOfficer": "Martin Eichner",
-      "city": "Mountain View",
-      "caseNumber": "22230002",
-      "hearingDate": "October 6, 2022",
-      "filedOnDate": "August 5, 2022",
-      "decisionDate": "November 4, 2022"
+      "hearingDate": "2022-10-06",
+      "filedOnDate": "2022-08-05",
+      "decisionDate": "2022-11-04"
     }
   ]
 }

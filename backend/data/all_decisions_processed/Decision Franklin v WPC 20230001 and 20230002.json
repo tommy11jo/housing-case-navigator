@@ -1,33 +1,27 @@
 {
   "petitions": [
     {
-      "petitionTypeNumber": "2",
-      "petitionerArgument": [
+      "caseInfo": "Petition: 2023-0001 and 2023-0002",
+      "city": "East Palo Alto",
+      "issueTypeNumber": "3",
+      "argumentsAndDecisions": [
         {
-          "violatedCode": "Section 13 of City's Rent Stabilization Ordinance",
-          "summaryOfViolation": "Cracked and uneven outdoor patio affecting storage use and maintenance/services reduction"
-        },
-        {
-          "violatedCode": "CA Civil Code \u00a7 1941.1",
-          "summaryOfViolation": "Bathtub in need of repair with drain issues"
+          "complaintSummary": "Cracked and uneven outdoor patio affecting tenant's use of backyard space",
+          "violatedCode": "Section 13 of City's Rent Stabilization and Just Cause for Eviction Ordinance",
+          "reimbursement": "$398.76",
+          "complaintTiming": "July 2023 to present",
+          "respondentHadNotice": "Yes, notified in July and August 2023",
+          "evidenceAssessment": "Hearing Officer's inspection confirmed cracked/uneven patio with no visual evidence of claimed repairs",
+          "impactAssessment": "Conditions more than minor maintenance deficiency but not a habitability violation"
         }
       ],
-      "decision": "granted",
-      "reimbursement": "$396.76",
+      "reimbursementJustified": "yes",
       "rentAdjustment": "Yes (5%)",
-      "rationale": {
-        "respondentHadNotice": "Yes, notified in July and August 2023",
-        "issueDuration": "Issue with patio existing since at least July 2023",
-        "evidenceAssessment": "No visual evidence of repairs despite invoice claiming August 2023 repair",
-        "impactAssessment": "Condition exceeds minor maintenance deficiency but does not constitute habitability violation"
-      },
       "respondent": "Woodland Park Communities",
       "hearingOfficer": "Michael H. Roush",
-      "city": "East Palo Alto",
-      "caseNumber": "2023-0001 and 2023-0002",
-      "hearingDate": "May 17, 2024",
-      "filedOnDate": "November 3, 2023",
-      "decisionDate": "May 22, 2024"
+      "hearingDate": "2024-05-17",
+      "filedOnDate": "2023-11-03",
+      "decisionDate": "2024-05-22"
     }
   ]
 }

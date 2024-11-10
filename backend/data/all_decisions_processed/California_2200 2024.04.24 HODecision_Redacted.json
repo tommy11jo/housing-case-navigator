@@ -1,54 +1,50 @@
 {
   "petitions": [
     {
-      "petitionTypeNumber": "1",
-      "petitionerArgument": [
+      "issueTypeNumber": "1",
+      "caseInfo": "Petition: C23240032/C23240033",
+      "city": "Mountain View",
+      "argumentsAndDecisions": [
         {
+          "complaintSummary": "Improper rent increase calculation and failure to apply rent concessions",
           "violatedCode": "CSFRA Sections 1706 and 1707",
-          "summaryOfViolation": "Improper calculation of base rent and rent increases, failing to account for rent concessions"
+          "reimbursement": "$7,596.30",
+          "complaintTiming": "November 2022 through October 2023",
+          "respondentHadNotice": "Yes, through rent payments and documentation",
+          "evidenceAssessment": "Hearing officer found respondent incorrectly calculated base rent by not including concession months",
+          "impactAssessment": "Tenant was overcharged due to improper rent calculation"
         }
       ],
-      "decision": "granted",
-      "reimbursement": "7,596.30",
+      "reimbursementJustified": "yes",
       "rentAdjustment": "Yes",
-      "rationale": {
-        "respondentHadNotice": "Yes, via lease terms and rent payment history",
-        "issueDuration": "Nov 2022 - Oct 2023",
-        "evidenceAssessment": "Rent ledger and payment records showed improper base rent calculations",
-        "impactAssessment": "Tenant overcharged due to incorrect base rent calculation"
-      },
-      "respondent": "Ferdi DeLuna",
+      "respondent": "Ferdi DeLuna, The Arbors at Mountain View",
       "hearingOfficer": "E. Alexandra DeLateur",
-      "city": "Mountain View",
-      "caseNumber": "C23240032",
-      "hearingDate": "February 16, 2024",
-      "filedOnDate": "November 22, 2023",
-      "decisionDate": "April 22, 2024"
+      "hearingDate": "2024-02-16",
+      "filedOnDate": "2023-11-22",
+      "decisionDate": "2024-04-22"
     },
     {
-      "petitionTypeNumber": "2",
-      "petitionerArgument": [
+      "issueTypeNumber": "2",
+      "caseInfo": "Petition: C23240032/C23240033",
+      "city": "Mountain View",
+      "argumentsAndDecisions": [
         {
-          "violatedCode": "CA Civil Code 1941.1",
-          "summaryOfViolation": "Multiple maintenance issues including mold, peeling paint, broken appliances, and damaged flooring in bathrooms, kitchen and living room"
+          "complaintSummary": "Multiple maintenance and habitability issues including mold, peeling paint, broken appliances and flooring",
+          "violatedCode": "California Civil Code section 1954(a)(2)",
+          "reimbursement": "$2,800.00",
+          "complaintTiming": "August 2023 through March 2024",
+          "respondentHadNotice": "Yes, through maintenance request on August 23, 2023",
+          "evidenceAssessment": "Photos and video evidence supported tenant's claims about conditions",
+          "impactAssessment": "Issues affected habitability and potentially tenant health and safety"
         }
       ],
-      "decision": "granted",
-      "reimbursement": "2,800.00",
+      "reimbursementJustified": "yes",
       "rentAdjustment": "Yes",
-      "rationale": {
-        "respondentHadNotice": "Yes, via maintenance request on August 23, 2023",
-        "issueDuration": "3+ months before petition filing",
-        "evidenceAssessment": "Photos and video evidence supported claims of disrepair",
-        "impactAssessment": "Issues affected habitability and proper use of multiple rooms"
-      },
-      "respondent": "Ferdi DeLuna",
+      "respondent": "Ferdi DeLuna, The Arbors at Mountain View",
       "hearingOfficer": "E. Alexandra DeLateur",
-      "city": "Mountain View",
-      "caseNumber": "C23240033",
-      "hearingDate": "February 16, 2024",
-      "filedOnDate": "November 22, 2023",
-      "decisionDate": "April 22, 2024"
+      "hearingDate": "2024-02-16",
+      "filedOnDate": "2023-11-22",
+      "decisionDate": "2024-04-22"
     }
   ]
 }

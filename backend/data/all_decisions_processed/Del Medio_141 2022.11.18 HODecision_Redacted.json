@@ -1,29 +1,27 @@
 {
   "petitions": [
     {
-      "petitionTypeNumber": "2",
-      "petitionerArgument": [
+      "caseInfo": "Petition: 22230004",
+      "city": "Mountain View",
+      "issueTypeNumber": "4",
+      "argumentsAndDecisions": [
         {
-          "violatedCode": "CSFRA Section 1707(d) and Chapter 7, Section C of Regulations",
-          "summaryOfViolation": "Undue tenant hardship due to inadequate household income relative to rent increases"
+          "complaintSummary": "Landlord failed to register property with Rent Stabilization Program as required by CSFRA",
+          "violatedCode": "CSFRA Reg. Chap. 11(B)(1) and 11(F)",
+          "reimbursement": "Rent reduction for October 7-9, 2022 plus reduction of banked increases through August 31, 2023",
+          "complaintTiming": "Prior to October 10, 2022",
+          "respondentHadNotice": "Yes, landlord was notified multiple times including September 30, 2022",
+          "evidenceAssessment": "Property registration records confirmed non-compliance until October 10, 2022",
+          "impactAssessment": "Constituted substantial noncompliance with CSFRA affecting rent increase validity"
         }
       ],
-      "decision": "granted",
-      "reimbursement": "Rent increase amount for Oct 7-9, 2022 and reduction of banked increases after Oct 10, 2022",
-      "rentAdjustment": "Yes (reduction of banked increases beyond 5% AGA)",
-      "rationale": {
-        "respondentHadNotice": "Yes, through proper petition filing on September 9, 2022",
-        "issueDuration": "Not applicable",
-        "evidenceAssessment": "Tenant proved income below 100% AMI threshold through tax returns and testimony",
-        "impactAssessment": "Tenant's household income qualified for hardship protection under regulations"
-      },
-      "respondent": "Del Medio Manor LLC/Calson Property Management",
+      "rentAdjustment": "Yes (9.9%)",
+      "respondent": "Gina Frye, Lydia Sanabria (Calson Property Management)",
       "hearingOfficer": "Martin Eichner",
-      "city": "Mountain View",
-      "caseNumber": "22230004",
-      "hearingDate": "October 7, 2022",
-      "filedOnDate": "September 9, 2022",
-      "decisionDate": "November 18, 2022"
+      "hearingDate": "2022-10-07",
+      "filedOnDate": "2022-09-09",
+      "decisionDate": "2022-11-18",
+      "reimbursementJustified": "yes"
     }
   ]
 }

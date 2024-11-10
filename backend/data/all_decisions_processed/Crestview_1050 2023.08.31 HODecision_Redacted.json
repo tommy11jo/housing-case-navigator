@@ -1,33 +1,36 @@
 {
   "petitions": [
     {
-      "petitionTypeNumber": "2",
-      "petitionerArgument": [
+      "caseInfo": "Petition B - C22230046",
+      "city": "Mountain View",
+      "issueTypeNumber": "2",
+      "argumentsAndDecisions": [
         {
-          "violatedCode": "CA Civil Code \u00a7 1941.1(1)",
-          "summaryOfViolation": "Single pane windows failed to provide effective weatherproofing and protection against cold air"
+          "complaintSummary": "Inadequate heating system causing freezing temperatures in bedrooms and bathrooms",
+          "violatedCode": "California Civil Code Section 1941.1(4)",
+          "reimbursement": "$2,875.50",
+          "complaintTiming": "December 22, 2022 to March 22, 2023 (90 days)",
+          "respondentHadNotice": "Yes, through multiple written complaints starting December 19, 2022",
+          "evidenceAssessment": "Tenant's testimony about freezing temperatures was uncontradicted and maintenance staff's repeated visits without resolution supported the claim",
+          "impactAssessment": "Freezing temperatures represented a major discomfort and serious loss of tenancy benefits"
         },
         {
-          "violatedCode": "CA Civil Code \u00a7 1941.1(4)",
-          "summaryOfViolation": "Heating system failed to provide adequate heat in bedrooms and bathrooms, leading to freezing temperatures"
+          "complaintSummary": "Single pane windows providing inadequate weather protection",
+          "violatedCode": "California Civil Code Section 1941.1(1)",
+          "reimbursement": "No reimbursement awarded",
+          "complaintTiming": "November 13, 2022 to February 10, 2023",
+          "respondentHadNotice": "No - Tenant failed to properly notify landlord about window issues",
+          "evidenceAssessment": "Tenant didn't prove landlord was aware of habitability violation regarding windows",
+          "impactAssessment": "Contributed to cold temperatures but separate from heating system issue"
         }
       ],
-      "decision": "granted",
-      "reimbursement": "2875.50",
+      "reimbursementJustified": "yes",
       "rentAdjustment": "Yes (30%)",
-      "rationale": {
-        "respondentHadNotice": "Written notice provided on December 19, 2022 with multiple follow-up complaints",
-        "issueDuration": "90 days (December 22, 2022 to March 22, 2023)",
-        "evidenceAssessment": "Tenant provided credible testimony about freezing temperatures; landlord failed to prove tenant was responsible for heating issues",
-        "impactAssessment": "Major discomfort and serious loss of tenancy benefits due to freezing temperatures in bedrooms and bathrooms"
-      },
       "respondent": "Solano Apartments LP",
       "hearingOfficer": "Martin Eichner",
-      "city": "Mountain View",
-      "caseNumber": "C22230046",
-      "hearingDate": "July 12, 2023",
-      "filedOnDate": "April 21, 2023",
-      "decisionDate": "August 31, 2023"
+      "hearingDate": "2023-07-12",
+      "filedOnDate": "2023-04-21",
+      "decisionDate": "2023-08-31"
     }
   ]
 }

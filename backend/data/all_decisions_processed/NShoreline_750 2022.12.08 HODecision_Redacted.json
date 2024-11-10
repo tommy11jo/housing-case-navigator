@@ -1,29 +1,27 @@
 {
   "petitions": [
     {
-      "petitionTypeNumber": "1",
-      "petitionerArgument": [
+      "caseInfo": "Petition: T22230009",
+      "city": "Mountain View",
+      "issueTypeNumber": "4",
+      "argumentsAndDecisions": [
         {
-          "violatedCode": "CSFRA Sec. 1707(d)",
-          "summaryOfViolation": "Challenge to banked rent increases from 2020-2021 due to senior status and limited income creating undue hardship"
+          "complaintSummary": "Tenant seeks relief from banked rent increases due to senior status and limited income",
+          "violatedCode": "CSFRA Sec. 1707(d) and Chapter 7(C)(2)(c)",
+          "reimbursement": "$199.50 plus December 2022 overpayments",
+          "complaintTiming": "Filed September 29, 2022",
+          "respondentHadNotice": "Yes, through proper petition filing process",
+          "evidenceAssessment": "Petitioner proved by preponderance of evidence senior status and income below 120% AMI threshold",
+          "impactAssessment": "Undue hardship would result from banked rent increases due to senior status and limited income"
         }
       ],
-      "decision": "granted",
-      "reimbursement": "$199.50 plus December 2022 overpayments",
+      "reimbursementJustified": "yes",
       "rentAdjustment": "Yes (5%)",
-      "rationale": {
-        "respondentHadNotice": "Yes, petition filed within 10 days of rent increase notice",
-        "issueDuration": "Not applicable",
-        "evidenceAssessment": "Petitioner proved senior status (65+ years) and income below 120% AMI through documentation",
-        "impactAssessment": "Undue hardship established due to senior status and limited income"
-      },
-      "respondent": "Avery Shadows L/P",
+      "respondent": "Avery Shadows I, LP",
       "hearingOfficer": "E. Alexandra DeLateur",
-      "city": "Mountain View",
-      "caseNumber": "22230009",
-      "hearingDate": "November 16, 2022",
-      "filedOnDate": "September 29, 2022",
-      "decisionDate": "December 8, 2022"
+      "hearingDate": "2022-11-16",
+      "filedOnDate": "2022-09-29",
+      "decisionDate": "2022-12-08"
     }
   ]
 }

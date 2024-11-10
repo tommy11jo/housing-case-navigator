@@ -1,29 +1,27 @@
 {
   "petitions": [
     {
-      "petitionTypeNumber": "1",
-      "petitionerArgument": [
+      "caseInfo": "Petition: C23240026",
+      "city": "Mountain View",
+      "issueTypeNumber": "1",
+      "argumentsAndDecisions": [
         {
-          "violatedCode": "CSFRA Sec. 1707(d) and Chapter 7",
-          "summaryOfViolation": "Improper banked rent increase of 5% causing undue hardship due to tenant's limited income"
+          "complaintSummary": "Tenant seeks relief from banked 5% AGA rent increase due to financial hardship",
+          "violatedCode": "CSFRA Chapter 7(C)(2)(a)",
+          "reimbursement": "$586.82",
+          "complaintTiming": "December 2022 - December 2023",
+          "respondentHadNotice": "Yes, through formal rent increase notice",
+          "evidenceAssessment": "Petitioner proved income below 100% of median household income for Santa Clara County",
+          "impactAssessment": "Hearing officer found undue hardship would result from banked rent increase due to limited income"
         }
       ],
-      "decision": "granted",
-      "reimbursement": "$586.82",
+      "reimbursementJustified": "yes",
       "rentAdjustment": "Yes (5%)",
-      "rationale": {
-        "respondentHadNotice": "Yes, through proper petition filing",
-        "issueDuration": "Affected rent calculations from December 2022 through December 2023",
-        "evidenceAssessment": "Petitioner proved income below 100% of median household income, qualifying for hardship relief",
-        "impactAssessment": "Rent increase would create undue financial hardship given petitioner's limited income"
-      },
       "respondent": "Shoreline Village LLC rep. by Steve Welter",
       "hearingOfficer": "E. Alexandra DeLateur",
-      "city": "Mountain View",
-      "caseNumber": "C23240026",
-      "hearingDate": "November 29, 2023",
-      "filedOnDate": "October 9, 2023",
-      "decisionDate": "January 11, 2024"
+      "hearingDate": "2023-11-29",
+      "filedOnDate": "2023-10-09",
+      "decisionDate": "2024-01-11"
     }
   ]
 }

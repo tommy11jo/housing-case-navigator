@@ -1,29 +1,27 @@
 {
   "petitions": [
     {
-      "petitionTypeNumber": "2",
-      "petitionerArgument": [
+      "caseInfo": "Appeal: C22230037",
+      "city": "Mountain View",
+      "issueTypeNumber": "2",
+      "argumentsAndDecisions": [
         {
-          "violatedCode": "CA Health & Safety Code Section 114192, Civil Code Section 1941.1, Health & Safety Code Sections 17920.3 and 17920.10",
-          "summaryOfViolation": "Insufficient hot water temperature below required minimum of 120-degrees, affecting tenant's ability to shower and properly use sinks"
+          "complaintSummary": "Insufficient hot water temperature below required minimum",
+          "violatedCode": "California Health & Safety Code Section 114192, Civil Code Section 1941.1, Health & Safety Code Sections 17920.3 and 17920.10",
+          "reimbursement": "$1,100.00",
+          "complaintTiming": "Since November 23, 2022",
+          "respondentHadNotice": "Yes, notice provided on November 23, 2022",
+          "evidenceAssessment": "Water temperature consistently below 120-degree minimum requirement, verified through temperature readings",
+          "impactAssessment": "Significant impact on tenant's use of shower and ability to properly use sinks"
         }
       ],
-      "decision": "granted",
-      "reimbursement": "$1,100.00",
+      "reimbursementJustified": "yes",
       "rentAdjustment": "Yes (10%)",
-      "rationale": {
-        "respondentHadNotice": "Yes, notified on November 23, 2022",
-        "issueDuration": "From November 2022 through hearing date",
-        "evidenceAssessment": "Hearing officer found tenant's water temperature measurements reliable and confirmed violation through witness testimony and evidence",
-        "impactAssessment": "Significant impact on tenant's use of shower and sinks, requiring use of portable heater"
-      },
-      "respondent": "Trungent Enterprises, Inc.",
-      "hearingOfficer": "Not specified",
-      "city": "Mountain View",
-      "caseNumber": "C22230037",
-      "hearingDate": "May 9, 2023",
-      "filedOnDate": "March 2, 2023",
-      "decisionDate": "June 9, 2023"
+      "respondent": "Shirley Ankenbauer",
+      "hearingOfficer": "N/A",
+      "hearingDate": "2023-05-09",
+      "filedOnDate": "2023-03-02",
+      "decisionDate": "2023-06-09"
     }
   ]
 }

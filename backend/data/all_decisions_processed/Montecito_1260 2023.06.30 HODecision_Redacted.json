@@ -1,33 +1,27 @@
 {
   "petitions": [
     {
-      "petitionTypeNumber": "2",
-      "petitionerArgument": [
+      "caseInfo": "Petition: C22230030",
+      "city": "Mountain View",
+      "issueTypeNumber": "2",
+      "argumentsAndDecisions": [
         {
-          "violatedCode": "Civil Code \u00a71941.1",
-          "summaryOfViolation": "Water leaks in living room and garage causing mold growth and floor damage"
-        },
-        {
-          "violatedCode": "Health and Safety Code \u00a717920.3",
-          "summaryOfViolation": "Dampness and mold in unit endangering health and safety of occupants"
+          "complaintSummary": "Water leaks causing mold in garage and damage to living room wall/floor",
+          "violatedCode": "Civil Code \u00a71941.1 and Health and Safety Code \u00a717920.3",
+          "reimbursement": "$1,293.00",
+          "complaintTiming": "December 12, 2022 to February 28, 2023",
+          "respondentHadNotice": "Yes, written notice provided December 12 and 17, 2022",
+          "evidenceAssessment": "Photos showed significant mold growth in garage and damage to living room; landlord failed to test for mold despite visual evidence",
+          "impactAssessment": "Conditions endangered health of elderly resident, prevented full use of garage, and caused water damage to living room"
         }
       ],
-      "decision": "granted",
-      "reimbursement": "1293.00",
+      "reimbursementJustified": "yes",
       "rentAdjustment": "Yes (25%)",
-      "rationale": {
-        "respondentHadNotice": "Yes, written notice given December 12 and 17, 2022",
-        "issueDuration": "December 12, 2022 to February 28, 2023 (78 days)",
-        "evidenceAssessment": "Photographs showed significant mold growth and water damage; landlord failed to conduct proper testing or repairs",
-        "impactAssessment": "Severe risk to tenant's elderly mother's health due to mold conditions"
-      },
       "respondent": "TFT Investments",
       "hearingOfficer": "Renee Glover Chantler",
-      "city": "Mountain View",
-      "caseNumber": "C22230030",
-      "hearingDate": "May 3, 2023",
-      "filedOnDate": "February 13, 2023",
-      "decisionDate": "June 30, 2023"
+      "hearingDate": "2023-05-03",
+      "filedOnDate": "2023-02-13",
+      "decisionDate": "2023-06-30"
     }
   ]
 }

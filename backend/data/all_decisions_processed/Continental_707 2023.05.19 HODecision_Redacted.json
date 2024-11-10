@@ -1,33 +1,36 @@
 {
   "petitions": [
     {
-      "petitionTypeNumber": "1",
-      "petitionerArgument": [
+      "caseInfo": "Petition: C22230028",
+      "city": "Mountain View",
+      "issueTypeNumber": "1",
+      "argumentsAndDecisions": [
         {
-          "violatedCode": "CSFRA Section 1706(a)",
-          "summaryOfViolation": "Landlord charged rent exceeding the lawful Base Rent by not including rent concessions in calculation"
+          "complaintSummary": "Incorrect base rent calculation leading to unlawful rent increases in 2022 and 2023",
+          "violatedCode": "CSFRA Section 1706(a) and 1702(b)",
+          "reimbursement": "$6,072.11",
+          "complaintTiming": "February 16, 2022 through April 30, 2023",
+          "respondentHadNotice": "Yes, through filed petition on February 9, 2023",
+          "evidenceAssessment": "Hearing officer found base rent was incorrectly calculated by not including rent concessions from initial term",
+          "impactAssessment": "Tenants were overcharged due to incorrect base rent calculation"
         },
         {
+          "complaintSummary": "Unlawful collection of additional security deposit for pet",
           "violatedCode": "CSFRA Section 1706(c)",
-          "summaryOfViolation": "Unlawful increase in security deposit from $500 to $1000 for pet addition"
+          "reimbursement": "$500.00",
+          "complaintTiming": "March 22, 2021",
+          "respondentHadNotice": "Yes, through lease documentation",
+          "evidenceAssessment": "Additional deposit was improperly characterized as security deposit rather than pet deposit",
+          "impactAssessment": "Tenants paid excess security deposit beyond lawful amount"
         }
       ],
-      "decision": "granted",
-      "reimbursement": "$6,072.11 plus additional monthly credits",
+      "reimbursementJustified": "yes",
       "rentAdjustment": "Yes",
-      "rationaleForDecision": {
-        "respondentHadNotice": "Yes, through tenant petition and hearing",
-        "issueDuration": "Approximately 1 year (Feb 2022 - Feb 2023)",
-        "evidenceAssessment": "Documentation showed incorrect base rent calculation and unlawful security deposit increase",
-        "impactAssessment": "Tenants overcharged due to improper rent calculations and deposit requirements"
-      },
       "respondent": "Americana I, LLC",
-      "hearingOfficer": "Barbara M. Ainscher",
-      "city": "Mountain View",
-      "caseNumber": "C22230028",
-      "hearingDate": "April 13, 2023",
-      "filedOnDate": "February 9, 2023",
-      "decisionDate": "May 19, 2023"
+      "hearingOfficer": "Barbara M. Arscher",
+      "hearingDate": "2023-04-13",
+      "filedOnDate": "2023-02-09",
+      "decisionDate": "2023-05-19"
     }
   ]
 }

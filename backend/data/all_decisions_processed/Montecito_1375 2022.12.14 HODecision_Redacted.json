@@ -1,33 +1,27 @@
 {
   "petitions": [
     {
-      "petitionTypeNumber": "1",
-      "petitionerArgument": [
+      "caseInfo": "Petition: 22230008",
+      "city": "Mountain View",
+      "issueTypeNumber": "1",
+      "argumentsAndDecisions": [
         {
-          "violatedCode": "CSFRA Section 1702(b)(2)",
-          "summaryOfViolation": "Incorrect calculation of base rent during initial lease term"
-        },
-        {
-          "violatedCode": "CSFRA Section 1707(c)",
-          "summaryOfViolation": "Rent increase without proper notice"
+          "complaintSummary": "Landlord miscalculated base rent and made unlawful rent increases",
+          "violatedCode": "CSFRA Section 1702(b)(2), 1706(a), and 1707(b)",
+          "reimbursement": "$806.89",
+          "complaintTiming": "September 2022 - December 2022",
+          "respondentHadNotice": "Yes, tenant contacted property manager about rent increases",
+          "evidenceAssessment": "Hearing officer found base rent was incorrectly calculated as $2,390 instead of $2,172.73",
+          "impactAssessment": "Tenant was overcharged $337.27 per month due to unlawful rent increases"
         }
       ],
-      "decision": "granted",
-      "reimbursement": "$806.89",
-      "rentAdjustment": "Yes",
-      "rationale": {
-        "respondentHadNotice": "No, landlord failed to properly notify tenant of rent increases",
-        "issueDuration": "June 2022 - December 2022",
-        "evidenceAssessment": "Lease agreement and payment records showed incorrect base rent calculation",
-        "impactAssessment": "Tenant was overcharged due to improper base rent calculation and unauthorized increases"
-      },
+      "reimbursementJustified": "yes",
+      "rentAdjustment": "Yes (rolled back to $2,172.73)",
       "respondent": "Washington Square",
       "hearingOfficer": "Barbara M. Anscher",
-      "city": "Mountain View",
-      "caseNumber": "22230008",
-      "hearingDate": "November 18, 2022",
-      "filedOnDate": "September 26, 2022",
-      "decisionDate": "December 16, 2022"
+      "hearingDate": "2022-11-18",
+      "filedOnDate": "2022-09-26",
+      "decisionDate": "2022-12-16"
     }
   ]
 }

@@ -1,29 +1,27 @@
 {
   "petitions": [
     {
-      "petitionTypeNumber": "2",
-      "petitionerArgument": [
+      "caseInfo": "Appeal: C22230037",
+      "city": "Mountain View",
+      "issueTypeNumber": "2",
+      "argumentsAndDecisions": [
         {
-          "violatedCode": "Community Stabilization and Fair Rent Act (CSFRA)",
-          "summaryOfViolation": "Failure to maintain habitable premises due to insufficient hot water temperature below California health and safety codes since November 2022"
+          "complaintSummary": "Failure to maintain minimum hot water temperature required for habitable premises",
+          "violatedCode": "CSFRA and International Property Maintenance Code (IPMC) - minimum 110 degrees Fahrenheit requirement",
+          "reimbursement": "$2,640.00",
+          "complaintTiming": "Beginning November 2022",
+          "respondentHadNotice": "Yes, notice provided on November 23, 2022",
+          "evidenceAssessment": "Hearing Officer determined 110-degree Fahrenheit standard was appropriate based on IPMC and City's Multifamily Housing Inspection Department",
+          "impactAssessment": "Constitutes a failure to maintain habitable premises"
         }
       ],
-      "decision": "granted",
-      "reimbursement": "$2,640.00",
+      "reimbursementJustified": "yes",
       "rentAdjustment": "Yes (8%)",
-      "rationale": {
-        "respondentHadNotice": "Yes, notice given on November 23, 2022",
-        "issueDuration": "Since December 1, 2022",
-        "evidenceAssessment": "Hearing Officer determined 110-degree Fahrenheit minimum standard was appropriate based on International Property Maintenance Code and City's Multifamily Housing Inspection Department",
-        "impactAssessment": "Constituted a failure to maintain habitable premises"
-      },
-      "respondent": "Shirley Ankenbauer/Timpson Enterprises, Inc.",
-      "hearingOfficer": "Not specified",
-      "city": "Mountain View",
-      "caseNumber": "C22230037",
-      "hearingDate": "May 9, 2023",
-      "filedOnDate": "March 2, 2023",
-      "decisionDate": "January 26, 2024"
+      "respondent": "Timpson Enterprises, Inc.",
+      "hearingOfficer": "N/A",
+      "hearingDate": "2023-11-02",
+      "filedOnDate": "2023-03-02",
+      "decisionDate": "N/A"
     }
   ]
 }

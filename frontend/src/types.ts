@@ -1,37 +1,35 @@
 // This type is used to define the shape of our data.
 // You can use a Zod schema here if you want.
 export type Petition = {
-  petitionTypeNumber: string;
-  petitionerArgument: Array<{
-    violatedCode: string;
-    summaryOfViolation: string;
-  }>;
-  decision: string;
-  reimbursement: string;
-  rentAdjustment: string;
-  rationale: {
-    respondentHadNotice?: string;
-    issueDuration?: string;
-    evidenceAssessment?: string;
-    impactAssessment?: string;
-  };
-  respondent: string;
-  hearingOfficer: string;
-  city: string;
-  caseNumber: string;
-  filedOnDate: string;
-  hearingDate: string;
-  decisionDate: string;
-  source_file: string;
-};
+  caseInfo: string
+  city: string
+  issueTypeNumber: string
+  argumentsAndDecisions: Array<{
+    complaintSummary: string
+    violatedCode: string
+    reimbursement: string
+    complaintTiming: string
+    respondentHadNotice: string
+    evidenceAssessment: string
+    impactAssessment: string
+  }>
+  reimbursementJustified: string
+  rentAdjustment: string
+  respondent: string
+  hearingOfficer: string
+  hearingDate: string
+  filedOnDate: string
+  decisionDate: string
+  sourceFile: string
+}
 
 export type PetitionGuidance = {
   guidance: {
-    petitionType: string;
-    supportingCases: string[];
-    keyLegalGrounds: string[];
-    evidenceToGather: string[];
-    keyPoints: string[];
-    remediesToRequest: string[];
-  };
-};
+    petitionType: string
+    supportingCases: string[]
+    keyLegalGrounds: string[]
+    evidenceToGather: string[]
+    keyPoints: string[]
+    remediesToRequest: string[]
+  }
+}

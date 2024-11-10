@@ -1,29 +1,27 @@
 {
   "petitions": [
     {
-      "petitionTypeNumber": "2",
-      "petitionerArgument": [
+      "caseInfo": "Appeal: C22330052",
+      "city": "Mountain View",
+      "issueTypeNumber": "2",
+      "argumentsAndDecisions": [
         {
-          "violatedCode": "CSFRA",
-          "summaryOfViolation": "Landlord failed to maintain habitable premises due to water leaks, moisture, and mold issues in living room wall"
+          "complaintSummary": "Moisture and mold issues in living room wall due to water leaks near window",
+          "violatedCode": "CSFRA and Civil Code Section 1941.2",
+          "reimbursement": "$7,050.60",
+          "complaintTiming": "January 4, 2023 through July 1, 2023",
+          "respondentHadNotice": "Yes, multiple notices starting October 2021",
+          "evidenceAssessment": "Tenants' testimony and evidence found more credible than landlord's regarding timeline of repairs",
+          "impactAssessment": "Significant reduction in property value and health impacts from humidity/mold condition"
         }
       ],
-      "decision": "granted",
-      "reimbursement": "$7,050.60",
+      "reimbursementJustified": "yes",
       "rentAdjustment": "Yes (40%)",
-      "rationale": {
-        "respondentHadNotice": "Yes, first notified in October 2021",
-        "issueDuration": "Unresolved from January 4, 2023 through July 1, 2023",
-        "evidenceAssessment": "Tenants provided detailed testimony, maintenance requests, and photo evidence showing persistent issues; landlord's evidence was inconsistent",
-        "impactAssessment": "Significant reduction in property value and health impacts from humidity/mold condition"
-      },
       "respondent": "Highland Garden Apartments",
-      "hearingOfficer": "Not specified in document",
-      "city": "Mountain View",
-      "caseNumber": "C22330052",
-      "hearingDate": "August 30, 2023",
-      "filedOnDate": "May 16, 2023",
-      "decisionDate": "October 16, 2023"
+      "hearingOfficer": "N/A",
+      "hearingDate": "2023-08-30",
+      "filedOnDate": "2023-05-16",
+      "decisionDate": "2023-10-16"
     }
   ]
 }

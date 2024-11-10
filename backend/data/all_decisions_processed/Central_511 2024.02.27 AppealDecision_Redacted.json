@@ -1,29 +1,27 @@
 {
   "petitions": [
     {
-      "petitionTypeNumber": "1",
-      "petitionerArgument": [
+      "caseInfo": "Appeal: 23240026",
+      "city": "Mountain View",
+      "issueTypeNumber": "1",
+      "argumentsAndDecisions": [
         {
+          "complaintSummary": "Tenant filed for relief from banked rent increase of 5% due to financial hardship",
           "violatedCode": "CSFRA Section 1707(d)",
-          "summaryOfViolation": "Undue tenant hardship due to household income not exceeding 100% of median household income"
+          "reimbursement": "$28.25/month for 10 months and $101.44/month for 3 months",
+          "complaintTiming": "Filed October 9, 2023, within 10 days of effective rent increase date",
+          "respondentHadNotice": "Yes, through Notice of Rent Increase dated August 29, 2023",
+          "evidenceAssessment": "Hearing officer found tenant's household income was less than AMI threshold and qualified for relief",
+          "impactAssessment": "Determined tenant would experience financial hardship if rent increase was imposed"
         }
       ],
-      "decision": "granted",
-      "reimbursement": "$28.25 per month for Dec 2022-Sep 2023; $101.44 per month for Oct-Dec 2023",
+      "reimbursementJustified": "yes",
       "rentAdjustment": "Yes (5%)",
-      "rationale": {
-        "respondentHadNotice": "Yes, through formal rent increase notice dated August 29, 2023",
-        "issueDuration": "Issue addressed within 10 days of effective rent increase date",
-        "evidenceAssessment": "Petitioner demonstrated income below threshold and provided necessary documentation",
-        "impactAssessment": "Tenant would experience hardship if proposed rent increase were imposed"
-      },
       "respondent": "Shoreline Village LLC",
-      "hearingOfficer": "Not specified",
-      "city": "Mountain View",
-      "caseNumber": "23240026",
-      "hearingDate": "November 29, 2023",
-      "filedOnDate": "October 9, 2023",
-      "decisionDate": "January 11, 2024"
+      "hearingOfficer": "N/A",
+      "hearingDate": "2023-11-29",
+      "filedOnDate": "2023-10-09",
+      "decisionDate": "2024-01-11"
     }
   ]
 }

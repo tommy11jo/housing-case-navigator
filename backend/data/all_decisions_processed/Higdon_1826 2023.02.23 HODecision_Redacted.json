@@ -1,33 +1,54 @@
 {
   "petitions": [
     {
-      "petitionTypeNumber": "2",
-      "petitionerArgument": [
+      "caseInfo": "Petition: 22230012",
+      "city": "Mountain View",
+      "issueTypeNumber": "2",
+      "argumentsAndDecisions": [
         {
+          "complaintSummary": "Water leak in basement causing severe odor and flooding",
           "violatedCode": "CSFRA \u00a71710(b)",
-          "summaryOfViolation": "Basement flooding and sewage leak causing uninhabitable conditions and strong smells"
+          "reimbursement": "$2,484.00",
+          "complaintTiming": "April 2022 - June 2022",
+          "respondentHadNotice": "Yes, reported in April 2022",
+          "evidenceAssessment": "Evidence showed issue persisted longer than landlord claimed based on CLESEPA letter from 2021",
+          "impactAssessment": "Tenants unable to use kitchen, forced to wash dishes outside, visitors reluctant to enter due to smell"
         },
         {
-          "violatedCode": "Civil Code \u00a71941.1",
-          "summaryOfViolation": "Multiple habitability issues including broken windows, pest infestation, faulty water heater, and structural cracks"
+          "complaintSummary": "Broken windows and structural gaps allowing pest entry",
+          "violatedCode": "CSFRA \u00a71710(b)",
+          "reimbursement": "$1,863.00",
+          "complaintTiming": "October 2022 - February 2023",
+          "respondentHadNotice": "Yes, documented in City inspection reports",
+          "evidenceAssessment": "City inspection reports confirmed issues",
+          "impactAssessment": "Affected weatherproofing and pest control of unit"
+        },
+        {
+          "complaintSummary": "Severe pest infestation (cockroaches and rats)",
+          "violatedCode": "CSFRA \u00a71710(b)",
+          "reimbursement": "$14,593.50",
+          "complaintTiming": "December 2020 - November 2022 (23.5 months)",
+          "respondentHadNotice": "Yes, reported since December 2020",
+          "evidenceAssessment": "Monthly pest control was insufficient to resolve the issue",
+          "impactAssessment": "Severe habitability violation with long-term persistence"
+        },
+        {
+          "complaintSummary": "Lack of hot water/faulty water heater",
+          "violatedCode": "CSFRA \u00a71710(b), \u00a71702(b)",
+          "reimbursement": "$27,894.00",
+          "complaintTiming": "December 2016 - October 2020 (46 months)",
+          "respondentHadNotice": "Yes, reported in 2016",
+          "evidenceAssessment": "Confirmed lack of hot water for extended period",
+          "impactAssessment": "Major violation of habitability affecting basic living conditions"
         }
       ],
-      "decision": "granted",
-      "reimbursement": "46834.50",
+      "reimbursementJustified": "yes",
       "rentAdjustment": "Yes (10%)",
-      "rationale": {
-        "respondentHadNotice": "Yes, multiple issues reported between 2016-2022",
-        "issueDuration": "Various issues lasting from 3 months to over 46 months",
-        "evidenceAssessment": "City inspection reports and witness testimony confirmed multiple habitability violations",
-        "impactAssessment": "Severe impact on daily living - unable to use kitchen, forced to wash dishes outside, pest infestation, no hot water"
-      },
       "respondent": "Maria Guadalupe Roque",
       "hearingOfficer": "Derek W. Chantler",
-      "city": "Mountain View",
-      "caseNumber": "22230012",
-      "hearingDate": "December 1, 2022",
-      "filedOnDate": "October 19, 2022",
-      "decisionDate": "February 23, 2023"
+      "hearingDate": "2022-12-01",
+      "filedOnDate": "2022-10-19",
+      "decisionDate": "2023-02-23"
     }
   ]
 }

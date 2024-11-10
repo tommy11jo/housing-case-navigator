@@ -1,33 +1,27 @@
 {
   "petitions": [
     {
-      "petitionTypeNumber": "1",
-      "petitionerArgument": [
+      "caseInfo": "Petition: 22230011",
+      "city": "Mountain View",
+      "issueTypeNumber": "1",
+      "argumentsAndDecisions": [
         {
-          "violatedCode": "CSFRA Section 1707(f)",
-          "summaryOfViolation": "Unlawful rent increase above allowed Annual General Adjustment (AGA) and multiple rent increases within 12 months"
-        },
-        {
-          "violatedCode": "CSFRA Registration Requirements",
-          "summaryOfViolation": "Landlord failed to register property with Rent Stabilization Program before implementing rent increases"
+          "complaintSummary": "Unlawful rent increases above allowed AGA and multiple increases within 12 months",
+          "violatedCode": "CSFRA Section 1707(f), CSFRA Regs. Chapt. 4(B)",
+          "reimbursement": "$2,209.00",
+          "complaintTiming": "March 2022 - October 2022",
+          "respondentHadNotice": "No, landlord failed to provide required CSFRA notices",
+          "evidenceAssessment": "Hearing officer found rent increases unlawful due to failure to register property and exceeding AGA limits",
+          "impactAssessment": "Tenant was overcharged beyond legal base rent amount"
         }
       ],
-      "decision": "granted",
-      "reimbursement": "2209.00",
+      "reimbursementJustified": "yes",
       "rentAdjustment": "Yes",
-      "rationale": {
-        "respondentHadNotice": "No, landlord failed to provide required CSFRA notices to tenant",
-        "issueDuration": "Multiple unlawful increases from March 2022 through October 2022",
-        "evidenceAssessment": "Documentation showed rent increases exceeded AGA limits and property was not properly registered",
-        "impactAssessment": "Tenant overpaid rent due to multiple unlawful increases"
-      },
       "respondent": "Fairview Townhomes, WRL LLC",
       "hearingOfficer": "E. Alexandra DeLateur",
-      "city": "Mountain View",
-      "caseNumber": "22230011",
-      "hearingDate": "January 13, 2023",
-      "filedOnDate": "September 30, 2022",
-      "decisionDate": "February 21, 2023"
+      "hearingDate": "2023-01-13",
+      "filedOnDate": "2022-09-30",
+      "decisionDate": "2023-02-21"
     }
   ]
 }
