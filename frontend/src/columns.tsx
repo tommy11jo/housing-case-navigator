@@ -187,4 +187,8 @@ export const columns: ColumnDef<Petition>[] = [
       }
     },
   },
+  {
+    header: "Source File",
+    accessorKey: "source_file",
+  },
 ];

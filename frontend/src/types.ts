@@ -22,4 +22,5 @@ export type Petition = {
   filedOnDate: string;
   hearingDate: string;
   decisionDate: string;
+  source_file: string;
 };

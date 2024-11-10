@@ -41,6 +41,7 @@ export const DATA: Petition[] = [
     hearingDate: "November 8, 2023",
     filedOnDate: "August 25, 2023",
     decisionDate: "February 15, 2024",
+    source_file: "WMiddlefield_2120 2024.02.15 HODecision_Redacted.json",
   },
   {
     petitionTypeNumber: "1",
@@ -70,6 +71,7 @@ export const DATA: Petition[] = [
     hearingDate: "March 10, 2023",
     filedOnDate: "February 1, 2023",
     decisionDate: "April 12, 2023",
+    source_file: "Park_880 2023.04.12 HODecision_Redacted (2).json",
   },
   {
     petitionTypeNumber: "2",
@@ -105,6 +107,7 @@ export const DATA: Petition[] = [
     hearingDate: "September 29, 2023",
     filedOnDate: "June 28, 2023",
     decisionDate: "November 22, 2023",
+    source_file: "California_1556 2023.11.21 HODecision_Redacted.json",
   },
   {
     petitionTypeNumber: "2",
@@ -132,6 +135,7 @@ export const DATA: Petition[] = [
     hearingDate: "May 9, 2023",
     filedOnDate: "March 2, 2023",
     decisionDate: "January 26, 2024",
+    source_file: "Wright_1725 2024.04.03 RemandAppealDecision_Redacted.json",
   },
   {
     petitionTypeNumber: "2",
@@ -166,6 +170,8 @@ export const DATA: Petition[] = [
     hearingDate: "March 29, 2022",
     filedOnDate: "July 4, 2022",
     decisionDate: "January 18, 2023",
+    source_file:
+      "2023-01-23 Rent Boards Finding and Decisions Appeal Case 2021056 - 2070 Glen Way Apartment F.json",
   },
   {
     petitionTypeNumber: "1",
@@ -201,6 +207,7 @@ export const DATA: Petition[] = [
     hearingDate: "January 13, 2023",
     filedOnDate: "September 30, 2022",
     decisionDate: "February 21, 2023",
+    source_file: "Rengstorff_429 2023.02.17 HODecision_Redacted.json",
   },
   {
     petitionTypeNumber: "2",
@@ -237,49 +244,52 @@ export const DATA: Petition[] = [
     hearingDate: "May 3, 2023",
     filedOnDate: "February 13, 2023",
     decisionDate: "June 30, 2023",
+    source_file: "Montecito_1260 2023.10.24 AppealDecision_Redacted.json",
   },
-  // {
-  //   petitionTypeNumber: "3",
-  //   petitionerArgument: [
-  //     {
-  //       violatedCode: "CSFRA Registration Requirements",
-  //       summaryOfViolation:
-  //         "Failure to register property with Rent Stabilization Program prior to issuing rent increase",
-  //     },
-  //   ],
-  //   decision: "granted",
-  //   reimbursement: "200.00",
-  //   rentAdjustment: "Yes (5%)",
-  //   rationale: {
-  //     respondentHadNotice: "Yes",
-  //     issueDuration: "2021-2023",
-  //     evidenceAssessment:
-  //       "Property was not registered until September 2023, after rent increase notice was issued",
-  //     impactAssessment:
-  //       "Rent increase deemed invalid due to non-compliance with registration requirements",
-  //   },
-  // },
-  // {
-  //   petitionTypeNumber: "2",
-  //   petitionerArgument: [
-  //     {
-  //       violatedCode: "Civil Code Sections 1941.1",
-  //       summaryOfViolation:
-  //         "Multiple maintenance issues including water leaks, mold, broken stove, and other habitability concerns",
-  //     },
-  //   ],
-  //   decision: "granted",
-  //   reimbursement: "5750.00",
-  //   rentAdjustment: "Yes (various percentages for different issues)",
-  //   rationale: {
-  //     respondentHadNotice: "Yes, through multiple emails and communications",
-  //     issueDuration: "Various issues from 2021-2023",
-  //     evidenceAssessment:
-  //       "Photos, videos, and testimony showed pattern of maintenance problems with little response",
-  //     impactAssessment:
-  //       "Significant impact on habitability and use of premises",
-  //   },
-  // },
+  {
+    petitionTypeNumber: "3",
+    petitionerArgument: [
+      {
+        violatedCode: "CSFRA Registration Requirements",
+        summaryOfViolation:
+          "Failure to register property with Rent Stabilization Program prior to issuing rent increase",
+      },
+    ],
+    decision: "granted",
+    reimbursement: "200.00",
+    rentAdjustment: "Yes (5%)",
+    rationale: {
+      respondentHadNotice: "Yes",
+      issueDuration: "2021-2023",
+      evidenceAssessment:
+        "Property was not registered until September 2023, after rent increase notice was issued",
+      impactAssessment:
+        "Rent increase deemed invalid due to non-compliance with registration requirements",
+    },
+    source_file: "Wentworth_1084 2024.05.06 HODecision_Redacted.json",
+  },
+  {
+    petitionTypeNumber: "2",
+    petitionerArgument: [
+      {
+        violatedCode: "Civil Code Sections 1941.1",
+        summaryOfViolation:
+          "Multiple maintenance issues including water leaks, mold, broken stove, and other habitability concerns",
+      },
+    ],
+    decision: "granted",
+    reimbursement: "5750.00",
+    rentAdjustment: "Yes (various percentages for different issues)",
+    rationale: {
+      respondentHadNotice: "Yes, through multiple emails and communications",
+      issueDuration: "Various issues from 2021-2023",
+      evidenceAssessment:
+        "Photos, videos, and testimony showed pattern of maintenance problems with little response",
+      impactAssessment:
+        "Significant impact on habitability and use of premises",
+    },
+    source_file: "Wentworth_1084 2024.05.06 HODecision_Redacted.json",
+  },
   {
     petitionTypeNumber: "3",
     petitionerArgument: [
@@ -307,6 +317,7 @@ export const DATA: Petition[] = [
     hearingDate: "May 18, 2023",
     filedOnDate: "December 30, 2022",
     decisionDate: "August 3, 2023",
+    source_file: "Chiquita_465 2023.08.04 HODecision_Redacted.json",
   },
   {
     petitionTypeNumber: "2",
@@ -349,6 +360,7 @@ export const DATA: Petition[] = [
     hearingDate: "May 4, 2023 and December 20, 2023",
     filedOnDate: "February 3, 2023",
     decisionDate: "March 20, 2024",
+    source_file: "Whitney_2489 2024.03.20 HODecision_Redacted.json",
   },
   {
     petitionTypeNumber: "2",
@@ -380,6 +392,7 @@ export const DATA: Petition[] = [
     hearingDate: "October 7, 2022",
     filedOnDate: "September 9, 2022",
     decisionDate: "November 18, 2022",
+    source_file: "Del Medio_141 2022.11.18 HODecision_Redacted.json",
   },
   {
     petitionTypeNumber: "2",
@@ -419,6 +432,7 @@ export const DATA: Petition[] = [
     hearingDate: "November 8, 2023",
     filedOnDate: "August 25, 2023",
     decisionDate: "February 15, 2024",
+    source_file: "WMiddlefield_2120 2024.04.26 AppealDecision_Redacted.json",
   },
   {
     petitionTypeNumber: "1",
@@ -448,6 +462,7 @@ export const DATA: Petition[] = [
     hearingDate: "March 10, 2023",
     filedOnDate: "December 27, 2022",
     decisionDate: "April 12, 2023",
+    source_file: "Park_880 2023.04.12 HODecision_Redacted (1).json",
   },
   {
     petitionTypeNumber: "1",
@@ -481,6 +496,7 @@ export const DATA: Petition[] = [
     hearingDate: "November 18, 2022",
     filedOnDate: "September 26, 2022",
     decisionDate: "December 16, 2022",
+    source_file: "Montecito_1375 2022.12.14 HODecision_Redacted.json",
   },
   {
     petitionTypeNumber: "2",
@@ -516,6 +532,7 @@ export const DATA: Petition[] = [
     hearingDate: "May 17, 2024",
     filedOnDate: "January 25, 2024",
     decisionDate: "May 27, 2024",
+    source_file: "Decision Wilkerson v WPC 20240001.json",
   },
   {
     petitionTypeNumber: "2",
@@ -544,6 +561,7 @@ export const DATA: Petition[] = [
     hearingDate: "August 30, 2023",
     filedOnDate: "May 16, 2023",
     decisionDate: "October 16, 2023",
+    source_file: "Escuela_222 2024.01.25 AppealDecision_Redacted.json",
   },
   {
     petitionTypeNumber: "1",
@@ -575,6 +593,7 @@ export const DATA: Petition[] = [
     hearingDate: "November 29, 2023",
     filedOnDate: "October 9, 2023",
     decisionDate: "January 11, 2024",
+    source_file: "Central_511 2024.02.27 AppealDecision_Redacted.json",
   },
   {
     petitionTypeNumber: "2",
@@ -609,6 +628,7 @@ export const DATA: Petition[] = [
     hearingDate: "October 4, 2023",
     filedOnDate: "May 26, 2023",
     decisionDate: "February 1, 2024",
+    source_file: "Rich_939 2024.04.03 AppealDecision_Redacted.json",
   },
   {
     petitionTypeNumber: "2",
@@ -644,6 +664,7 @@ export const DATA: Petition[] = [
     hearingDate: "October 4, 2023",
     filedOnDate: "May 26, 2023",
     decisionDate: "January 25, 2024",
+    source_file: "Rich_939 2024.02.01 HODecision_Redacted.json",
   },
   {
     petitionTypeNumber: "2",
@@ -673,6 +694,7 @@ export const DATA: Petition[] = [
     hearingDate: "May 9, 2023",
     filedOnDate: "March 2, 2023",
     decisionDate: "June 9, 2023",
+    source_file: "Wright_1725 2023.10.12 AppealDecision_Redacted.json",
   },
   {
     petitionTypeNumber: "1",
@@ -701,6 +723,7 @@ export const DATA: Petition[] = [
     hearingDate: "February 16, 2024",
     filedOnDate: "November 22, 2023",
     decisionDate: "April 22, 2024",
+    source_file: "California_2200 2024.04.24 HODecision_Redacted.json",
   },
   {
     petitionTypeNumber: "2",
@@ -729,6 +752,7 @@ export const DATA: Petition[] = [
     hearingDate: "February 16, 2024",
     filedOnDate: "November 22, 2023",
     decisionDate: "April 22, 2024",
+    source_file: "California_2200 2024.04.24 HODecision_Redacted.json",
   },
   {
     petitionTypeNumber: "2",
@@ -757,6 +781,7 @@ export const DATA: Petition[] = [
     hearingDate: "May 9, 2023",
     filedOnDate: "March 3, 2023",
     decisionDate: "June 9, 2023",
+    source_file: "Wright_1725 2023.06.09 HODecision_Redacted.json",
   },
   {
     petitionTypeNumber: "1",
@@ -785,6 +810,7 @@ export const DATA: Petition[] = [
     hearingDate: "January 29, 2024",
     filedOnDate: "November 28, 2023",
     decisionDate: "March 4, 2024",
+    source_file: "Continental_707 2024.03.04 HOCPDecision_Redacted.json",
   },
   {
     petitionTypeNumber: "2",
@@ -819,6 +845,7 @@ export const DATA: Petition[] = [
     hearingDate: "December 18, 2023",
     filedOnDate: "October 10, 2023",
     decisionDate: "March 25, 2024",
+    source_file: "Church_31 2024.03.25 HODecision_Redacted.json",
   },
   {
     petitionTypeNumber: "2",
@@ -848,6 +875,7 @@ export const DATA: Petition[] = [
     hearingDate: "November 14, 2023",
     filedOnDate: "October 19, 2022",
     decisionDate: "January 12, 2024",
+    source_file: "Higdon_1826 2024.01.29 HOCPDecision_Redacted.json",
   },
   {
     petitionTypeNumber: "2",
@@ -876,6 +904,7 @@ export const DATA: Petition[] = [
     hearingDate: "October 7, 2022",
     filedOnDate: "September 15, 2022",
     decisionDate: "November 16, 2022",
+    source_file: "DelMedio_141 2022.11.16 HODecision_Redacted.json",
   },
   {
     petitionTypeNumber: "2",
@@ -909,6 +938,7 @@ export const DATA: Petition[] = [
     hearingDate: "May 3, 2023",
     filedOnDate: "February 13, 2023",
     decisionDate: "June 30, 2023",
+    source_file: "Montecito_1260 2023.06.30 HODecision_Redacted.json",
   },
   {
     petitionTypeNumber: "2",
@@ -939,6 +969,7 @@ export const DATA: Petition[] = [
     hearingDate: "August 30, 2023",
     filedOnDate: "May 16, 2023",
     decisionDate: "October 10, 2023",
+    source_file: "Escuela_222 2023.10.16 HODecision_Redacted.json",
   },
   {
     petitionTypeNumber: "2",
@@ -973,6 +1004,7 @@ export const DATA: Petition[] = [
     hearingDate: "July 12, 2023",
     filedOnDate: "April 21, 2023",
     decisionDate: "August 31, 2023",
+    source_file: "Crestview_1050 2023.08.31 HODecision_Redacted.json",
   },
   {
     petitionTypeNumber: "1",
@@ -1001,6 +1033,7 @@ export const DATA: Petition[] = [
     hearingDate: "October 6, 2022",
     filedOnDate: "August 5, 2022",
     decisionDate: "November 8, 2022",
+    source_file: "Del Medio_141 2022.11.08 HODecision_Redacted.json",
   },
   {
     petitionTypeNumber: "1",
@@ -1030,6 +1063,7 @@ export const DATA: Petition[] = [
     hearingDate: "November 29, 2023",
     filedOnDate: "October 9, 2023",
     decisionDate: "January 11, 2024",
+    source_file: "Central_511 2024.01.11 HODecision_Redacted.json",
   },
   {
     petitionTypeNumber: "1",
@@ -1058,6 +1092,7 @@ export const DATA: Petition[] = [
     hearingDate: "October 6, 2022",
     filedOnDate: "August 5, 2022",
     decisionDate: "November 4, 2022",
+    source_file: "Del Medio_141 2022.11.04 HODecision_Redacted.json",
   },
   {
     petitionTypeNumber: "2",
@@ -1090,6 +1125,7 @@ export const DATA: Petition[] = [
     hearingDate: "May 17, 2024",
     filedOnDate: "November 3, 2023",
     decisionDate: "May 22, 2024",
+    source_file: "Decision Franklin v WPC 20230001 and 20230002.json",
   },
   {
     petitionTypeNumber: "3",
@@ -1119,6 +1155,7 @@ export const DATA: Petition[] = [
     hearingDate: "May 17, 2023",
     filedOnDate: "March 8, 2023",
     decisionDate: "June 30, 2023",
+    source_file: "Villa_1643 2023.06.30 HODecision_Redacted.json",
   },
   {
     petitionTypeNumber: "2",
@@ -1152,6 +1189,7 @@ export const DATA: Petition[] = [
     hearingDate: "December 1, 2022",
     filedOnDate: "October 19, 2022",
     decisionDate: "February 23, 2023",
+    source_file: "Higdon_1826 2023.02.23 HODecision_Redacted.json",
   },
   {
     petitionTypeNumber: "1",
@@ -1181,6 +1219,7 @@ export const DATA: Petition[] = [
     hearingDate: "November 16, 2022",
     filedOnDate: "September 29, 2022",
     decisionDate: "December 8, 2022",
+    source_file: "NShoreline_750 2022.12.08 HODecision_Redacted.json",
   },
   {
     petitionTypeNumber: "1",
@@ -1214,6 +1253,7 @@ export const DATA: Petition[] = [
     hearingDate: "April 13, 2023",
     filedOnDate: "February 9, 2023",
     decisionDate: "May 19, 2023",
+    source_file: "Continental_707 2023.05.19 HODecision_Redacted.json",
   },
   {
     petitionTypeNumber: "1",
@@ -1249,6 +1289,7 @@ export const DATA: Petition[] = [
     hearingDate: "February 22, 2023",
     filedOnDate: "December 15, 2022",
     decisionDate: "March 23, 2023",
+    source_file: "NWhisman_100 2023.03.23 HODecision_Redacted.json",
   },
   {
     petitionTypeNumber: "1",
@@ -1279,6 +1320,7 @@ export const DATA: Petition[] = [
     hearingDate: "March 10, 2023",
     filedOnDate: "December 19, 2022",
     decisionDate: "April 13, 2023",
+    source_file: "Park_880 2023.04.13 HODecision_Redacted.json",
   },
   {
     petitionTypeNumber: "1",
@@ -1312,6 +1354,7 @@ export const DATA: Petition[] = [
     hearingDate: "January 12, 2023",
     filedOnDate: "November 29, 2022",
     decisionDate: "February 13, 2023",
+    source_file: "Church_31 2023.02.13 HODecision_Redacted.json",
   },
   {
     petitionTypeNumber: "2",
@@ -1342,6 +1385,7 @@ export const DATA: Petition[] = [
     hearingDate: "May 17, 2024",
     filedOnDate: "November 15, 2023",
     decisionDate: "May 23, 2024",
+    source_file: "Decision Nee v WPC 20230003 and 20230004.json",
   },
   {
     petitionTypeNumber: "2",
@@ -1382,5 +1426,6 @@ export const DATA: Petition[] = [
     hearingDate: "December 20, 2023",
     filedOnDate: "February 3, 2023",
     decisionDate: "March 20, 2024",
+    source_file: "Whitney_2489 2024.07.09 Appeal Decision_Redacted.json",
   },
 ];
