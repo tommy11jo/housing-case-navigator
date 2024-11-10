@@ -1,0 +1,37 @@
+{
+  "petitions": [
+    {
+      "petitionTypeNumber": "2",
+      "petitionerArgument": [
+        {
+          "violatedCode": "CSFRA Sections 1706(a) and 1707(a)",
+          "summaryOfViolation": "Respondent improperly calculated Base Rent and imposed unlawful rent increases"
+        },
+        {
+          "violatedCode": "CA Civil Code \u00a7 1941.1, Health & Safety Code \u00a7 17920.3(c)",
+          "summaryOfViolation": "Multiple habitability issues including second-hand smoke, rodent infestation, inadequate lighting, trash accumulation, and swimming pool maintenance"
+        },
+        {
+          "violatedCode": "CSFRA Housing Services Requirements",
+          "summaryOfViolation": "Reduction in housing services including laundry room closure and lack of on-site property manager"
+        }
+      ],
+      "decision": "granted",
+      "reimbursement": "$34,931.23",
+      "rentAdjustment": "Yes (20%)",
+      "rationaleForDecision": {
+        "respondentHadNotice": "Yes, through multiple complaints and emails from 2019-2023",
+        "issueDuration": "Various issues persisted between 2019-2023",
+        "evidenceAssessment": "Hearing Officer found substantial evidence through testimony, photos, inspection reports and emails documenting ongoing issues",
+        "impactAssessment": "Multiple habitability and maintenance issues significantly impacted tenant's use and enjoyment of property"
+      },
+      "respondent": "West Washington Gardens LLC/CMF Property Management",
+      "hearingOfficer": "Not explicitly stated",
+      "city": "Mountain View",
+      "caseNumber": "C22230019 and C22230025",
+      "hearingDate": "December 20, 2023",
+      "filedOnDate": "February 3, 2023",
+      "decisionDate": "March 20, 2024"
+    }
+  ]
+}

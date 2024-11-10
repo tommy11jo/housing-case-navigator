@@ -1,0 +1,29 @@
+{
+  "petitions": [
+    {
+      "petitionTypeNumber": "1",
+      "petitionerArgument": [
+        {
+          "violatedCode": "CSFRA Sec. 1707(d) and Chapter 7, Section C",
+          "summaryOfViolation": "Undue tenant hardship due to inadequate household income below AMI threshold, making banked rent increases unaffordable"
+        }
+      ],
+      "decision": "granted",
+      "reimbursement": "Full refund of rent increase paid from Sept 1-Oct 9, 2022",
+      "rentAdjustment": "Yes (4.9%)",
+      "rationale": {
+        "respondentHadNotice": "Yes, petition filed before increase effective date",
+        "issueDuration": "Not applicable",
+        "evidenceAssessment": "Tenant proved income significantly below 100% AMI threshold, landlord did not dispute income evidence",
+        "impactAssessment": "Tenant's income significantly below hardship threshold, hardship expected to continue"
+      },
+      "respondent": "Del Medio Manor, LLP and Calson Property Management",
+      "hearingOfficer": "Martin Eichner",
+      "city": "Mountain View",
+      "caseNumber": "22230002",
+      "hearingDate": "October 6, 2022",
+      "filedOnDate": "August 5, 2022",
+      "decisionDate": "November 4, 2022"
+    }
+  ]
+}

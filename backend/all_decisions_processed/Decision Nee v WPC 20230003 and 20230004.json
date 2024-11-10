@@ -1,0 +1,29 @@
+{
+  "petitions": [
+    {
+      "petitionTypeNumber": "2",
+      "petitionerArgument": [
+        {
+          "violatedCode": "Section 13 of City's Rent Stabilization Ordinance & CA Civil Code \u00a7 1941.1",
+          "summaryOfViolation": "Roach infestation, unsanitary conditions from neighbor's garbage storage, rats on balcony, and noise disturbances impacting habitability"
+        }
+      ],
+      "decision": "granted",
+      "reimbursement": "$2024.79",
+      "rentAdjustment": "Yes (7.5%)",
+      "rationale": {
+        "respondentHadNotice": "Yes, since at least 2022",
+        "issueDuration": "Multiple years of ongoing issues, particularly since 2022",
+        "evidenceAssessment": "Tenant's testimony supported finding of periodic maintenance and habitability issues; temporary remedial efforts by landlord proved insufficient",
+        "impactAssessment": "Unit not free of roaches/rats, balcony unusable due to neighbor's dog waste, significant impact on living conditions"
+      },
+      "respondent": "Woodland Park Communities",
+      "hearingOfficer": "Michael H. Roush",
+      "city": "East Palo Alto",
+      "caseNumber": "2023-0003 and 2023-0004",
+      "hearingDate": "May 17, 2024",
+      "filedOnDate": "November 15, 2023",
+      "decisionDate": "May 23, 2024"
+    }
+  ]
+}

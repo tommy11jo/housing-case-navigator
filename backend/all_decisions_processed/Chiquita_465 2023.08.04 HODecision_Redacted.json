@@ -1,0 +1,29 @@
+{
+  "petitions": [
+    {
+      "petitionTypeNumber": "3",
+      "petitionerArgument": [
+        {
+          "violatedCode": "CSFRA \u00a7 1707(f)(1)",
+          "summaryOfViolation": "Failure to register property with the City before imposing rent increase"
+        }
+      ],
+      "decision": "granted",
+      "reimbursement": "1487.20",
+      "rentAdjustment": "Yes (2%)",
+      "rationale": {
+        "respondentHadNotice": "No evidence of prior notice",
+        "issueDuration": "July 2022 - April 2023 (improper rent increase period)",
+        "evidenceAssessment": "Property registration records showed non-compliance during rent increase period",
+        "impactAssessment": "Tenant was charged 10% increase instead of allowed 2% due to registration non-compliance"
+      },
+      "respondent": "Tenant Planet Inc.",
+      "hearingOfficer": "Derek W. Chantler",
+      "city": "Mountain View",
+      "caseNumber": "C22230021",
+      "hearingDate": "May 18, 2023",
+      "filedOnDate": "December 30, 2022",
+      "decisionDate": "August 3, 2023"
+    }
+  ]
+}

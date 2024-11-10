@@ -1,0 +1,29 @@
+{
+  "petitions": [
+    {
+      "petitionTypeNumber": "1",
+      "petitionerArgument": [
+        {
+          "violatedCode": "CSFRA Section 1707",
+          "summaryOfViolation": "Landlord imposed multiple unlawful rent increases and failed to register property with Rent Stabilization Program"
+        }
+      ],
+      "decision": "granted",
+      "reimbursement": "2,337.04",
+      "rentAdjustment": "No",
+      "rationale": {
+        "respondentHadNotice": "Yes, was notified by City about compliance requirements",
+        "issueDuration": "Failed to register property for years until February 3, 2023",
+        "evidenceAssessment": "Landlord did not contest tenant's factual statements and failed to provide required CSFRA notices",
+        "impactAssessment": "Tenant was overcharged due to improper rent increases above allowable amounts"
+      },
+      "respondent": "Francisco Cervantes aka Frank Cervantes for Cervantes, LLC",
+      "hearingOfficer": "E. Alexandra DeLateur",
+      "city": "Mountain View",
+      "caseNumber": "22230016",
+      "hearingDate": "March 10, 2023",
+      "filedOnDate": "December 19, 2022",
+      "decisionDate": "April 13, 2023"
+    }
+  ]
+}

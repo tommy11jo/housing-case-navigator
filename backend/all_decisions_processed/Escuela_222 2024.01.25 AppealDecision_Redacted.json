@@ -1,0 +1,29 @@
+{
+  "petitions": [
+    {
+      "petitionTypeNumber": "2",
+      "petitionerArgument": [
+        {
+          "violatedCode": "CSFRA",
+          "summaryOfViolation": "Landlord failed to maintain habitable premises due to water leaks, moisture, and mold issues in living room wall"
+        }
+      ],
+      "decision": "granted",
+      "reimbursement": "$7,050.60",
+      "rentAdjustment": "Yes (40%)",
+      "rationale": {
+        "respondentHadNotice": "Yes, first notified in October 2021",
+        "issueDuration": "Unresolved from January 4, 2023 through July 1, 2023",
+        "evidenceAssessment": "Tenants provided detailed testimony, maintenance requests, and photo evidence showing persistent issues; landlord's evidence was inconsistent",
+        "impactAssessment": "Significant reduction in property value and health impacts from humidity/mold condition"
+      },
+      "respondent": "Highland Garden Apartments",
+      "hearingOfficer": "Not specified in document",
+      "city": "Mountain View",
+      "caseNumber": "C22330052",
+      "hearingDate": "August 30, 2023",
+      "filedOnDate": "May 16, 2023",
+      "decisionDate": "October 16, 2023"
+    }
+  ]
+}

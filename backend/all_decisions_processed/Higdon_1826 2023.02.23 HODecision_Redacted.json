@@ -1,0 +1,33 @@
+{
+  "petitions": [
+    {
+      "petitionTypeNumber": "2",
+      "petitionerArgument": [
+        {
+          "violatedCode": "CSFRA \u00a71710(b)",
+          "summaryOfViolation": "Basement flooding and sewage leak causing uninhabitable conditions and strong smells"
+        },
+        {
+          "violatedCode": "Civil Code \u00a71941.1",
+          "summaryOfViolation": "Multiple habitability issues including broken windows, pest infestation, faulty water heater, and structural cracks"
+        }
+      ],
+      "decision": "granted",
+      "reimbursement": "46834.50",
+      "rentAdjustment": "Yes (10%)",
+      "rationale": {
+        "respondentHadNotice": "Yes, multiple issues reported between 2016-2022",
+        "issueDuration": "Various issues lasting from 3 months to over 46 months",
+        "evidenceAssessment": "City inspection reports and witness testimony confirmed multiple habitability violations",
+        "impactAssessment": "Severe impact on daily living - unable to use kitchen, forced to wash dishes outside, pest infestation, no hot water"
+      },
+      "respondent": "Maria Guadalupe Roque",
+      "hearingOfficer": "Derek W. Chantler",
+      "city": "Mountain View",
+      "caseNumber": "22230012",
+      "hearingDate": "December 1, 2022",
+      "filedOnDate": "October 19, 2022",
+      "decisionDate": "February 23, 2023"
+    }
+  ]
+}

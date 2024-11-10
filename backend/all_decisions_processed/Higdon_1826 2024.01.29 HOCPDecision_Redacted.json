@@ -1,0 +1,29 @@
+{
+  "petitions": [
+    {
+      "petitionTypeNumber": "2",
+      "petitionerArgument": [
+        {
+          "violatedCode": "Mountain View Municipal Code Article XVII, Section 1700",
+          "summaryOfViolation": "Maintenance and habitability issues including gaps allowing vermin entry, kitchen defects, door problems, and structural issues"
+        }
+      ],
+      "decision": "granted",
+      "reimbursement": "$46,834.50",
+      "rentAdjustment": "Yes ($310.50 monthly reduction)",
+      "rationale": {
+        "respondentHadNotice": "Yes, documented through multiple inspections and communications",
+        "issueDuration": "Multiple months spanning 2022-2023",
+        "evidenceAssessment": "City inspections verified repairs were completed, with photographic evidence and permits confirming work",
+        "impactAssessment": "Issues affected habitability including vermin entry and structural integrity"
+      },
+      "respondent": "Maria Guadalupe Roque",
+      "hearingOfficer": "Derek W. Chantler",
+      "city": "Mountain View",
+      "caseNumber": "22230012",
+      "hearingDate": "November 14, 2023",
+      "filedOnDate": "October 19, 2022",
+      "decisionDate": "January 12, 2024"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "petitions": [
+    {
+      "petitionTypeNumber": "2",
+      "petitionerArgument": [
+        {
+          "violatedCode": "Cal. Code Regs. Tit. 25, \u00a7 34",
+          "summaryOfViolation": "Landlord failed to maintain adequate heating facilities and fix malfunctioning gas heater"
+        },
+        {
+          "violatedCode": "Civil Code Sections 1941.1",
+          "summaryOfViolation": "Failure to maintain premises in habitable condition due to gas leak and heating issues"
+        }
+      ],
+      "decision": "granted",
+      "reimbursement": "1174.73",
+      "rentAdjustment": "Yes (4-5%)",
+      "rationale": {
+        "respondentHadNotice": "Yes, multiple notices from April 2021 through April 2023",
+        "issueDuration": "Over 2 years (April 2021 - December 2023)",
+        "evidenceAssessment": "PG&E verification of gas leak, tenant documentation of communications and purchase of electric heater",
+        "impactAssessment": "Significant impact on habitability requiring tenant to purchase alternative heating source"
+      },
+      "respondent": "Cervantes LLC, Francisco Cervantes",
+      "hearingOfficer": "Duf Sundheim",
+      "city": "Mountain View",
+      "caseNumber": "C23240002",
+      "hearingDate": "December 18, 2023",
+      "filedOnDate": "October 10, 2023",
+      "decisionDate": "March 25, 2024"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "petitions": [
+    {
+      "petitionTypeNumber": "2",
+      "petitionerArgument": [
+        {
+          "violatedCode": "CSFRA Regulations, Chapter 2(h)",
+          "summaryOfViolation": "Peeling bathroom surfaces, leaking plumbing fixtures, and inadequate maintenance of tub, sink, shower and toilet"
+        },
+        {
+          "violatedCode": "CSFRA Regulations, Chapter 2(h)",
+          "summaryOfViolation": "Blocked parking access due to dumpster placement, pest issues, and inadequate laundry facilities maintenance"
+        }
+      ],
+      "decision": "granted",
+      "reimbursement": "12,865.18",
+      "rentAdjustment": "Yes",
+      "rationale": {
+        "respondentHadNotice": "Yes, through tenant portal and direct communications",
+        "issueDuration": "Various issues persisting 8-19 months",
+        "evidenceAssessment": "Photos, texts, videos, and testimony demonstrated ongoing maintenance issues",
+        "impactAssessment": "Multiple habitability issues affecting daily living including bathroom facilities, parking access, and laundry services"
+      },
+      "respondent": "TayCon Properties",
+      "hearingOfficer": "E. Alexandra DeLateur",
+      "city": "Mountain View",
+      "caseNumber": "C2324003 & C2324004",
+      "hearingDate": "November 8, 2023",
+      "filedOnDate": "August 25, 2023",
+      "decisionDate": "February 15, 2024"
+    }
+  ]
+}

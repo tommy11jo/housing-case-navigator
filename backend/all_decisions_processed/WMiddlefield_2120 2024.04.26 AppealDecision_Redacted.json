@@ -1,0 +1,37 @@
+{
+  "petitions": [
+    {
+      "petitionTypeNumber": "2",
+      "petitionerArgument": [
+        {
+          "violatedCode": "CSFRA Regulations on Housing Services and Maintenance",
+          "summaryOfViolation": "Failure to maintain bathroom fixtures (bathtub, shower, sinks) in proper condition with ongoing glazing issues"
+        },
+        {
+          "violatedCode": "City Housing Code - Waste Management",
+          "summaryOfViolation": "Blocked access to assigned parking spot due to overflowing dumpsters"
+        },
+        {
+          "violatedCode": "Housing Services Requirements",
+          "summaryOfViolation": "Unsanitary and non-functional laundry facilities with broken machines"
+        }
+      ],
+      "decision": "granted",
+      "reimbursement": "$12,367.34 total (various refunds for rent overcharges, repairs, and service reductions)",
+      "rentAdjustment": "Yes ($25-100 monthly reductions for various issues)",
+      "rationale": {
+        "respondentHadNotice": "Yes, multiple notifications about various issues",
+        "issueDuration": "Issues persisted from February 2021 through hearing date",
+        "evidenceAssessment": "Photographic evidence and testimony demonstrated ongoing maintenance issues",
+        "impactAssessment": "Significant impact on habitability and use of facilities"
+      },
+      "respondent": "Property owner represented by Ela Levin",
+      "hearingOfficer": "Not explicitly named",
+      "city": "Mountain View",
+      "caseNumber": "C23240003 and C23240004",
+      "hearingDate": "November 8, 2023",
+      "filedOnDate": "August 25, 2023",
+      "decisionDate": "February 15, 2024"
+    }
+  ]
+}

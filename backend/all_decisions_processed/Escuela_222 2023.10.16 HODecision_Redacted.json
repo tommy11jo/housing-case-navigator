@@ -1,0 +1,29 @@
+{
+  "petitions": [
+    {
+      "petitionTypeNumber": "2",
+      "petitionerArgument": [
+        {
+          "violatedCode": "CA Civil Code \u00a71941.1, CA H&SC \u00a717920.3",
+          "summaryOfViolation": "Failure to maintain premises due to extensive mold growth and moisture issues in wall causing unhealthy living conditions"
+        }
+      ],
+      "decision": "granted",
+      "reimbursement": "7050.60",
+      "rentAdjustment": "Yes (40%)",
+      "rationale": {
+        "respondentHadNotice": "Yes, first notified in October 2021 and multiple times thereafter",
+        "issueDuration": "Issue persisted from January 2023 through July 2023 (180 days)",
+        "evidenceAssessment": "Landlord failed to provide evidence of completed repairs, had inconsistent records, and AT&T worker incident confirmed serious mold issue requiring specialized mask",
+        "impactAssessment": "Significant negative health impacts on tenants, requiring specialized masks and causing respiratory issues"
+      },
+      "respondent": "Highland Garden Apartments",
+      "hearingOfficer": "Duf Sundheim",
+      "city": "Mountain View",
+      "caseNumber": "C22230052",
+      "hearingDate": "August 30, 2023",
+      "filedOnDate": "May 16, 2023",
+      "decisionDate": "October 10, 2023"
+    }
+  ]
+}

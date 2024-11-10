@@ -1,0 +1,47 @@
+{
+  "petitions": [
+    {
+      "petitionTypeNumber": "3",
+      "petitionerArgument": [
+        {
+          "violatedCode": "CSFRA Registration Requirements",
+          "summaryOfViolation": "Failure to register property with Rent Stabilization Program prior to issuing rent increase"
+        }
+      ],
+      "decision": "granted",
+      "reimbursement": "200.00",
+      "rentAdjustment": "Yes (5%)",
+      "rationaleForDecision": {
+        "respondentHadNotice": "Yes",
+        "issueDuration": "2021-2023",
+        "evidenceAssessment": "Property was not registered until September 2023, after rent increase notice was issued",
+        "impactAssessment": "Rent increase deemed invalid due to non-compliance with registration requirements"
+      }
+    },
+    {
+      "petitionTypeNumber": "2",
+      "petitionerArgument": [
+        {
+          "violatedCode": "Civil Code Sections 1941.1",
+          "summaryOfViolation": "Multiple maintenance issues including water leaks, mold, broken stove, and other habitability concerns"
+        }
+      ],
+      "decision": "granted",
+      "reimbursement": "5750.00",
+      "rentAdjustment": "Yes (various percentages for different issues)",
+      "rationaleForDecision": {
+        "respondentHadNotice": "Yes, through multiple emails and communications",
+        "issueDuration": "Various issues from 2021-2023",
+        "evidenceAssessment": "Photos, videos, and testimony showed pattern of maintenance problems with little response",
+        "impactAssessment": "Significant impact on habitability and use of premises"
+      }
+    }
+  ],
+  "respondent": "Joseph Richards for 1084 Wentworth Apartments",
+  "hearingOfficer": "E. Alexandra DeLateur",
+  "city": "Mountain View",
+  "caseNumber": "C23240022 and C23240023",
+  "hearingDate": "January 31, 2024",
+  "filedOnDate": "October 19, 2023",
+  "decisionDate": "May 6, 2024"
+}

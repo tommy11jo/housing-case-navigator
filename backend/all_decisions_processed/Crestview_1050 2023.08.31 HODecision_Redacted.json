@@ -1,0 +1,33 @@
+{
+  "petitions": [
+    {
+      "petitionTypeNumber": "2",
+      "petitionerArgument": [
+        {
+          "violatedCode": "CA Civil Code \u00a7 1941.1(1)",
+          "summaryOfViolation": "Single pane windows failed to provide effective weatherproofing and protection against cold air"
+        },
+        {
+          "violatedCode": "CA Civil Code \u00a7 1941.1(4)",
+          "summaryOfViolation": "Heating system failed to provide adequate heat in bedrooms and bathrooms, leading to freezing temperatures"
+        }
+      ],
+      "decision": "granted",
+      "reimbursement": "2875.50",
+      "rentAdjustment": "Yes (30%)",
+      "rationale": {
+        "respondentHadNotice": "Written notice provided on December 19, 2022 with multiple follow-up complaints",
+        "issueDuration": "90 days (December 22, 2022 to March 22, 2023)",
+        "evidenceAssessment": "Tenant provided credible testimony about freezing temperatures; landlord failed to prove tenant was responsible for heating issues",
+        "impactAssessment": "Major discomfort and serious loss of tenancy benefits due to freezing temperatures in bedrooms and bathrooms"
+      },
+      "respondent": "Solano Apartments LP",
+      "hearingOfficer": "Martin Eichner",
+      "city": "Mountain View",
+      "caseNumber": "C22230046",
+      "hearingDate": "July 12, 2023",
+      "filedOnDate": "April 21, 2023",
+      "decisionDate": "August 31, 2023"
+    }
+  ]
+}

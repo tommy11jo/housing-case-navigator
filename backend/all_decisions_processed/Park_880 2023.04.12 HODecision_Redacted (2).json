@@ -1,0 +1,29 @@
+{
+  "petitions": [
+    {
+      "petitionTypeNumber": "1",
+      "petitionerArgument": [
+        {
+          "violatedCode": "CSFRA Section 1707",
+          "summaryOfViolation": "Landlord demanded unlawful rent increases and failed to register property with Rent Stabilization Program"
+        }
+      ],
+      "decision": "granted",
+      "reimbursement": "2317.66",
+      "rentAdjustment": "Yes",
+      "rationale": {
+        "respondentHadNotice": "Yes, through city correspondence requesting registration",
+        "issueDuration": "Property unregistered from start of tenancy until February 2023",
+        "evidenceAssessment": "Found rent increases exceeded allowable AGA and proper notices not given",
+        "impactAssessment": "Tenant overcharged due to improper rent increases"
+      },
+      "respondent": "Frank Cervantes for Cervantes, LLC",
+      "hearingOfficer": "E. Alexandra DeLateur",
+      "city": "Mountain View",
+      "caseNumber": "22230026",
+      "hearingDate": "March 10, 2023",
+      "filedOnDate": "February 1, 2023",
+      "decisionDate": "April 12, 2023"
+    }
+  ]
+}
