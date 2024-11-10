@@ -47,7 +47,7 @@ export function DataTable<TData, TValue>({
           : String(cellValue).toLowerCase();
 
       return searchableValue.includes(String(value).toLowerCase());
-    } catch (error) {
+    } catch {
       // If we can't access the value, exclude this row from results
       return false;
     }
@@ -132,7 +132,7 @@ export function DataTable<TData, TValue>({
                             cell.column.columnDef.cell,
                             cell.getContext()
                           );
-                        } catch (error) {
+                        } catch {
                           // Skip cells that can't be rendered
                           cellContent = "Unable to load";
                         }
@@ -144,7 +144,7 @@ export function DataTable<TData, TValue>({
                       })}
                     </TableRow>
                   );
-                } catch (error) {
+                } catch {
                   // Skip rows that can't be rendered
                   return null;
                 }

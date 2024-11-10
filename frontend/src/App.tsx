@@ -8,9 +8,15 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { useEffect, useState } from "react";
 import { Petition } from "./types";
+import { Spinner } from "./components/ui/spinner";
 
 function App() {
   const [data, setData] = useState<Petition[]>([]);
+  const [petitionGuidance, setPetitionGuidance] = useState<
+    Record<string, unknown>
+  >({});
+  const [petitionDetails, setPetitionDetails] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
     fetch("http://localhost:8000/retrieval/documents")
@@ -18,10 +24,31 @@ function App() {
       .then((data) => setData(data.petitions));
   }, []);
 
+  const generatePetitionGuidance = async (details: string) => {
+    setIsLoading(true);
+    try {
+      const response = await fetch(
+        "http://localhost:8000/petition/generate-guidance",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ petitionDetails: details }),
+        }
+      );
+      const data = await response.json();
+      console.log(`response: ${JSON.stringify(data)}`);
+      setPetitionGuidance(data.guidance);
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
   return (
     <div className="container mx-auto py-10 min-h-screen">
       <h1 className="text-3xl font-bold mb-10 text-gray-900">
-        Housing Case Navigator
+        Tenant Case Navigator
       </h1>
       <Tabs defaultValue="cases" className="w-full">
         <TabsList>
@@ -43,40 +70,57 @@ function App() {
                 <Textarea
                   placeholder="Describe your petition details here..."
                   className="min-h-[150px]"
+                  value={petitionDetails}
+                  onChange={(e) => setPetitionDetails(e.target.value)}
                 />
-                <Button className="mt-4">Help me write a petition</Button>
+                <Button
+                  className="mt-4"
+                  onClick={() =>
+                    generatePetitionGuidance(JSON.stringify(petitionGuidance))
+                  }
+                  disabled={isLoading}
+                >
+                  Help me write a petition
+                </Button>
               </CardContent>
             </Card>
 
-            <Card>
-              <CardHeader>
-                <CardTitle>Generated Petition</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-4">
-                  <div>
-                    <h3 className="text-lg font-semibold">Background</h3>
-                    <p className="text-gray-600">
-                      Sample background information about the case...
-                    </p>
-                  </div>
+            {isLoading ? (
+              <Spinner className="mr-2 h-4 w-4" />
+            ) : (
+              <Card>
+                <CardHeader>
+                  <CardTitle>Generated Petition</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="space-y-4">
+                    <div>
+                      <h3 className="text-lg font-semibold">Background</h3>
+                      <p className="text-gray-600">
+                        OUTPUT HERE RIHGT NOW:
+                        {JSON.stringify(petitionGuidance)}
+                      </p>
+                    </div>
 
-                  <div>
-                    <h3 className="text-lg font-semibold">Legal Basis</h3>
-                    <p className="text-gray-600">
-                      Relevant legal statutes and precedents...
-                    </p>
-                  </div>
+                    <div>
+                      <h3 className="text-lg font-semibold">Legal Basis</h3>
+                      <p className="text-gray-600">
+                        Relevant legal statutes and precedents...
+                      </p>
+                    </div>
 
-                  <div>
-                    <h3 className="text-lg font-semibold">Relief Requested</h3>
-                    <p className="text-gray-600">
-                      Specific actions requested from the court...
-                    </p>
+                    <div>
+                      <h3 className="text-lg font-semibold">
+                        Relief Requested
+                      </h3>
+                      <p className="text-gray-600">
+                        Specific actions requested from the court...
+                      </p>
+                    </div>
                   </div>
-                </div>
-              </CardContent>
-            </Card>
+                </CardContent>
+              </Card>
+            )}
           </div>
         </TabsContent>
       </Tabs>
