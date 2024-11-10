@@ -1,0 +1,5 @@
+# frontend deps
+frontend/.env
+
+# backend deps
+backend/.env
