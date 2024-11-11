@@ -48,6 +48,48 @@ async def extract_all_mtnview_data(start_index=0, end_index=7):  # inclusive
         index += 1
 
 
+# rewrites the entry if it exists, otherwise creates a new one
+@router.post("/upload")
+async def upload_file(file: UploadFile = File(...)):
+    if file.content_type != "application/pdf":
+        raise HTTPException(status_code=415, detail="Unsupported file type")
+
+    base_fname = (
+        file.filename.rsplit(".", 1)[0]
+        if file.filename.endswith(".pdf")
+        else file.filename
+    )
+
+    try:
+        results = await extract_data_helper(file.file, base_fname, save=False)
+        output_path = "../data/all_decisions.json"
+
+        print(f"Saving to {output_path}")
+
+        # Ensure directory exists
+        os.makedirs(os.path.dirname(output_path), exist_ok=True)
+
+        try:
+            if os.path.exists(output_path):
+                with open(output_path, "r") as f:
+                    existing_data = json.load(f)
+            else:
+                existing_data = []
+        except json.JSONDecodeError as e:
+            print(f"Error reading existing JSON: {str(e)}")
+            existing_data = []
+
+        existing_data.append({"filename": file.filename, "data": results})
+
+        with open(output_path, "w") as f:
+            json.dump(existing_data, f, indent=2)
+
+        return {"message": "File processed and saved successfully", "results": results}
+    except Exception as e:
+        print(f"Error in upload_file: {str(e)}")  # Add detailed logging
+        raise HTTPException(status_code=500, detail=f"Error processing file: {str(e)}")
+
+
 @router.post("/extract-pdf")
 async def extract_data(file: UploadFile = File(...), fname="results"):
     """Takes in a PDF file, breaks it into page images, and extracts the item data from each page."""

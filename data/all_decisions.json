@@ -1,0 +1,119 @@
+[
+  {
+    "filename": "Central_511 2024.01.11 HODecision_Redacted.pdf",
+    "data": {
+      "petitions": [
+        {
+          "caseInfo": "Petition: C23240026",
+          "city": "Mountain View",
+          "issueTypeNumber": "1",
+          "argumentsAndDecisions": [
+            {
+              "complaintSummary": "Tenant seeks relief from banked 5% rent increase due to financial hardship",
+              "violatedCode": "CSFRA Sec. 1707(d) and Chapter 7(C)(2)(a)",
+              "reimbursement": "$586.82",
+              "complaintTiming": "December 2022 - December 2023",
+              "respondentHadNotice": "Yes, through formal rent increase notice",
+              "evidenceAssessment": "Petitioner proved income below 100% of area median income, qualifying for hardship relief",
+              "impactAssessment": "Proposed rent increase would cause undue hardship given tenant's limited income"
+            }
+          ],
+          "reimbursementJustified": "yes",
+          "rentAdjustment": "Yes (5%)",
+          "respondent": "Shoreline Village LLC rep. by Steve Welter",
+          "hearingOfficer": "E. Alexandra DeLateur",
+          "hearingDate": "2023-11-29",
+          "filedOnDate": "2023-10-09",
+          "decisionDate": "2024-01-11"
+        }
+      ]
+    }
+  },
+  {
+    "filename": "WMiddlefield_2120 2024.04.26 AppealDecision_Redacted.pdf",
+    "data": {
+      "petitions": [
+        {
+          "caseInfo": "Appeal: C23240003 and C23240004",
+          "city": "Mountain View",
+          "issueTypeNumber": "2",
+          "argumentsAndDecisions": [
+            {
+              "complaintSummary": "Deteriorating glazing and poor condition of bathtub, shower and sinks",
+              "violatedCode": "CA Civil Code 1954(a)",
+              "reimbursement": "$1,200 for 12 months plus ongoing $100/month",
+              "complaintTiming": "Started January 2023",
+              "respondentHadNotice": "Yes, tenant informed respondent's agent/plumber",
+              "evidenceAssessment": "Photographic evidence showed poor conditions, multiple reglazings failed to resolve issue",
+              "impactAssessment": "Significant impact on habitability requiring substantial rent reduction"
+            },
+            {
+              "complaintSummary": "Blocked parking access due to dumpster placement",
+              "violatedCode": "CSFRA 1702, Housing Services regulations",
+              "reimbursement": "$3,500 for 15-month period plus ongoing $100/month",
+              "complaintTiming": "February 2021 through December 2023",
+              "respondentHadNotice": "Yes, multiple complaints documented since February 2021",
+              "evidenceAssessment": "Sufficient evidence of ongoing issue through testimony and documentation",
+              "impactAssessment": "Significant impact on tenant's fundamental right to parking access"
+            },
+            {
+              "complaintSummary": "Unsanitary and inaccessible laundry facilities",
+              "violatedCode": "Housing Services regulations",
+              "reimbursement": "$950 for 19-month period plus ongoing $50/month",
+              "complaintTiming": "June 2022 through December 2023",
+              "respondentHadNotice": "Yes, multiple maintenance reports filed",
+              "evidenceAssessment": "Witness testimony confirmed unsanitary conditions and broken machines",
+              "impactAssessment": "Reduced access to essential housing service"
+            }
+          ],
+          "rentAdjustment": "Yes",
+          "respondent": "N/A",
+          "hearingOfficer": "N/A",
+          "hearingDate": "2023-11-08",
+          "filedOnDate": "2023-08-25",
+          "decisionDate": "2024-02-15",
+          "reimbursementJustified": "yes"
+        }
+      ]
+    }
+  },
+  {
+    "filename": "Wentworth_1084 2024.05.06 HODecision_Redacted.pdf",
+    "data": {
+      "petitions": [
+        {
+          "issueTypeNumber": "2",
+          "caseInfo": "Petition: C23240022 and C23240023",
+          "city": "Mountain View",
+          "argumentsAndDecisions": [
+            {
+              "complaintSummary": "Water leaking from bedroom ceiling causing mold and water damage",
+              "violatedCode": "CSFRA Section 1707(f)(3)",
+              "reimbursement": "$3,100 plus continuing $100/month reduction",
+              "complaintTiming": "October 2021 - present",
+              "respondentHadNotice": "Yes, notified January 2022 with photos",
+              "evidenceAssessment": "Photos and video show appalling water damage and mold formation",
+              "impactAssessment": "Hazardous condition affecting family health and safety"
+            },
+            {
+              "complaintSummary": "Broken stove emitting sparks and smoke",
+              "violatedCode": "CSFRA Section 1707(f)(3)",
+              "reimbursement": "Replacement stove ordered plus $200/month until replaced",
+              "complaintTiming": "November 27, 2023",
+              "respondentHadNotice": "Yes, immediately reported",
+              "evidenceAssessment": "Video evidence showed dangerous sparking condition",
+              "impactAssessment": "Safety hazard forcing family to use microwave and eat out"
+            }
+          ],
+          "reimbursementJustified": "yes",
+          "rentAdjustment": "Yes (multiple reductions ranging from 2.3% to 9.2%)",
+          "respondent": "Joseph Richards for 1084 Wentworth Apartments",
+          "hearingOfficer": "E. Alexandra DeLateur",
+          "hearingDate": "2024-01-31",
+          "filedOnDate": "2023-10-19",
+          "decisionDate": "2024-05-06"
+        }
+      ]
+    }
+  }
+]

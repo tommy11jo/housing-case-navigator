@@ -139,39 +139,6 @@
       "sourceFile": "Montecito_1260 2023.10.24 AppealDecision_Redacted.json"
     },
     {
-      "issueTypeNumber": "2",
-      "caseInfo": "Petition: C23240022 and C23240023",
-      "city": "Mountain View",
-      "argumentsAndDecisions": [
-        {
-          "complaintSummary": "Water leaking from bedroom ceiling causing mold",
-          "violatedCode": "CSFRA Section 1707(f)(3)",
-          "reimbursement": "$3,100 plus continuing rent reductions of $100/month",
-          "complaintTiming": "October 2021 - ongoing",
-          "respondentHadNotice": "Yes, notified via email with photos",
-          "evidenceAssessment": "Photos and video show appalling water damage and mold formation",
-          "impactAssessment": "Hazardous condition affecting family health and safety"
-        },
-        {
-          "complaintSummary": "Exploded stove and non-functioning hood fan",
-          "violatedCode": "CSFRA Section 1707(f)(3)",
-          "reimbursement": "$200/month until stove replaced + $50 for hood fan",
-          "complaintTiming": "November 27, 2023",
-          "respondentHadNotice": "Yes, reported immediately",
-          "evidenceAssessment": "Video evidence of sparks and smoke, stove deemed unsafe",
-          "impactAssessment": "Family unable to cook, forced to eat out"
-        }
-      ],
-      "reimbursementJustified": "yes",
-      "rentAdjustment": "Yes (multiple percentage reductions: 4.6%, 2.3%, 4.6%, 2.3%, 9.2%)",
-      "respondent": "Joseph Richards for 1084 Wentworth Apartments",
-      "hearingOfficer": "E. Alexandra DeLateur",
-      "hearingDate": "2024-01-31",
-      "filedOnDate": "2023-10-19",
-      "decisionDate": "2024-05-06",
-      "sourceFile": "Wentworth_1084 2024.05.06 HODecision_Redacted.json"
-    },
-    {
       "caseInfo": "Petition: C22230021",
       "city": "Mountain View",
       "issueTypeNumber": "4",
