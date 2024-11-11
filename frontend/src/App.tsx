@@ -1,31 +1,41 @@
-import "./App.css";
-import { DataTable } from "./data-table";
+import "./App.css"
+import { DataTable } from "./data-table"
 // import { DATA } from "./data";
-import { columns } from "./columns";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Textarea } from "@/components/ui/textarea";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { useEffect, useState } from "react";
-import { Petition, PetitionGuidance } from "./types";
-import { Spinner } from "./components/ui/spinner";
+import { columns } from "./columns"
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import { Textarea } from "@/components/ui/textarea"
+import { Button } from "@/components/ui/button"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { useEffect, useState } from "react"
+import { Petition, PetitionGuidance } from "./types"
+import { Spinner } from "./components/ui/spinner"
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+  DialogClose,
+} from "@/components/ui/dialog"
+import { Input } from "@/components/ui/input"
+import { Label } from "@/components/ui/label"
 
 function App() {
-  const [data, setData] = useState<Petition[]>([]);
+  const [data, setData] = useState<Petition[]>([])
   const [petitionGuidance, setPetitionGuidance] = useState<
     PetitionGuidance["guidance"] | null
-  >(null);
-  const [petitionDetails, setPetitionDetails] = useState("");
-  const [isLoading, setIsLoading] = useState(false);
+  >(null)
+  const [petitionDetails, setPetitionDetails] = useState("")
+  const [isLoading, setIsLoading] = useState(false)
 
   useEffect(() => {
     fetch("http://localhost:8000/retrieval/documents")
       .then((res) => res.json())
-      .then((data) => setData(data.petitions));
-  }, []);
+      .then((data) => setData(data.petitions))
+  }, [])
 
   const generatePetitionGuidance = async (details: string) => {
-    setIsLoading(true);
+    setIsLoading(true)
     try {
       const response = await fetch(
         "http://localhost:8000/petition/generate-guidance",
@@ -36,14 +46,45 @@ function App() {
           },
           body: JSON.stringify({ petitionDetails: details }),
         }
-      );
-      const data = await response.json();
-      console.log(`response: ${JSON.stringify(data)}`);
-      setPetitionGuidance(data.guidance);
+      )
+      const data = await response.json()
+      console.log(`response: ${JSON.stringify(data)}`)
+      setPetitionGuidance(data.guidance)
     } finally {
-      setIsLoading(false);
+      setIsLoading(false)
     }
-  };
+  }
+
+  const handleFileUpload = async (file: File) => {
+    if (!file || file.type !== "application/pdf") {
+      alert("Please upload a PDF file")
+      return
+    }
+
+    const formData = new FormData()
+    formData.append("file", file)
+
+    try {
+      const response = await fetch("http://localhost:8000/process/upload", {
+        method: "POST",
+        body: formData,
+      })
+
+      if (!response.ok) {
+        throw new Error("Upload failed")
+      }
+
+      const result = await response.json()
+      console.log("Upload successful:", result)
+      // Optionally refresh the documents list
+      fetch("http://localhost:8000/retrieval/documents")
+        .then((res) => res.json())
+        .then((data) => setData(data.petitions))
+    } catch (error) {
+      console.error("Error uploading file:", error)
+      alert("Failed to upload file")
+    }
+  }
 
   return (
     <div className="container mx-auto py-10 min-h-screen">
@@ -57,6 +98,103 @@ function App() {
         </TabsList>
 
         <TabsContent value="cases" className="border-none p-0 mt-6 w-full">
+          <div className="flex justify-end mb-4">
+            <Dialog>
+              <DialogTrigger asChild>
+                <Button variant="outline" className="flex items-center gap-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                    <polyline points="17 8 12 3 7 8" />
+                    <line x1="12" y1="3" x2="12" y2="15" />
+                  </svg>
+                  Upload Document
+                </Button>
+              </DialogTrigger>
+              <DialogContent>
+                <DialogHeader>
+                  <DialogTitle>Upload Document</DialogTitle>
+                </DialogHeader>
+                <div className="grid gap-4 py-4">
+                  <div className="grid gap-2">
+                    <Label htmlFor="file">File</Label>
+                    <div
+                      className="border-2 border-dashed rounded-lg p-8 text-center cursor-pointer hover:border-gray-400 transition-colors"
+                      onClick={() => document.getElementById("file")?.click()}
+                      onDrop={(e) => {
+                        e.preventDefault()
+                        const file = e.dataTransfer.files[0]
+                        if (file) {
+                          handleFileUpload(file)
+                        }
+                      }}
+                      onDragOver={(e) => {
+                        e.preventDefault()
+                        e.stopPropagation()
+                      }}
+                    >
+                      <Input
+                        id="file"
+                        type="file"
+                        className="hidden"
+                        accept=".pdf"
+                        onChange={(e) => {
+                          const file = e.target.files?.[0]
+                          if (file) {
+                            handleFileUpload(file)
+                          }
+                        }}
+                      />
+                      <div className="flex flex-col items-center gap-2">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        >
+                          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                          <polyline points="17 8 12 3 7 8" />
+                          <line x1="12" y1="3" x2="12" y2="15" />
+                        </svg>
+                        <p className="text-sm text-gray-600">
+                          Click to browse or drag and drop your file here
+                        </p>
+                        <p className="text-xs text-gray-500">
+                          Supported formats: PDF, DOC, DOCX
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="flex justify-end gap-2">
+                  <DialogClose asChild>
+                    <Button variant="outline">Cancel</Button>
+                  </DialogClose>
+                  <Button
+                    onClick={() => {
+                      // Handle upload
+                    }}
+                  >
+                    Upload
+                  </Button>
+                </div>
+              </DialogContent>
+            </Dialog>
+          </div>
           <DataTable columns={columns} data={data} />
         </TabsContent>
 
@@ -206,7 +344,7 @@ function App() {
         </TabsContent>
       </Tabs>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

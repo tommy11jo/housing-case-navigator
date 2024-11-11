@@ -23,6 +23,7 @@ export const columns: ColumnDef<Petition>[] = [
         | 1
         | 2
         | 3
+        | 4
       return PETITION_TYPE_NUMBER_TO_NAME[petitionTypeNumber]
     },
   },

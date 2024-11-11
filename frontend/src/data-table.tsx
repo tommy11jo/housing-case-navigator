@@ -57,7 +57,6 @@ export function DataTable<TData, TValue>({
     }
   }
 
-  console.log("data is ", data)
   const table = useReactTable({
     data,
     columns: columns.map((c) => ({ ...c, filterFn: fuzzyFilter })),
