@@ -17,9 +17,10 @@ function App() {
   >(null);
   const [petitionDetails, setPetitionDetails] = useState("");
   const [isLoading, setIsLoading] = useState(false);
+  const backendUrl = import.meta.env.BACKEND_URL ?? "http://localhost:8000";
 
   useEffect(() => {
-    fetch("http://localhost:8000/retrieval/documents")
+    fetch(`${backendUrl}/retrieval/documents`)
       .then((res) => res.json())
       .then((data) => setData(data.petitions));
   }, []);
@@ -28,16 +29,13 @@ function App() {
     setIsLoading(true);
     try {
       console.log(`sending request`);
-      const response = await fetch(
-        "http://localhost:8000/petition/generate-guidance",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({ petitionDetails: details }),
-        }
-      );
+      const response = await fetch(`${backendUrl}/petition/generate-guidance`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ petitionDetails: details }),
+      });
       console.log(`got response`);
       const data = await response.json();
       console.log(`response: ${JSON.stringify(data)}`);
