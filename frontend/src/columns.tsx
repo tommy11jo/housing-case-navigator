@@ -19,18 +19,18 @@ export const columns: ColumnDef<Petition>[] = [
     accessorKey: "issueTypeNumber",
     size: 300,
     cell: ({ row }) => {
-      const petitionTypeNumber = parseInt(row.original.issueTypeNumber) as
+      const issueTypeNumber = parseInt(row.original.issueTypeNumber) as
         | 1
         | 2
         | 3
         | 4
-      return PETITION_TYPE_NUMBER_TO_NAME[petitionTypeNumber]
+      return PETITION_TYPE_NUMBER_TO_NAME[issueTypeNumber]
     },
   },
   {
     header: () => (
       <div className="text-center" style={{ width: "350px" }}>
-        Petitioner Argument
+        Argument and Decision
       </div>
     ),
     accessorKey: "argumentsAndDecisions",
@@ -44,9 +44,9 @@ export const columns: ColumnDef<Petition>[] = [
                 <br />
                 <strong>Reimbursement:</strong> {arg.reimbursement}
                 <br />
-                {/* <strong>Impact Assessment:</strong> {arg.impactAssessment} */}
-                {/* <br /> */}
-                {/* <strong>Evidence Assessment:</strong> {arg.evidenceAssessment} */}
+                <strong>Impact Assessment:</strong> {arg.impactAssessment}
+                <br />
+                <strong>Evidence Assessment:</strong> {arg.evidenceAssessment}
               </li>
             )
           )}
@@ -54,21 +54,21 @@ export const columns: ColumnDef<Petition>[] = [
       )
     },
   },
-  {
-    header: "Reimbursement Justified",
-    accessorKey: "reimbursementJustified",
-    cell: ({ row }) => (
-      <span
-        className={`px-3 py-1 rounded-full text-sm font-medium ${
-          row.original.reimbursementJustified.toLowerCase() === "yes"
-            ? "bg-green-100 text-green-800"
-            : "bg-red-100 text-red-800"
-        }`}
-      >
-        {row.original.reimbursementJustified}
-      </span>
-    ),
-  },
+  // {
+  //   header: "Reimbursement Justified",
+  //   accessorKey: "reimbursementJustified",
+  //   cell: ({ row }) => (
+  //     <span
+  //       className={`px-3 py-1 rounded-full text-sm font-medium ${
+  //         row.original.reimbursementJustified.toLowerCase() === "yes"
+  //           ? "bg-green-100 text-green-800"
+  //           : "bg-red-100 text-red-800"
+  //       }`}
+  //     >
+  //       {row.original.reimbursementJustified}
+  //     </span>
+  //   ),
+  // },
   {
     header: "Rent Adjustment",
     accessorKey: "rentAdjustment",

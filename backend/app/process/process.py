@@ -18,7 +18,7 @@ router = APIRouter(prefix="/process")
 MODEL = "claude-3-5-sonnet-20241022"
 
 anthropic_client = anthropic.Client(api_key=os.environ.get("ANTHROPIC_API_KEY"))
-openai_client = openai.OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
+# openai_client = openai.OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
 
 
 MAX_PAGES = 100
