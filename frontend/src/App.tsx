@@ -17,7 +17,8 @@ function App() {
   >(null);
   const [petitionDetails, setPetitionDetails] = useState("");
   const [isLoading, setIsLoading] = useState(false);
-  const backendUrl = import.meta.env.BACKEND_URL ?? "http://localhost:8000";
+  const backendUrl =
+    import.meta.env.VITE_BACKEND_URL ?? "http://localhost:8000";
 
   useEffect(() => {
     fetch(`${backendUrl}/retrieval/documents`)
