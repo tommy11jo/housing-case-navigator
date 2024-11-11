@@ -1,7 +1,7 @@
-import { ColumnDef } from "@tanstack/react-table"
-import { PETITION_TYPE_NUMBER_TO_NAME } from "./data"
-import { format } from "date-fns"
-import { Petition } from "./types"
+import { ColumnDef } from "@tanstack/react-table";
+import { PETITION_TYPE_NUMBER_TO_NAME } from "./data";
+import { format } from "date-fns";
+import { Petition } from "./types";
 export const columns: ColumnDef<Petition>[] = [
   {
     header: "Case Info",
@@ -19,17 +19,18 @@ export const columns: ColumnDef<Petition>[] = [
     accessorKey: "issueTypeNumber",
     size: 300,
     cell: ({ row }) => {
-      const petitionTypeNumber = parseInt(row.original.issueTypeNumber) as
+      const issueTypeNumber = parseInt(row.original.issueTypeNumber) as
         | 1
         | 2
         | 3
-      return PETITION_TYPE_NUMBER_TO_NAME[petitionTypeNumber]
+        | 4;
+      return PETITION_TYPE_NUMBER_TO_NAME[issueTypeNumber];
     },
   },
   {
     header: () => (
       <div className="text-center" style={{ width: "350px" }}>
-        Petitioner Argument
+        Argument and Decision
       </div>
     ),
     accessorKey: "argumentsAndDecisions",
@@ -43,38 +44,38 @@ export const columns: ColumnDef<Petition>[] = [
                 <br />
                 <strong>Reimbursement:</strong> {arg.reimbursement}
                 <br />
-                {/* <strong>Impact Assessment:</strong> {arg.impactAssessment} */}
-                {/* <br /> */}
-                {/* <strong>Evidence Assessment:</strong> {arg.evidenceAssessment} */}
+                <strong>Impact Assessment:</strong> {arg.impactAssessment}
+                <br />
+                <strong>Evidence Assessment:</strong> {arg.evidenceAssessment}
               </li>
             )
           )}
         </ol>
-      )
+      );
     },
   },
-  {
-    header: "Reimbursement Justified",
-    accessorKey: "reimbursementJustified",
-    cell: ({ row }) => (
-      <span
-        className={`px-3 py-1 rounded-full text-sm font-medium ${
-          row.original.reimbursementJustified.toLowerCase() === "yes"
-            ? "bg-green-100 text-green-800"
-            : "bg-red-100 text-red-800"
-        }`}
-      >
-        {row.original.reimbursementJustified}
-      </span>
-    ),
-  },
+  // {
+  //   header: "Reimbursement Justified",
+  //   accessorKey: "reimbursementJustified",
+  //   cell: ({ row }) => (
+  //     <span
+  //       className={`px-3 py-1 rounded-full text-sm font-medium ${
+  //         row.original.reimbursementJustified.toLowerCase() === "yes"
+  //           ? "bg-green-100 text-green-800"
+  //           : "bg-red-100 text-red-800"
+  //       }`}
+  //     >
+  //       {row.original.reimbursementJustified}
+  //     </span>
+  //   ),
+  // },
   {
     header: "Rent Adjustment",
     accessorKey: "rentAdjustment",
     cell: ({ row }) => {
-      const value = row.original.rentAdjustment
+      const value = row.original.rentAdjustment;
       const rentReduced =
-        value.includes("-") || value.toLowerCase().includes("yes")
+        value.includes("-") || value.toLowerCase().includes("yes");
       return (
         <div className="flex items-center gap-1">
           <span
@@ -85,7 +86,7 @@ export const columns: ColumnDef<Petition>[] = [
             {rentReduced ? "↓" : "↑"} {value}
           </span>
         </div>
-      )
+      );
     },
   },
   {
@@ -105,12 +106,12 @@ export const columns: ColumnDef<Petition>[] = [
     accessorKey: "hearingDate",
     cell: ({ row }) => {
       try {
-        const date = new Date(row.original.hearingDate)
+        const date = new Date(row.original.hearingDate);
         return isNaN(date.getTime())
           ? "Invalid Date"
-          : format(date, "MMM d, yyyy")
+          : format(date, "MMM d, yyyy");
       } catch {
-        return "Invalid Date"
+        return "Invalid Date";
       }
     },
   },
@@ -119,12 +120,12 @@ export const columns: ColumnDef<Petition>[] = [
     accessorKey: "filedOnDate",
     cell: ({ row }) => {
       try {
-        const date = new Date(row.original.filedOnDate)
+        const date = new Date(row.original.filedOnDate);
         return isNaN(date.getTime())
           ? "Invalid Date"
-          : format(date, "MMM d, yyyy")
+          : format(date, "MMM d, yyyy");
       } catch {
-        return "Invalid Date"
+        return "Invalid Date";
       }
     },
   },
@@ -133,12 +134,12 @@ export const columns: ColumnDef<Petition>[] = [
     accessorKey: "decisionDate",
     cell: ({ row }) => {
       try {
-        const date = new Date(row.original.decisionDate)
+        const date = new Date(row.original.decisionDate);
         return isNaN(date.getTime())
           ? "Invalid Date"
-          : format(date, "MMM d, yyyy")
+          : format(date, "MMM d, yyyy");
       } catch {
-        return "Invalid Date"
+        return "Invalid Date";
       }
     },
   },
@@ -146,4 +147,4 @@ export const columns: ColumnDef<Petition>[] = [
     header: "Source File",
     accessorKey: "sourceFile",
   },
-]
+];

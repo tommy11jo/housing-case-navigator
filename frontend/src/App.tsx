@@ -27,6 +27,7 @@ function App() {
   const generatePetitionGuidance = async (details: string) => {
     setIsLoading(true);
     try {
+      console.log(`sending request`);
       const response = await fetch(
         "http://localhost:8000/petition/generate-guidance",
         {
@@ -37,6 +38,7 @@ function App() {
           body: JSON.stringify({ petitionDetails: details }),
         }
       );
+      console.log(`got response`);
       const data = await response.json();
       console.log(`response: ${JSON.stringify(data)}`);
       setPetitionGuidance(data.guidance);
@@ -77,9 +79,7 @@ function App() {
                 />
                 <Button
                   className="mt-4"
-                  onClick={() =>
-                    generatePetitionGuidance(JSON.stringify(petitionGuidance))
-                  }
+                  onClick={() => generatePetitionGuidance(petitionDetails)}
                   disabled={isLoading}
                 >
                   Help me write a petition

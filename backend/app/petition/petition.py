@@ -53,6 +53,7 @@ async def generate_guidance(request: dict):
     if not petition_details:
         raise HTTPException(status_code=400, detail="petitionDetails is required")
 
+    print('got petition details')
     # Fetch past case decisions from retrieval endpoint
     async with AsyncClient() as client:
         response = await client.get("http://localhost:8000/retrieval/documents", params={"format": "csv"})
@@ -61,6 +62,7 @@ async def generate_guidance(request: dict):
             raise HTTPException(status_code=500, detail="Failed to fetch past case decisions")
         past_case_decisions = response.text
 
+    print('got output')
     # try:
     message = anthropic_client.messages.create(
         model=MODEL,

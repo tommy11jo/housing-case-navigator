@@ -1,48 +1,6 @@
 {
   "petitions": [
     {
-      "caseInfo": "Petition: C2324003 & C2324004",
-      "city": "Mountain View",
-      "issueTypeNumber": "2",
-      "argumentsAndDecisions": [
-        {
-          "complaintSummary": "Peeling bathroom surfaces and plumbing issues",
-          "violatedCode": "CSFRA Regulations, Chapter 2(h)",
-          "reimbursement": "$1,200.00 plus $100/month ongoing until repaired",
-          "complaintTiming": "July 2023 - present",
-          "respondentHadNotice": "Yes, through tenant portal and direct communications",
-          "evidenceAssessment": "Photos, texts provided showing poor condition; respondent's offered repairs deemed inadequate",
-          "impactAssessment": "Significant impact on basic housing services, potential water damage and mold issues"
-        },
-        {
-          "complaintSummary": "Trash bins blocking parking access and pest issues",
-          "violatedCode": "CSFRA Regulations, Chapter 2(h)",
-          "reimbursement": "$3,500.00 plus $100/month ongoing until resolved",
-          "complaintTiming": "January 2024 - present",
-          "respondentHadNotice": "Yes, multiple communications documented",
-          "evidenceAssessment": "Respondent admitted issue but cited space constraints",
-          "impactAssessment": "Regular loss of contracted parking access impacts tenant's basic housing services"
-        },
-        {
-          "complaintSummary": "Inoperable/unsafe laundry facilities",
-          "violatedCode": "CSFRA Regulations, Chapter 2(h)",
-          "reimbursement": "$950.00 plus $50/month ongoing until resolved",
-          "complaintTiming": "June 2022 - present",
-          "respondentHadNotice": "Yes, through maintenance requests and direct communication",
-          "evidenceAssessment": "Documentation of repair invoices and ongoing issues provided",
-          "impactAssessment": "Forced to use external laundry facilities due to persistent problems"
-        }
-      ],
-      "reimbursementJustified": "yes",
-      "rentAdjustment": "Yes (17%)",
-      "respondent": "TayCon Properties",
-      "hearingOfficer": "E. Alexandra DeLateur",
-      "hearingDate": "2023-11-08",
-      "filedOnDate": "2023-08-25",
-      "decisionDate": "2024-02-15",
-      "sourceFile": "WMiddlefield_2120 2024.02.15 HODecision_Redacted.json"
-    },
-    {
       "caseInfo": "Petition: C2223005, C2223056",
       "city": "Mountain View",
       "issueTypeNumber": "2",
