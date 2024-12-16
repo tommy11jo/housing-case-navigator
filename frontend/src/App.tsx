@@ -91,9 +91,7 @@ function App() {
   };
 
   useEffect(() => {
-    console.log(`in use effefct isAuthenticated: ${isAuthenticated}`);
     if (isAuthenticated) {
-      console.log(`making authenticated fetch for data`);
       authenticatedFetch(`${backendUrl}/retrieval/documents`)
         .then((res) => res.json())
         .then((data) => setData(data.petitions))
@@ -104,7 +102,7 @@ function App() {
   const generatePetitionGuidance = async (details: string) => {
     setIsLoading(true);
     try {
-      console.log(`sending request`);
+      console.log(`sending request: petition/generate-guidance`);
       const response = await authenticatedFetch(
         `${backendUrl}/petition/generate-guidance`,
         {
