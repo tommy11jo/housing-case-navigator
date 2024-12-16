@@ -3,7 +3,6 @@ from fastapi import APIRouter, UploadFile, File, HTTPException
 
 from .process_services import pdf_to_base64_images
 import anthropic
-import openai
 import os
 from dotenv import load_dotenv
 from typing import BinaryIO
@@ -15,9 +14,18 @@ load_dotenv()
 router = APIRouter(prefix="/process")
 
 
-MODEL = "claude-3-5-sonnet-20241022"
+MODEL = "anthropic.claude-3-5-sonnet-20241022-v2:0"
 
-anthropic_client = anthropic.Client(api_key=os.environ.get("ANTHROPIC_API_KEY"))
+# this is running on tommy's personal AWS account which is very unideal
+# there is no way to limit this API usage for example
+anthropic_client = anthropic.AnthropicBedrock(
+    # Authenticate by either providing the keys below or use the default AWS credential providers, such as
+    # using ~/.aws/credentials or the "AWS_SECRET_ACCESS_KEY" and "AWS_ACCESS_KEY_ID" environment variables.
+    aws_access_key=os.environ.get("AWS_ACCESS_KEY_ID"),
+    aws_secret_key=os.environ.get("AWS_SECRET_ACCESS_KEY"),
+    aws_region="us-west-2",
+)
+
 # openai_client = openai.OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
 
 
@@ -116,12 +124,10 @@ async def extract_data_helper(file: BinaryIO, filename: str = "", save: bool = F
 
 async def extract_housing_case_data(image_datas, model):
     match (model):
-        case "claude-3-5-sonnet-20241022":
-            return await extract_housing_case_data_with_claude(image_datas)
         case "gpt":
             return await extract_housing_case_data_with_openai(image_datas)
         case _:
-            raise HTTPException(status_code=400, detail="Invalid model")
+            return await extract_housing_case_data_with_claude(image_datas)
 
 
 async def extract_housing_case_data_with_claude(image_datas):
@@ -149,14 +155,14 @@ async def extract_housing_case_data_with_claude(image_datas):
 
     try:
         message = anthropic_client.messages.create(
-            model="claude-3-5-sonnet-20241022",
+            model=MODEL,
             system=SYSTEM_PROMPT,
             max_tokens=1024,
             messages=img_messages,
         )
     except Exception as e:
         print(e)
-        return "Error processing images"
+        raise e
 
     response = message.content[0].text
     response_json = "{" + response[: response.rfind("}") + 1]
