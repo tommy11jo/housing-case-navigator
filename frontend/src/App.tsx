@@ -6,7 +6,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { Petition, PetitionGuidance } from "./types";
 import { Spinner } from "./components/ui/spinner";
 import {
@@ -22,6 +22,9 @@ import { Label } from "@/components/ui/label";
 
 function App() {
   const [data, setData] = useState<Petition[]>([]);
+  const [isAuthenticated, setIsAuthenticated] = useState<boolean>(false);
+  const [password, setPassword] = useState<string>("");
+  const [authError, setAuthError] = useState<string>("");
   const [petitionGuidance, setPetitionGuidance] = useState<
     PetitionGuidance["guidance"] | null
   >(null);
@@ -30,26 +33,90 @@ function App() {
   const backendUrl =
     import.meta.env.VITE_BACKEND_URL ?? "http://localhost:8000";
 
+  const validatePassword = useCallback(
+    async (pwd: string) => {
+      try {
+        const response = await fetch(`${backendUrl}/auth`, {
+          method: "POST",
+          body: JSON.stringify({ password: pwd }),
+          headers: {
+            "Content-Type": "application/json",
+          },
+        });
+
+        if (response.ok) {
+          setIsAuthenticated(true);
+          localStorage.setItem("auth_password", pwd);
+          setAuthError("");
+        } else {
+          console.error("Failed to validate password: ", await response.text());
+          setAuthError("Invalid password");
+          localStorage.removeItem("auth_password");
+        }
+      } catch (error) {
+        console.error("Error validating password:", error);
+        setAuthError("Failed to validate password");
+        localStorage.removeItem("auth_password");
+      }
+    },
+    [backendUrl]
+  );
+
   useEffect(() => {
-    fetch(`${backendUrl}/retrieval/documents`)
-      .then((res) => res.json())
-      .then((data) => setData(data.petitions));
-  }, []);
+    const storedPassword = localStorage.getItem("auth_password");
+    if (storedPassword) {
+      validatePassword(storedPassword);
+    }
+  }, [validatePassword]);
+
+  const handlePasswordSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    validatePassword(password);
+  };
+
+  // Wrap fetch calls with authentication header
+  const authenticatedFetch = (url: string, options: RequestInit = {}) => {
+    const storedPassword = localStorage.getItem("auth_password");
+    if (!storedPassword) {
+      setIsAuthenticated(false);
+      return Promise.reject(new Error("No authentication token"));
+    }
+
+    const headers = {
+      ...options.headers,
+      "X-Password": storedPassword,
+    };
+
+    return fetch(url, { ...options, headers });
+  };
+
+  useEffect(() => {
+    console.log(`in use effefct isAuthenticated: ${isAuthenticated}`);
+    if (isAuthenticated) {
+      console.log(`making authenticated fetch for data`);
+      authenticatedFetch(`${backendUrl}/retrieval/documents`)
+        .then((res) => res.json())
+        .then((data) => setData(data.petitions))
+        .catch(() => setIsAuthenticated(false));
+    }
+  }, [isAuthenticated, backendUrl]);
 
   const generatePetitionGuidance = async (details: string) => {
     setIsLoading(true);
     try {
       console.log(`sending request`);
-      const response = await fetch(`${backendUrl}/petition/generate-guidance`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ petitionDetails: details }),
-      });
-      console.log(`got response`);
+      const response = await authenticatedFetch(
+        `${backendUrl}/petition/generate-guidance`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ petitionDetails: details }),
+        }
+      );
       const data = await response.json();
-      console.log(`response: ${JSON.stringify(data)}`);
+      console.log(`got response ${JSON.stringify(data)}`);
       setPetitionGuidance(data.guidance);
     } finally {
       setIsLoading(false);
@@ -66,10 +133,13 @@ function App() {
     formData.append("file", file);
 
     try {
-      const response = await fetch("http://localhost:8000/process/upload", {
-        method: "POST",
-        body: formData,
-      });
+      const response = await authenticatedFetch(
+        `${backendUrl}/process/upload`,
+        {
+          method: "POST",
+          body: formData,
+        }
+      );
 
       if (!response.ok) {
         throw new Error("Upload failed");
@@ -77,8 +147,7 @@ function App() {
 
       const result = await response.json();
       console.log("Upload successful:", result);
-      // Optionally refresh the documents list
-      fetch("http://localhost:8000/retrieval/documents")
+      authenticatedFetch(`${backendUrl}/retrieval/documents`)
         .then((res) => res.json())
         .then((data) => setData(data.petitions));
     } catch (error) {
@@ -86,6 +155,37 @@ function App() {
       alert("Failed to upload file");
     }
   };
+
+  if (!isAuthenticated) {
+    return (
+      <div className="container mx-auto py-10 min-h-screen flex items-center justify-center">
+        <Card className="w-[350px]">
+          <CardHeader>
+            <CardTitle>Enter your password to continue</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <form onSubmit={handlePasswordSubmit}>
+              <div className="grid w-full items-center gap-4">
+                <div className="flex flex-col space-y-1.5">
+                  <Label htmlFor="password">Password</Label>
+                  <Input
+                    id="password"
+                    type="password"
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                  />
+                </div>
+                {authError && (
+                  <p className="text-sm text-red-500">{authError}</p>
+                )}
+                <Button type="submit">Submit</Button>
+              </div>
+            </form>
+          </CardContent>
+        </Card>
+      </div>
+    );
+  }
 
   return (
     <div className="container mx-auto py-10 min-h-screen">
