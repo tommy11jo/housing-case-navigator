@@ -17,6 +17,8 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+app.add_middleware(PasswordMiddleware)
+
 app.include_router(quote_router)
 app.include_router(retrieval_router)
 app.include_router(petition_router)
@@ -24,3 +26,12 @@ app.include_router(petition_router)
 @app.get("/")
 def read_root():
     return {"message": "Hi there"}
+
+@app.post("/auth")
+async def verify_password(password: str):
+    if password == GLOBAL_PASSWORD:
+        return {"status": "success"}
+    raise HTTPException(
+        status_code=401,
+        detail="Invalid password"
+    )
