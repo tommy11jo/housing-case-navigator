@@ -1,37 +1,38 @@
-import "./App.css";
-import { DataTable } from "./data-table";
+import "./App.css"
+import { DataTable } from "./data-table"
 // import { DATA } from "./data";
-import { columns } from "./columns";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Textarea } from "@/components/ui/textarea";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { useCallback, useEffect, useState } from "react";
-import { Petition, PetitionGuidance } from "./types";
-import { Spinner } from "./components/ui/spinner";
+import { columns } from "./columns"
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import { Textarea } from "@/components/ui/textarea"
+import { Button } from "@/components/ui/button"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { useCallback, useEffect, useState } from "react"
+import { Petition, PetitionGuidance } from "./types"
+import { Spinner } from "./components/ui/spinner"
 import {
   Dialog,
   DialogContent,
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-  DialogClose,
-} from "@/components/ui/dialog";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
+} from "@/components/ui/dialog"
+import { Input } from "@/components/ui/input"
+import { Label } from "@/components/ui/label"
+import { Toaster, toast } from "sonner"
 
 function App() {
-  const [data, setData] = useState<Petition[]>([]);
-  const [isAuthenticated, setIsAuthenticated] = useState<boolean>(false);
-  const [password, setPassword] = useState<string>("");
-  const [authError, setAuthError] = useState<string>("");
+  const [data, setData] = useState<Petition[]>([])
+  const [isAuthenticated, setIsAuthenticated] = useState<boolean>(false)
+  const [password, setPassword] = useState<string>("")
+  const [authError, setAuthError] = useState<string>("")
   const [petitionGuidance, setPetitionGuidance] = useState<
     PetitionGuidance["guidance"] | null
-  >(null);
-  const [petitionDetails, setPetitionDetails] = useState("");
-  const [isLoading, setIsLoading] = useState(false);
-  const backendUrl =
-    import.meta.env.VITE_BACKEND_URL ?? "http://localhost:8000";
+  >(null)
+  const [petitionDetails, setPetitionDetails] = useState("")
+  const [isLoading, setIsLoading] = useState(false)
+  const [isUploadDialogOpen, setIsUploadDialogOpen] = useState(false)
+  const [isUploading, setIsUploading] = useState(false)
+  const backendUrl = import.meta.env.VITE_BACKEND_URL ?? "http://localhost:8000"
 
   const validatePassword = useCallback(
     async (pwd: string) => {
@@ -42,67 +43,67 @@ function App() {
           headers: {
             "Content-Type": "application/json",
           },
-        });
+        })
 
         if (response.ok) {
-          setIsAuthenticated(true);
-          localStorage.setItem("auth_password", pwd);
-          setAuthError("");
+          setIsAuthenticated(true)
+          localStorage.setItem("auth_password", pwd)
+          setAuthError("")
         } else {
-          console.error("Failed to validate password: ", await response.text());
-          setAuthError("Invalid password");
-          localStorage.removeItem("auth_password");
+          console.error("Failed to validate password: ", await response.text())
+          setAuthError("Invalid password")
+          localStorage.removeItem("auth_password")
         }
       } catch (error) {
-        console.error("Error validating password:", error);
-        setAuthError("Failed to validate password");
-        localStorage.removeItem("auth_password");
+        console.error("Error validating password:", error)
+        setAuthError("Failed to validate password")
+        localStorage.removeItem("auth_password")
       }
     },
     [backendUrl]
-  );
+  )
 
   useEffect(() => {
-    const storedPassword = localStorage.getItem("auth_password");
+    const storedPassword = localStorage.getItem("auth_password")
     if (storedPassword) {
-      validatePassword(storedPassword);
+      validatePassword(storedPassword)
     }
-  }, [validatePassword]);
+  }, [validatePassword])
 
   const handlePasswordSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    validatePassword(password);
-  };
+    e.preventDefault()
+    validatePassword(password)
+  }
 
   // Wrap fetch calls with authentication header
   const authenticatedFetch = (url: string, options: RequestInit = {}) => {
-    const storedPassword = localStorage.getItem("auth_password");
+    const storedPassword = localStorage.getItem("auth_password")
     if (!storedPassword) {
-      setIsAuthenticated(false);
-      return Promise.reject(new Error("No authentication token"));
+      setIsAuthenticated(false)
+      return Promise.reject(new Error("No authentication token"))
     }
 
     const headers = {
       ...options.headers,
       "X-Password": storedPassword,
-    };
+    }
 
-    return fetch(url, { ...options, headers });
-  };
+    return fetch(url, { ...options, headers })
+  }
 
   useEffect(() => {
     if (isAuthenticated) {
       authenticatedFetch(`${backendUrl}/retrieval/documents`)
         .then((res) => res.json())
         .then((data) => setData(data.petitions))
-        .catch(() => setIsAuthenticated(false));
+        .catch(() => setIsAuthenticated(false))
     }
-  }, [isAuthenticated, backendUrl]);
+  }, [isAuthenticated, backendUrl])
 
   const generatePetitionGuidance = async (details: string) => {
-    setIsLoading(true);
+    setIsLoading(true)
     try {
-      console.log(`sending request: petition/generate-guidance`);
+      console.log(`sending request: petition/generate-guidance`)
       const response = await authenticatedFetch(
         `${backendUrl}/petition/generate-guidance`,
         {
@@ -112,23 +113,24 @@ function App() {
           },
           body: JSON.stringify({ petitionDetails: details }),
         }
-      );
-      const data = await response.json();
-      console.log(`got response ${JSON.stringify(data)}`);
-      setPetitionGuidance(data.guidance);
+      )
+      const data = await response.json()
+      console.log(`got response ${JSON.stringify(data)}`)
+      setPetitionGuidance(data.guidance)
     } finally {
-      setIsLoading(false);
+      setIsLoading(false)
     }
-  };
+  }
 
   const handleFileUpload = async (file: File) => {
     if (!file || file.type !== "application/pdf") {
-      alert("Please upload a PDF file");
-      return;
+      toast.error("Please upload a PDF file")
+      return
     }
 
-    const formData = new FormData();
-    formData.append("file", file);
+    setIsUploading(true)
+    const formData = new FormData()
+    formData.append("file", file)
 
     try {
       const response = await authenticatedFetch(
@@ -137,22 +139,29 @@ function App() {
           method: "POST",
           body: formData,
         }
-      );
+      )
 
       if (!response.ok) {
-        throw new Error("Upload failed");
+        throw new Error("Upload failed")
       }
 
-      const result = await response.json();
-      console.log("Upload successful:", result);
+      const result = await response.json()
+      console.log("Upload successful:", result)
+
+      setIsUploadDialogOpen(false)
+      toast.success("Document uploaded successfully")
+
+      // Refresh the documents list
       authenticatedFetch(`${backendUrl}/retrieval/documents`)
         .then((res) => res.json())
-        .then((data) => setData(data.petitions));
+        .then((data) => setData(data.petitions))
     } catch (error) {
-      console.error("Error uploading file:", error);
-      alert("Failed to upload file");
+      console.error("Error uploading file:", error)
+      toast.error("Failed to upload file")
+    } finally {
+      setIsUploading(false)
     }
-  };
+  }
 
   if (!isAuthenticated) {
     return (
@@ -182,11 +191,12 @@ function App() {
           </CardContent>
         </Card>
       </div>
-    );
+    )
   }
 
   return (
     <div className="container mx-auto py-10 min-h-screen">
+      <Toaster position="top-center" />
       <h1 className="text-3xl font-bold mb-10 text-gray-900">
         Tenant Case Navigator
       </h1>
@@ -198,7 +208,10 @@ function App() {
 
         <TabsContent value="cases" className="border-none p-0 mt-6 w-full">
           <div className="flex justify-end mb-4">
-            <Dialog>
+            <Dialog
+              open={isUploadDialogOpen}
+              onOpenChange={setIsUploadDialogOpen}
+            >
               <DialogTrigger asChild>
                 <Button variant="outline" className="flex items-center gap-2">
                   <svg
@@ -230,15 +243,15 @@ function App() {
                       className="border-2 border-dashed rounded-lg p-8 text-center cursor-pointer hover:border-gray-400 transition-colors"
                       onClick={() => document.getElementById("file")?.click()}
                       onDrop={(e) => {
-                        e.preventDefault();
-                        const file = e.dataTransfer.files[0];
+                        e.preventDefault()
+                        const file = e.dataTransfer.files[0]
                         if (file) {
-                          handleFileUpload(file);
+                          handleFileUpload(file)
                         }
                       }}
                       onDragOver={(e) => {
-                        e.preventDefault();
-                        e.stopPropagation();
+                        e.preventDefault()
+                        e.stopPropagation()
                       }}
                     >
                       <Input
@@ -247,49 +260,43 @@ function App() {
                         className="hidden"
                         accept=".pdf"
                         onChange={(e) => {
-                          const file = e.target.files?.[0];
+                          const file = e.target.files?.[0]
                           if (file) {
-                            handleFileUpload(file);
+                            handleFileUpload(file)
                           }
                         }}
                       />
                       <div className="flex flex-col items-center gap-2">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        >
-                          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-                          <polyline points="17 8 12 3 7 8" />
-                          <line x1="12" y1="3" x2="12" y2="15" />
-                        </svg>
+                        {isUploading ? (
+                          <Spinner className="h-6 w-6" />
+                        ) : (
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          >
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                            <polyline points="17 8 12 3 7 8" />
+                            <line x1="12" y1="3" x2="12" y2="15" />
+                          </svg>
+                        )}
                         <p className="text-sm text-gray-600">
-                          Click to browse or drag and drop your file here
+                          {isUploading
+                            ? "Uploading..."
+                            : "Click to browse or drag and drop your file here"}
                         </p>
                         <p className="text-xs text-gray-500">
-                          Supported formats: PDF, DOC, DOCX
+                          Supported formats: PDF
                         </p>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div className="flex justify-end gap-2">
-                  <DialogClose asChild>
-                    <Button variant="outline">Cancel</Button>
-                  </DialogClose>
-                  <Button
-                    onClick={() => {
-                      // Handle upload
-                    }}
-                  >
-                    Upload
-                  </Button>
                 </div>
               </DialogContent>
             </Dialog>
@@ -441,7 +448,7 @@ function App() {
         </TabsContent>
       </Tabs>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
