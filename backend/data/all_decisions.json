@@ -1,6 +1,30 @@
 {
   "petitions": [
     {
+      "caseInfo": "Petition: C2223055/C2223056",
+      "city": "Mountain View",
+      "issueTypeNumber": "2",
+      "argumentsAndDecisions": [
+        {
+          "complaintSummary": "Multiple habitability issues including mold, damaged carpet, electrical problems, non-functioning appliances, and lack of heat",
+          "violatedCode": "CA Civil Code \u00a7 1941.1, Health and Safety Code \u00a7 17920.3, CA Electrical Code \u00a7 404.9, 406.6, 400.12, 240.5",
+          "reimbursement": "$6,717.06",
+          "complaintTiming": "Issues dating back 5+ years with some beginning in 2016",
+          "respondentHadNotice": "Yes, through verbal and written notices including a formal letter on May 5, 2023",
+          "evidenceAssessment": "Credible testimony established long-term neglect with photographic evidence of mold and damages; MFH inspection reports confirmed code violations",
+          "impactAssessment": "Severe impact on daily living with safety hazards from electrical issues, health concerns from mold, and reduced functionality of basic amenities"
+        }
+      ],
+      "reimbursementJustified": "yes",
+      "rentAdjustment": "Yes (multiple % reductions ranging from 1-45% for different issues)",
+      "respondent": "Sergio Sanchez Morado",
+      "hearingOfficer": "Barbara M. Arischer",
+      "hearingDate": "2023-09-29",
+      "filedOnDate": "2023-06-28",
+      "decisionDate": "2023-11-22",
+      "sourceFile": "0California_1556 2023.11.21 HODecision_Redacted.pdf"
+    },
+    {
       "caseInfo": "Appeal: C22230037",
       "city": "Mountain View",
       "issueTypeNumber": "2",
@@ -1106,29 +1130,6 @@
       "decisionDate": "2024-03-20",
       "reimbursementJustified": "yes",
       "sourceFile": "Whitney_2489 2024.07.09 Appeal Decision_Redacted.json"
-    },
-    {
-      "caseInfo": "Petition: C2223055, C2223056",
-      "city": "Mountain View",
-      "issueTypeNumber": "2",
-      "argumentsAndDecisions": [
-        {
-          "complaintSummary": "Multiple habitability issues including mold, electrical problems, non-functioning appliances, and plumbing issues",
-          "violatedCode": "CA Civil Code \u00a7 1941.1, CA Health & Safety Code \u00a7 17920.3, CA Electrical Code \u00a7 404.9, 406.6, 400.12, 240.5",
-          "reimbursement": "$6,717.06",
-          "complaintTiming": "5+ years for most issues",
-          "respondentHadNotice": "Yes, through verbal complaints, written notice on May 5, 2023, and MFH inspections",
-          "evidenceAssessment": "Credible testimony and documentation of long-term habitability issues, supported by MFH inspection reports",
-          "impactAssessment": "Significant impact on daily living - electrical hazards, lack of heat, mold causing health issues, and limited kitchen functionality"
-        }
-      ],
-      "reimbursementJustified": "yes",
-      "rentAdjustment": "Yes (45% for electrical issues, 25% for heat issues, plus various other percentage reductions for specific problems)",
-      "respondent": "Sergio Sanchez Morado",
-      "hearingOfficer": "Barbara M. Arischer",
-      "hearingDate": "2023-09-29",
-      "filedOnDate": "2023-06-28",
-      "decisionDate": "2023-11-22"
     }
   ]
 }

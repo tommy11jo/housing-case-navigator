@@ -78,8 +78,10 @@ async def upload_file(file: UploadFile = File(...)):
             except json.JSONDecodeError as e:
                 print(f"Error reading existing JSON: {str(e)}")
 
+        # Add sourceFile field to each petition before appending
         for petition in results["petitions"]:
-            data["petitions"].append(petition)
+            petition["sourceFile"] = file.filename
+            data["petitions"] = [petition] + data["petitions"]
 
         with open(output_path, "w") as f:
             json.dump(data, f, indent=2)
