@@ -15,3 +15,9 @@ cd frontend
 yarn
 yarn dev
 ```
+
+Then go to:
+
+```
+http://localhost:5173/
+```
