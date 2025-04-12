@@ -3,7 +3,7 @@ import json
 from fastapi import APIRouter, HTTPException, Response
 from fastapi.responses import StreamingResponse
 import io
-from ..config import supabase
+from app.db_utils import supabase
 import logging
 
 logger = logging.getLogger(__name__)
