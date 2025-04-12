@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 from typing import BinaryIO
 from pydantic import BaseModel
 from typing import List
-from ..config import supabase
+from app.config import supabase
 
 load_dotenv()
 
