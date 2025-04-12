@@ -1,28 +1,28 @@
 {
   "petitions": [
     {
-      "caseInfo": "Petition: C2223005, C2223056",
+      "caseInfo": "Petition: C2223055/C2223056",
       "city": "Mountain View",
       "issueTypeNumber": "2",
       "argumentsAndDecisions": [
         {
-          "complaintSummary": "Multiple habitability issues including mold, electrical problems, non-functioning appliances, and maintenance issues",
-          "violatedCode": "CA Civil Code \u00a7 1941.1, Health and Safety Code \u00a7 17920.3",
+          "complaintSummary": "Multiple habitability issues including mold, damaged carpet, electrical problems, non-functioning appliances, and lack of heat",
+          "violatedCode": "CA Civil Code \u00a7 1941.1, Health and Safety Code \u00a7 17920.3, CA Electrical Code \u00a7 404.9, 406.6, 400.12, 240.5",
           "reimbursement": "$6,717.06",
-          "complaintTiming": "Multiple issues spanning 5+ years",
-          "respondentHadNotice": "Yes, through verbal complaints, written notice on May 5, 2023, and MFH inspections",
-          "evidenceAssessment": "Evidence included photos, inspection reports, witness testimony confirming long-term issues",
-          "impactAssessment": "Significant impact on living conditions - electrical hazards, lack of heat, mold, plumbing issues affecting daily life"
+          "complaintTiming": "Issues dating back 5+ years with some beginning in 2016",
+          "respondentHadNotice": "Yes, through verbal and written notices including a formal letter on May 5, 2023",
+          "evidenceAssessment": "Credible testimony established long-term neglect with photographic evidence of mold and damages; MFH inspection reports confirmed code violations",
+          "impactAssessment": "Severe impact on daily living with safety hazards from electrical issues, health concerns from mold, and reduced functionality of basic amenities"
         }
       ],
       "reimbursementJustified": "yes",
-      "rentAdjustment": "Yes",
+      "rentAdjustment": "Yes (multiple % reductions ranging from 1-45% for different issues)",
       "respondent": "Sergio Sanchez Morado",
       "hearingOfficer": "Barbara M. Arischer",
       "hearingDate": "2023-09-29",
       "filedOnDate": "2023-06-28",
       "decisionDate": "2023-11-22",
-      "sourceFile": "California_1556 2023.11.21 HODecision_Redacted.json"
+      "sourceFile": "0California_1556 2023.11.21 HODecision_Redacted.pdf"
     },
     {
       "caseInfo": "Appeal: C22230037",

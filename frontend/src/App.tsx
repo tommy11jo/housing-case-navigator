@@ -1,6 +1,6 @@
 import "./App.css";
 import { DataTable } from "./data-table";
-// import { DATA } from "./data";
+// import { DATA } from "./data"; // <-- Removed DATA import
 import { columns } from "./columns";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Textarea } from "@/components/ui/textarea";
@@ -19,6 +19,7 @@ import {
 } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import { Toaster, toast } from "sonner"; // <-- Restored sonner import
 
 function App() {
   const [data, setData] = useState<Petition[]>([]);
@@ -30,6 +31,7 @@ function App() {
   >(null);
   const [petitionDetails, setPetitionDetails] = useState("");
   const [isLoading, setIsLoading] = useState(false);
+  const [isUploading, setIsUploading] = useState(false);
   const [uploadError, setUploadError] = useState<string>("");
   const [isUploadDialogOpen, setIsUploadDialogOpen] = useState(false);
   const backendUrl =
@@ -76,7 +78,6 @@ function App() {
     validatePassword(password);
   };
 
-  // Wrap fetch calls with authentication header
   const authenticatedFetch = (url: string, options: RequestInit = {}) => {
     const storedPassword = localStorage.getItem("auth_password");
     if (!storedPassword) {
@@ -95,19 +96,22 @@ function App() {
   useEffect(() => {
     if (isAuthenticated) {
       authenticatedFetch(`${backendUrl}/retrieval/documents`)
-        .then((res) => res.json())
-        .then((fetchedData) => {
-          // Ensure fetchedData is an array before setting state
-          if (Array.isArray(fetchedData)) {
-            setData(fetchedData);
+        .then((response) => response.json())
+        .then((data) => {
+          if (Array.isArray(data)) {
+            setData(data);
           } else {
-            console.error("Fetched data is not an array:", fetchedData);
-            setData([]); // Reset to empty array if fetch returned invalid data
+            console.error("Invalid data structure received:", data);
+            toast.error(
+              // <-- Restored toast
+              "Received invalid data format from the server. Please check the data source."
+            );
+            setData([]);
           }
         })
         .catch((error) => {
-          console.error("Error fetching documents:", error);
-          setData([]); // Reset on error too
+          console.error("Failed to fetch documents:", error);
+          toast.error("Failed to load documents. Please try again later."); // <-- Restored toast
           setIsAuthenticated(false);
         });
     }
@@ -137,12 +141,12 @@ function App() {
 
   const handleFileUpload = async (file: File) => {
     if (!file || file.type !== "application/pdf") {
+      toast.error("Please upload a PDF file"); // <-- Restored toast
       setUploadError("Please upload a PDF file");
       return;
     }
-
     setUploadError("");
-    setIsLoading(true);
+    setIsUploading(true);
     const formData = new FormData();
     formData.append("file", file);
 
@@ -157,34 +161,41 @@ function App() {
 
       const result = await response.json();
       if (!response.ok) {
-        throw new Error(result.detail || "Upload failed");
+        const errorMsg = result.detail || "Upload failed due to server error";
+        toast.error(errorMsg); // <-- Restored toast
+        setUploadError(errorMsg);
+        throw new Error(errorMsg);
       }
 
       console.log("Upload successful:", result);
-      // Refresh the data
-      const docsResponse = await authenticatedFetch(
-        `${backendUrl}/retrieval/documents`
-      );
-      const docsData = await docsResponse.json();
-      if (!docsResponse.ok) {
-        throw new Error(docsData.detail || "Failed to refresh data");
-      }
-      // Ensure docsData is an array before setting state
-      if (Array.isArray(docsData)) {
-        setData(docsData);
-      } else {
-        console.error("Refreshed data is not an array:", docsData);
-        setData([]); // Reset to empty array
-      }
-      setUploadError("");
-      setIsUploadDialogOpen(false); // Close dialog on success
+      setIsUploadDialogOpen(false);
+      toast.success("Document uploaded successfully"); // <-- Restored toast
+
+      authenticatedFetch(`${backendUrl}/retrieval/documents`)
+        .then((res) => res.json())
+        .then((fetchedData) => {
+          if (Array.isArray(fetchedData)) {
+            setData(fetchedData);
+          } else {
+            console.error("Fetched data is not an array:", fetchedData);
+            toast.error("Failed to refresh documents: Invalid data format."); // <-- Restored toast
+            setData([]);
+          }
+        })
+        .catch((error) => {
+          console.error("Error refreshing documents after upload:", error);
+          toast.error("Failed to refresh documents list."); // <-- Restored toast
+        });
     } catch (error) {
       console.error("Error uploading file:", error);
-      setUploadError(
-        error instanceof Error ? error.message : "Failed to upload file"
-      );
+      if (!uploadError) {
+        const errorMsg =
+          error instanceof Error ? error.message : "Failed to upload file";
+        toast.error(errorMsg); // <-- Restored toast
+        setUploadError(errorMsg);
+      }
     } finally {
-      setIsLoading(false);
+      setIsUploading(false);
     }
   };
 
@@ -221,6 +232,7 @@ function App() {
 
   return (
     <div className="container mx-auto py-10 min-h-screen">
+      <Toaster position="top-center" />
       <h1 className="text-3xl font-bold mb-10 text-gray-900">
         Tenant Case Navigator
       </h1>
@@ -278,44 +290,43 @@ function App() {
                         e.stopPropagation();
                       }}
                     >
-                      <Input
-                        id="file"
+                      <input
                         type="file"
-                        className="hidden"
-                        accept=".pdf"
+                        accept="application/pdf"
+                        className="absolute inset-0 w-full h-full opacity-0 cursor-pointer"
                         onChange={(e) => {
-                          const file = e.target.files?.[0];
-                          if (file) {
-                            handleFileUpload(file);
+                          if (e.target.files && e.target.files[0]) {
+                            setUploadError("");
+                            // handleFileUpload(e.target.files[0]);
                           }
                         }}
+                        disabled={isUploading}
                       />
                       <div className="flex flex-col items-center gap-2">
-                        {isLoading ? (
+                        {isUploading ? (
                           <Spinner className="h-6 w-6" />
                         ) : (
                           <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
+                            className="w-12 h-12 text-gray-400"
                             fill="none"
                             stroke="currentColor"
-                            strokeWidth="2"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
                           >
-                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-                            <polyline points="17 8 12 3 7 8" />
-                            <line x1="12" y1="3" x2="12" y2="15" />
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth="2"
+                              d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"
+                            ></path>
                           </svg>
                         )}
                         <p className="text-sm text-gray-600">
-                          {isLoading
-                            ? "Processing..."
+                          {isUploading
+                            ? "Uploading..."
                             : "Click to browse or drag and drop your file here"}
                         </p>
-                        {!isLoading && (
+                        {!isUploading && (
                           <p className="text-xs text-gray-500">
                             Supported formats: PDF
                           </p>
@@ -329,17 +340,27 @@ function App() {
                     </div>
                   </div>
                 </div>
-                <div className="flex justify-end gap-2">
+                <div className="flex justify-end gap-2 mt-4">
                   <DialogClose asChild>
-                    <Button variant="outline">Cancel</Button>
+                    <Button variant="outline" disabled={isUploading}>
+                      Cancel
+                    </Button>
                   </DialogClose>
                   <Button
                     onClick={() => {
-                      document.getElementById("file")?.click();
+                      const fileInput =
+                        document.querySelector<HTMLInputElement>(
+                          'input[type="file"]'
+                        );
+                      if (fileInput?.files?.length) {
+                        handleFileUpload(fileInput.files[0]);
+                      } else {
+                        setUploadError("Please select a file first.");
+                      }
                     }}
-                    disabled={isLoading}
+                    disabled={isUploading}
                   >
-                    {isLoading ? "Processing..." : "Upload"}
+                    {isUploading ? "Uploading..." : "Upload"}
                   </Button>
                 </div>
               </DialogContent>

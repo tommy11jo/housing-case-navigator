@@ -2,7 +2,6 @@ import json
 from fastapi import APIRouter, UploadFile, File, HTTPException
 from .process_services import pdf_to_base64_images
 import anthropic
-import openai
 import os
 from dotenv import load_dotenv
 from typing import BinaryIO
@@ -25,7 +24,7 @@ MAX_PAGES = 100
 
 
 async def extract_all_epa_data():
-    directory = "../data/epa_petition_decisions"
+    directory = "data/epa_petition_decisions"
     for filename in os.listdir(directory):
         file_path = os.path.join(directory, filename)
         raw_fname = filename.rsplit(".", 1)[0]
@@ -34,7 +33,7 @@ async def extract_all_epa_data():
 
 
 async def extract_all_mtnview_data(start_index=0, end_index=7):  # inclusive
-    directory = "../data/mtnview_petition_decisions"
+    directory = "data/mtnview_petition_decisions"
     index = 0
     for filename in os.listdir(directory):
         if index < start_index or (end_index and index > end_index):
@@ -51,13 +50,10 @@ async def extract_all_mtnview_data(start_index=0, end_index=7):  # inclusive
 # rewrites the entry if it exists, otherwise creates a new one
 @router.post("/upload")
 async def upload_file(file: UploadFile = File(...)):
-    if file.content_type != "application/pdf":
-        raise HTTPException(status_code=415, detail="Unsupported file type")
-
-    base_fname = (
-        file.filename.rsplit(".", 1)[0]
-        if file.filename.endswith(".pdf")
-        else file.filename
+    # TODO: Validate file type and size
+    base_fname = file.filename.rsplit(".", 1)[0] if file.filename else "uploaded_file"
+    print(
+        f"Received file: {file.filename}, Content-Type: {file.content_type}, Size: {file.size}"
     )
 
     try:
@@ -66,7 +62,10 @@ async def upload_file(file: UploadFile = File(...)):
         return {"message": "File processed and saved successfully", "results": results}
     except Exception as e:
         print(f"Error in upload_file: {str(e)}")  # Add detailed logging
-        raise HTTPException(status_code=500, detail=str(e))
+        # Ensure the error detail is informative
+        detail = str(e) if isinstance(e, HTTPException) else f"Internal server error during processing: {str(e)}"
+        status_code = e.status_code if isinstance(e, HTTPException) else 500
+        raise HTTPException(status_code=status_code, detail=detail)
 
 
 @router.post("/extract-pdf")
@@ -269,21 +268,21 @@ EXAMPLE_OUTPUT = PetitionResponse(
 SYSTEM_PROMPT = """Your job is to extract structured data from the following case document of a tenant petition.
 There can be multiple issues raised in a single petition.
 If more than 1 issue is included in a single petition, separate each issue in its own JSON array item.
-If a string value is not present, output “N/A”.
+If a string value is not present, output "N/A".
 
 The data you will extract for each petition includes:
 1. issueTypeNumber: Select one of the following: (1) Rent Ceiling Violations (2) Reductions in Maintenance and Habitability (3) Reductions in Service (4) Failure to Register a Unit with the Rent Stabilization Program.
-2. caseInfo: in the format “Petition: <caseNumber>” or “Appeal: <caseNumber>”
+2. caseInfo: in the format "Petition: <caseNumber>" or "Appeal: <caseNumber>"
 3. city: the city where the petition was filed
 4. argumentsAndDecisions: a list of the petitioner's complaints and the corresponding decision. Each complaint and decision includes:
-    1. complaintSummary: Provide a short summary of the tenant’s complaint relevant to the code
+    1. complaintSummary: Provide a short summary of the tenant's complaint relevant to the code
     2. violatedCode: Specific code/regulation violations claimed
-    3. reimbursement: the reimbursement value if awarded. Otherwise, state “No reimbursement awarded.”
+    3. reimbursement: the reimbursement value if awarded. Otherwise, state "No reimbursement awarded."
     4. complaintTiming: the time duration (e.g. 6 months) or reported start date for the complaint.
     5. respondentHadNotice: whether the landlord knew of the complaints raised and/or was given notice by the tenant
     6. evidenceAssessment: how the hearing officer interpreted the evidence presented
-    7. impactAssessment: hearing officer’s assessment of the impact on the tenant
-5. reimbursementJustified: Does the hearing officer give a strong justification for why they chose that specific dollar amount or percent rent reduction for reimbursement? For example, “7.5% reduction/rebate will be applied for a four month period because the tenant’s housing services were not maintained for a similar period“ would be considered a strong justification. Provide “yes” or “no.”
+    7. impactAssessment: hearing officer's assessment of the impact on the tenant
+5. reimbursementJustified: Does the hearing officer give a strong justification for why they chose that specific dollar amount or percent rent reduction for reimbursement? For example, "7.5% reduction/rebate will be applied for a four month period because the tenant's housing services were not maintained for a similar period" would be considered a strong justification. Provide "yes" or "no."
 6. rentAdjustment: only select (1) Yes or (2) No. If yes, and the value of the increase or decrease is available in percent format in the document, provide in parentheses.
 7. respondent
 8. hearingOfficer
