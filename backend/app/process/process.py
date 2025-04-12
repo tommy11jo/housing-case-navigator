@@ -1,6 +1,5 @@
 import json
 from fastapi import APIRouter, UploadFile, File, HTTPException
-
 from .process_services import pdf_to_base64_images
 import anthropic
 import openai
@@ -9,6 +8,7 @@ from dotenv import load_dotenv
 from typing import BinaryIO
 from pydantic import BaseModel
 from typing import List
+from ..config import supabase
 
 load_dotenv()
 
@@ -61,33 +61,12 @@ async def upload_file(file: UploadFile = File(...)):
     )
 
     try:
-        results = await extract_data_helper(file.file, base_fname, save=False)
-        output_path = "../data/all_decisions.json"
-
-        print(f"Saving to {output_path}")
-
-        # Ensure directory exists
-        os.makedirs(os.path.dirname(output_path), exist_ok=True)
-
-        try:
-            if os.path.exists(output_path):
-                with open(output_path, "r") as f:
-                    existing_data = json.load(f)
-            else:
-                existing_data = []
-        except json.JSONDecodeError as e:
-            print(f"Error reading existing JSON: {str(e)}")
-            existing_data = []
-
-        existing_data.append({"filename": file.filename, "data": results})
-
-        with open(output_path, "w") as f:
-            json.dump(existing_data, f, indent=2)
-
+        # Pass save=True to handle all saving logic in extract_data_helper
+        results = await extract_data_helper(file.file, base_fname, save=True)
         return {"message": "File processed and saved successfully", "results": results}
     except Exception as e:
         print(f"Error in upload_file: {str(e)}")  # Add detailed logging
-        raise HTTPException(status_code=500, detail=f"Error processing file: {str(e)}")
+        raise HTTPException(status_code=500, detail=str(e))
 
 
 @router.post("/extract-pdf")
@@ -101,17 +80,79 @@ async def extract_data(file: UploadFile = File(...), fname="results"):
 
 
 async def extract_data_helper(file: BinaryIO, filename: str = "", save: bool = False):
-    print(f"Extracting data for {filename}")
-    base64_images = pdf_to_base64_images(file, max_pages=MAX_PAGES)
-    results = await extract_housing_case_data(base64_images, MODEL)
+    # Read the file content first
+    if hasattr(file, 'seek'):
+        file.seek(0)  # Reset file pointer to beginning
+    file_content = file.read() if hasattr(file, 'read') else file
+    
+    # Upload file to Supabase storage if save is True
     if save:
-        os.makedirs("../data/all_decisions_processed", exist_ok=True)
-        output_path = os.path.join(
-            "../data/all_decisions_processed", f"{filename}.json"
-        )
-        with open(output_path, "w") as f:
-            json.dump(results, f, indent=2)
-    return results
+        try:
+            # Upload the PDF to Supabase storage
+            storage_path = f"decisions/{filename}.pdf"
+            supabase.storage.from_("documents").upload(storage_path, file_content, {"upsert": "true"})
+        except Exception as e:
+            raise HTTPException(status_code=500, detail=f"Error uploading to Supabase: {str(e)}")
+    
+    print(f"Extracting data for {filename}")
+    # Create a BytesIO object from the file content for pdf_to_base64_images
+    from io import BytesIO
+    file_stream = BytesIO(file_content)
+    base64_images = pdf_to_base64_images(file_stream, max_pages=MAX_PAGES)
+    results_response = await extract_housing_case_data(base64_images, MODEL) # results_response is PetitionResponse = {"petitions": [...]}
+
+    if save:
+        try:
+            # Get existing data from Supabase storage
+            try:
+                response = supabase.storage.from_("documents").download("all_decisions.json")
+                existing_data = json.loads(response.decode('utf-8'))
+                if not isinstance(existing_data, dict) or "petitions" not in existing_data:
+                     print("[DEBUG] existing_data is not a dict or missing 'petitions', resetting.")
+                     existing_data = {"petitions": []}
+            except Exception:
+                 print("[DEBUG] Failed to get or parse existing data, starting fresh.")
+                 existing_data = {"petitions": []}
+
+            # Ensure results_response has the expected structure
+            if isinstance(results_response, dict) and "petitions" in results_response and isinstance(results_response["petitions"], list):
+                new_petitions_list = results_response["petitions"] # Extract the list of petitions
+                print(f"[DEBUG] Extracted {len(new_petitions_list)} new petition(s) from results.")
+
+                for new_petition_data in new_petitions_list:
+                    # Ensure the new petition has caseInfo
+                    if isinstance(new_petition_data, dict) and "caseInfo" in new_petition_data:
+                        case_info = new_petition_data["caseInfo"] # Use caseInfo from the petition itself
+                        found = False
+                        for i, existing_petition in enumerate(existing_data["petitions"]):
+                             # Check if existing_petition is a dict and has caseInfo before comparing
+                            if isinstance(existing_petition, dict) and existing_petition.get("caseInfo") == case_info:
+                                existing_data["petitions"][i] = new_petition_data # Update with the new petition object
+                                found = True
+                                print(f"[DEBUG] Updated existing petition for {case_info}")
+                                break
+                        if not found:
+                            existing_data["petitions"].append(new_petition_data) # Append the new petition object
+                            print(f"[DEBUG] Added new petition for {case_info}")
+                    else:
+                        print("[DEBUG] Skipping a new petition object as it's not a dict or missing 'caseInfo'.")
+            else:
+                 print("[DEBUG] 'results_response' from extract_housing_case_data did not have the expected format {'petitions': [...]}. Skipping save.")
+            # Upload updated data back to Supabase
+            json_data = json.dumps(existing_data).encode('utf-8') # Keep existing_data as {"petitions": [...]}
+            supabase.storage.from_("documents").upload(
+                "all_decisions.json", 
+                json_data, 
+                {"upsert": "true"}
+            )
+        except Exception as e:
+            # Add more specific error logging
+            print(f"[ERROR] Failed during save operation: {type(e).__name__} - {str(e)}")
+            import traceback
+            traceback.print_exc()
+            raise HTTPException(status_code=500, detail=f"Error saving to Supabase: {str(e)}")
+            
+    return results_response # Return the original full response
 
 
 async def extract_housing_case_data(image_datas, model):

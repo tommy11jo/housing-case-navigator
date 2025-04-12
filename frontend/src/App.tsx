@@ -30,6 +30,8 @@ function App() {
   >(null);
   const [petitionDetails, setPetitionDetails] = useState("");
   const [isLoading, setIsLoading] = useState(false);
+  const [uploadError, setUploadError] = useState<string>("");
+  const [isUploadDialogOpen, setIsUploadDialogOpen] = useState(false);
   const backendUrl =
     import.meta.env.VITE_BACKEND_URL ?? "http://localhost:8000";
 
@@ -94,8 +96,20 @@ function App() {
     if (isAuthenticated) {
       authenticatedFetch(`${backendUrl}/retrieval/documents`)
         .then((res) => res.json())
-        .then((data) => setData(data.petitions))
-        .catch(() => setIsAuthenticated(false));
+        .then((fetchedData) => {
+          // Ensure fetchedData is an array before setting state
+          if (Array.isArray(fetchedData)) {
+            setData(fetchedData);
+          } else {
+            console.error("Fetched data is not an array:", fetchedData);
+            setData([]); // Reset to empty array if fetch returned invalid data
+          }
+        })
+        .catch((error) => {
+          console.error("Error fetching documents:", error);
+          setData([]); // Reset on error too
+          setIsAuthenticated(false);
+        });
     }
   }, [isAuthenticated, backendUrl]);
 
@@ -123,10 +137,12 @@ function App() {
 
   const handleFileUpload = async (file: File) => {
     if (!file || file.type !== "application/pdf") {
-      alert("Please upload a PDF file");
+      setUploadError("Please upload a PDF file");
       return;
     }
 
+    setUploadError("");
+    setIsLoading(true);
     const formData = new FormData();
     formData.append("file", file);
 
@@ -139,18 +155,36 @@ function App() {
         }
       );
 
+      const result = await response.json();
       if (!response.ok) {
-        throw new Error("Upload failed");
+        throw new Error(result.detail || "Upload failed");
       }
 
-      const result = await response.json();
       console.log("Upload successful:", result);
-      authenticatedFetch(`${backendUrl}/retrieval/documents`)
-        .then((res) => res.json())
-        .then((data) => setData(data.petitions));
+      // Refresh the data
+      const docsResponse = await authenticatedFetch(
+        `${backendUrl}/retrieval/documents`
+      );
+      const docsData = await docsResponse.json();
+      if (!docsResponse.ok) {
+        throw new Error(docsData.detail || "Failed to refresh data");
+      }
+      // Ensure docsData is an array before setting state
+      if (Array.isArray(docsData)) {
+        setData(docsData);
+      } else {
+        console.error("Refreshed data is not an array:", docsData);
+        setData([]); // Reset to empty array
+      }
+      setUploadError("");
+      setIsUploadDialogOpen(false); // Close dialog on success
     } catch (error) {
       console.error("Error uploading file:", error);
-      alert("Failed to upload file");
+      setUploadError(
+        error instanceof Error ? error.message : "Failed to upload file"
+      );
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -198,7 +232,10 @@ function App() {
 
         <TabsContent value="cases" className="border-none p-0 mt-6 w-full">
           <div className="flex justify-end mb-4">
-            <Dialog>
+            <Dialog
+              open={isUploadDialogOpen}
+              onOpenChange={setIsUploadDialogOpen}
+            >
               <DialogTrigger asChild>
                 <Button variant="outline" className="flex items-center gap-2">
                   <svg
@@ -254,27 +291,40 @@ function App() {
                         }}
                       />
                       <div className="flex flex-col items-center gap-2">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        >
-                          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-                          <polyline points="17 8 12 3 7 8" />
-                          <line x1="12" y1="3" x2="12" y2="15" />
-                        </svg>
+                        {isLoading ? (
+                          <Spinner className="h-6 w-6" />
+                        ) : (
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          >
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                            <polyline points="17 8 12 3 7 8" />
+                            <line x1="12" y1="3" x2="12" y2="15" />
+                          </svg>
+                        )}
                         <p className="text-sm text-gray-600">
-                          Click to browse or drag and drop your file here
+                          {isLoading
+                            ? "Processing..."
+                            : "Click to browse or drag and drop your file here"}
                         </p>
-                        <p className="text-xs text-gray-500">
-                          Supported formats: PDF, DOC, DOCX
-                        </p>
+                        {!isLoading && (
+                          <p className="text-xs text-gray-500">
+                            Supported formats: PDF
+                          </p>
+                        )}
+                        {uploadError && (
+                          <p className="text-sm text-red-500 mt-2">
+                            {uploadError}
+                          </p>
+                        )}
                       </div>
                     </div>
                   </div>
@@ -285,10 +335,11 @@ function App() {
                   </DialogClose>
                   <Button
                     onClick={() => {
-                      // Handle upload
+                      document.getElementById("file")?.click();
                     }}
+                    disabled={isLoading}
                   >
-                    Upload
+                    {isLoading ? "Processing..." : "Upload"}
                   </Button>
                 </div>
               </DialogContent>

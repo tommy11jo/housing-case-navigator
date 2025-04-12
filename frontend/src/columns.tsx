@@ -1,7 +1,7 @@
-import { ColumnDef } from "@tanstack/react-table"
-import { PETITION_TYPE_NUMBER_TO_NAME } from "./data"
-import { format } from "date-fns"
-import { Petition } from "./types"
+import { ColumnDef } from "@tanstack/react-table";
+import { PETITION_TYPE_NUMBER_TO_NAME } from "./data";
+import { format } from "date-fns";
+import { Petition } from "./types";
 export const columns: ColumnDef<Petition>[] = [
   {
     header: "Case Info",
@@ -23,8 +23,8 @@ export const columns: ColumnDef<Petition>[] = [
         | 1
         | 2
         | 3
-        | 4
-      return PETITION_TYPE_NUMBER_TO_NAME[issueTypeNumber]
+        | 4;
+      return PETITION_TYPE_NUMBER_TO_NAME[issueTypeNumber];
     },
   },
   {
@@ -35,9 +35,14 @@ export const columns: ColumnDef<Petition>[] = [
     ),
     accessorKey: "argumentsAndDecisions",
     cell: ({ row }) => {
+      const decisions = row.original.argumentsAndDecisions;
+      // Check if decisions is an array before mapping
+      if (!Array.isArray(decisions)) {
+        return <span className="text-gray-500">N/A</span>;
+      }
       return (
         <ol className="list-decimal pl-4 text-left w-full">
-          {row.original.argumentsAndDecisions.map(
+          {decisions.map(
             (arg: Petition["argumentsAndDecisions"][number], i: number) => (
               <li key={i} className="mb-2">
                 <strong>{arg.violatedCode}</strong>: {arg.complaintSummary}
@@ -51,7 +56,7 @@ export const columns: ColumnDef<Petition>[] = [
             )
           )}
         </ol>
-      )
+      );
     },
   },
   // {
@@ -73,9 +78,13 @@ export const columns: ColumnDef<Petition>[] = [
     header: "Rent Adjustment",
     accessorKey: "rentAdjustment",
     cell: ({ row }) => {
-      const value = row.original.rentAdjustment
+      const value = row.original.rentAdjustment;
+      // Check if value is a string before using string methods
+      if (typeof value !== "string") {
+        return <span className="text-gray-500">N/A</span>; // Handle non-string case
+      }
       const rentReduced =
-        value.includes("-") || value.toLowerCase().includes("yes")
+        value.includes("-") || value.toLowerCase().includes("yes");
       return (
         <div className="flex items-center gap-1">
           <span
@@ -86,7 +95,7 @@ export const columns: ColumnDef<Petition>[] = [
             {rentReduced ? "↓" : "↑"} {value}
           </span>
         </div>
-      )
+      );
     },
   },
   {
@@ -106,12 +115,12 @@ export const columns: ColumnDef<Petition>[] = [
     accessorKey: "hearingDate",
     cell: ({ row }) => {
       try {
-        const date = new Date(row.original.hearingDate)
+        const date = new Date(row.original.hearingDate);
         return isNaN(date.getTime())
           ? "Invalid Date"
-          : format(date, "MMM d, yyyy")
+          : format(date, "MMM d, yyyy");
       } catch {
-        return "Invalid Date"
+        return "Invalid Date";
       }
     },
   },
@@ -120,12 +129,12 @@ export const columns: ColumnDef<Petition>[] = [
     accessorKey: "filedOnDate",
     cell: ({ row }) => {
       try {
-        const date = new Date(row.original.filedOnDate)
+        const date = new Date(row.original.filedOnDate);
         return isNaN(date.getTime())
           ? "Invalid Date"
-          : format(date, "MMM d, yyyy")
+          : format(date, "MMM d, yyyy");
       } catch {
-        return "Invalid Date"
+        return "Invalid Date";
       }
     },
   },
@@ -134,12 +143,12 @@ export const columns: ColumnDef<Petition>[] = [
     accessorKey: "decisionDate",
     cell: ({ row }) => {
       try {
-        const date = new Date(row.original.decisionDate)
+        const date = new Date(row.original.decisionDate);
         return isNaN(date.getTime())
           ? "Invalid Date"
-          : format(date, "MMM d, yyyy")
+          : format(date, "MMM d, yyyy");
       } catch {
-        return "Invalid Date"
+        return "Invalid Date";
       }
     },
   },
@@ -147,4 +156,4 @@ export const columns: ColumnDef<Petition>[] = [
     header: "Source File",
     accessorKey: "sourceFile",
   },
-]
+];

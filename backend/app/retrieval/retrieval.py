@@ -1,9 +1,10 @@
 from dotenv import load_dotenv
 from typing import BinaryIO
 import json
-from fastapi import APIRouter, Response
+from fastapi import APIRouter, Response, HTTPException
 import csv
 from io import StringIO
+from ..config import supabase
 
 load_dotenv()
 
@@ -20,8 +21,17 @@ PETITION_TYPE_NUMBER_TO_NAME = {
 
 @router.get("/documents")
 async def get_documents(format: str = "json"):
-    with open("./data/all_decisions.json", "r") as file:
-        data = json.load(file)
+    try:
+        # Get data from Supabase storage
+        response = supabase.storage.from_("documents").download("all_decisions.json")
+        # response is bytes, decode it to string then parse JSON
+        data = json.loads(response.decode('utf-8'))
+    except Exception as e:
+        # If file doesn't exist, return empty data
+        if "404" in str(e):
+            data = {"petitions": []}
+        else:
+            raise HTTPException(status_code=500, detail=f"Error fetching from Supabase: {str(e)}")
     
     if format.lower() == "csv":
         # Create a string buffer to write CSV data
@@ -46,5 +56,6 @@ async def get_documents(format: str = "json"):
                 "Content-Disposition": "attachment; filename=documents.csv"
             }
         )
-    
-    return data
+    else:  # Default to JSON
+        # Return only the petitions array
+        return Response(content=json.dumps(data["petitions"], indent=2), media_type="application/json")
