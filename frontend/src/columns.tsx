@@ -155,5 +155,25 @@ export const columns: ColumnDef<Petition>[] = [
   {
     header: "Source File",
     accessorKey: "sourceFile",
+    cell: ({ row, cell }) => {
+      const sourceFile = row.original.sourceFile;
+      // Access the function from table meta, now strongly typed
+      const onOpenFile = cell.getContext().table.options.meta?.onOpenFile;
+
+      if (!onOpenFile) {
+        // Fallback if the function isn't passed (optional)
+        return <span>{sourceFile}</span>;
+      }
+
+      return (
+        <button
+          onClick={() => onOpenFile(sourceFile)}
+          className="text-blue-600 hover:underline cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
+          style={{ background: 'none', border: 'none', padding: 0, font: 'inherit' }} // Make it look like text
+        >
+          {sourceFile}
+        </button>
+      );
+    },
   },
 ];

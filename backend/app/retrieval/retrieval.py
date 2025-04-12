@@ -1,6 +1,8 @@
 from dotenv import load_dotenv
 import json
-from fastapi import APIRouter, HTTPException
+from fastapi import APIRouter, HTTPException, Response
+from fastapi.responses import StreamingResponse
+import io
 from ..config import supabase
 import logging
 
@@ -41,3 +43,47 @@ async def get_documents():
 
     # Return the petitions list directly as the JSON response body
     return petitions
+
+
+@router.get("/file/{file_path:path}")
+async def get_file(file_path: str):
+    """
+    Fetches a file from the 'documents' bucket in Supabase storage.
+    """
+    # Basic security check to prevent accessing unintended paths if needed
+    # e.g., if file_path could contain '..'
+    if ".." in file_path:
+        raise HTTPException(status_code=400, detail="Invalid file path")
+
+    try:
+        logger.info(f"Attempting to download file: {file_path} from bucket 'documents'")
+        response_data = supabase.storage.from_("documents").download(file_path)
+
+        # Determine content type (simple check for PDF for now)
+        content_type = "application/octet-stream" # Default
+        file_path_lower = file_path.lower()
+        if file_path_lower.endswith(".pdf"):
+            content_type = "application/pdf"
+        elif file_path_lower.endswith(".json"):
+            content_type = "application/json"
+        # Add more types as needed
+
+        # Return the file content as a streaming response
+        return StreamingResponse(
+            io.BytesIO(response_data),
+            media_type=content_type,
+            headers={"Content-Disposition": f"inline; filename=\"{file_path.split('/')[-1]}\""} # Show inline, suggest original filename
+        )
+
+    except Exception as e:
+        # Handle Supabase client errors, especially file not found
+        # The Supabase client might raise specific exceptions or return an error response
+        # Check the Supabase client documentation for precise error handling
+        error_message = str(e)
+        logger.error(f"Error downloading file '{file_path}': {error_message}")
+
+        # Example check for common 'Not Found' patterns (adjust based on actual Supabase errors)
+        if "404" in error_message or "does not exist" in error_message.lower() or "NotFound" in error_message:
+             raise HTTPException(status_code=404, detail=f"File not found: {file_path}")
+        else:
+             raise HTTPException(status_code=500, detail=f"Error fetching file from Supabase: {error_message}")

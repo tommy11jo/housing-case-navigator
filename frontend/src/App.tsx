@@ -15,7 +15,6 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-  DialogClose,
 } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -78,20 +77,23 @@ function App() {
     validatePassword(password);
   };
 
-  const authenticatedFetch = (url: string, options: RequestInit = {}) => {
-    const storedPassword = localStorage.getItem("auth_password");
-    if (!storedPassword) {
-      setIsAuthenticated(false);
-      return Promise.reject(new Error("No authentication token"));
-    }
+  const authenticatedFetch = useCallback(
+    (url: string, options: RequestInit = {}) => {
+      const storedPassword = localStorage.getItem("auth_password");
+      if (!storedPassword) {
+        setIsAuthenticated(false);
+        return Promise.reject(new Error("No authentication token"));
+      }
 
-    const headers = {
-      ...options.headers,
-      "X-Password": storedPassword,
-    };
+      const headers = {
+        ...options.headers,
+        "X-Password": storedPassword,
+      };
 
-    return fetch(url, { ...options, headers });
-  };
+      return fetch(url, { ...options, headers });
+    },
+    []
+  );
 
   useEffect(() => {
     if (isAuthenticated) {
@@ -115,7 +117,7 @@ function App() {
           setIsAuthenticated(false);
         });
     }
-  }, [isAuthenticated, backendUrl]);
+  }, [isAuthenticated, backendUrl, authenticatedFetch]);
 
   const generatePetitionGuidance = async (details: string) => {
     setIsLoading(true);
@@ -168,24 +170,18 @@ function App() {
       }
 
       console.log("Upload successful:", result);
+      if (Array.isArray(result.petitions)) {
+        setData(result.petitions);
+      } else {
+        console.error(
+          "Upload response did not contain a valid petitions array:",
+          result
+        );
+        toast.error("Failed to update document list after upload.");
+      }
+
       setIsUploadDialogOpen(false);
       toast.success("Document uploaded successfully"); // <-- Restored toast
-
-      authenticatedFetch(`${backendUrl}/retrieval/documents`)
-        .then((res) => res.json())
-        .then((fetchedData) => {
-          if (Array.isArray(fetchedData)) {
-            setData(fetchedData);
-          } else {
-            console.error("Fetched data is not an array:", fetchedData);
-            toast.error("Failed to refresh documents: Invalid data format."); // <-- Restored toast
-            setData([]);
-          }
-        })
-        .catch((error) => {
-          console.error("Error refreshing documents after upload:", error);
-          toast.error("Failed to refresh documents list."); // <-- Restored toast
-        });
     } catch (error) {
       console.error("Error uploading file:", error);
       if (!uploadError) {
@@ -198,6 +194,41 @@ function App() {
       setIsUploading(false);
     }
   };
+
+  const handleOpenFile = useCallback(
+    async (fileName: string) => {
+      const toastId = toast.loading("Fetching file..."); // Start loading toast
+      try {
+        const encodedFileName = encodeURIComponent(fileName);
+        const fullPath = `decisions/${encodedFileName}`;
+
+        const response = await authenticatedFetch(
+          `${backendUrl}/retrieval/file/${fullPath}`
+        );
+
+        if (!response.ok) {
+          const errorText = await response.text();
+          throw new Error(
+            `Failed to fetch file: ${response.status} ${response.statusText} - ${errorText}`
+          );
+        }
+
+        const blob = await response.blob();
+        const fileUrl = URL.createObjectURL(blob);
+        window.open(fileUrl, "_blank");
+        // Optional: Revoke the object URL after some time if needed,
+        // but opening in a new tab usually handles this.
+        // setTimeout(() => URL.revokeObjectURL(fileUrl), 60000);
+        toast.success("File opened successfully", { id: toastId }); // Update toast on success
+      } catch (error) {
+        console.error("Error opening file:", error);
+        const errorMsg =
+          error instanceof Error ? error.message : "Could not open file";
+        toast.error(`Error: ${errorMsg}`, { id: toastId }); // Update toast on error
+      }
+    },
+    [backendUrl, authenticatedFetch]
+  );
 
   if (!isAuthenticated) {
     return (
@@ -272,11 +303,13 @@ function App() {
                 <DialogHeader>
                   <DialogTitle>Upload Document</DialogTitle>
                 </DialogHeader>
-                <div className="grid gap-4 py-4">
-                  <div className="grid gap-2">
-                    <Label htmlFor="file">File</Label>
+                <div className="py-4">
+                  <div>
+                    <Label htmlFor="file" className="text-xl font-medium">
+                      File
+                    </Label>
                     <div
-                      className="border-2 border-dashed rounded-lg p-8 text-center cursor-pointer hover:border-gray-400 transition-colors"
+                      className="border-2 border-dashed rounded-lg p-12 text-center cursor-pointer hover:border-gray-400 transition-colors mt-4"
                       onClick={() => document.getElementById("file")?.click()}
                       onDrop={(e) => {
                         e.preventDefault();
@@ -297,7 +330,7 @@ function App() {
                         onChange={(e) => {
                           if (e.target.files && e.target.files[0]) {
                             setUploadError("");
-                            // handleFileUpload(e.target.files[0]);
+                            handleFileUpload(e.target.files[0]);
                           }
                         }}
                         disabled={isUploading}
@@ -307,7 +340,7 @@ function App() {
                           <Spinner className="h-6 w-6" />
                         ) : (
                           <svg
-                            className="w-12 h-12 text-gray-400"
+                            className="w-8 h-8 text-black"
                             fill="none"
                             stroke="currentColor"
                             viewBox="0 0 24 24"
@@ -317,13 +350,13 @@ function App() {
                               strokeLinecap="round"
                               strokeLinejoin="round"
                               strokeWidth="2"
-                              d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"
-                            ></path>
+                              d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0l-4 4m4-4v12"
+                            />
                           </svg>
                         )}
                         <p className="text-sm text-gray-600">
                           {isUploading
-                            ? "Uploading..."
+                            ? "Processing..."
                             : "Click to browse or drag and drop your file here"}
                         </p>
                         {!isUploading && (
@@ -340,33 +373,14 @@ function App() {
                     </div>
                   </div>
                 </div>
-                <div className="flex justify-end gap-2 mt-4">
-                  <DialogClose asChild>
-                    <Button variant="outline" disabled={isUploading}>
-                      Cancel
-                    </Button>
-                  </DialogClose>
-                  <Button
-                    onClick={() => {
-                      const fileInput =
-                        document.querySelector<HTMLInputElement>(
-                          'input[type="file"]'
-                        );
-                      if (fileInput?.files?.length) {
-                        handleFileUpload(fileInput.files[0]);
-                      } else {
-                        setUploadError("Please select a file first.");
-                      }
-                    }}
-                    disabled={isUploading}
-                  >
-                    {isUploading ? "Uploading..." : "Upload"}
-                  </Button>
-                </div>
               </DialogContent>
             </Dialog>
           </div>
-          <DataTable columns={columns} data={data} />
+          <DataTable
+            columns={columns}
+            data={data}
+            onOpenFile={handleOpenFile}
+          />
         </TabsContent>
 
         <TabsContent value="analytics" className="border-none p-0 mt-6 w-full">

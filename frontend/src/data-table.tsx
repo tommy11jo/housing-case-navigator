@@ -22,14 +22,24 @@ import React, { Fragment } from "react"
 import { Input } from "./components/ui/input"
 import { Search } from "lucide-react"
 
+// Extend react-table types to include our custom meta
+declare module '@tanstack/react-table' {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  interface TableMeta<TData> {
+    onOpenFile?: (filePath: string) => Promise<void>;
+  }
+}
+
 interface DataTableProps<TData, TValue> {
   columns: ColumnDef<TData, TValue>[]
   data: TData[]
+  onOpenFile?: (filePath: string) => Promise<void>
 }
 
 export function DataTable<TData, TValue>({
   columns,
   data,
+  onOpenFile,
 }: DataTableProps<TData, TValue>) {
   const [columnFilters, setColumnFilters] = React.useState<ColumnFiltersState>(
     []
@@ -70,6 +80,10 @@ export function DataTable<TData, TValue>({
       fuzzy: fuzzyFilter,
     },
     globalFilterFn: fuzzyFilter,
+    // Pass the function down via meta, now strongly typed
+    meta: {
+      onOpenFile,
+    },
   })
 
   const getFilteredRowCount = (columnId: string) => {
